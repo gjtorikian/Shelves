@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2008 Romain Guy Copyright (C) 2010 Garen J. Torikian Licensed 
+	under the Apache License, Version 2.0 (the "License"); you may not use this 
+	file except in compliance with the License. You may obtain a copy of the 
+	License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by 
+	applicable law or agreed to in writing, software distributed under the License 
+	is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY 
+	KIND, either express or implied. See the License for the specific language 
+	governing permissions and limitations under the License. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:fillViewport="true">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:orientation="vertical">
+		<TextView android:layout_width="wrap_content" android:id="@+id/title"
+			android:layout_height="wrap_content" android:layout_alignParentLeft="true"
+			android:layout_alignParentTop="true" android:text="@string/edit_title_label"
+			android:padding="5dip" style="@style/DetailsLabel.Medium.Bold" />
+		<EditText android:layout_height="wrap_content" android:id="@+id/edit_title"
+			android:layout_width="fill_parent" android:layout_below="@+id/title"
+			android:padding="5dip" />
+
+		<TextView android:id="@+id/edit_cover_label"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:text="@string/edit_cover_label" android:layout_below="@id/edit_title"
+			android:layout_alignLeft="@id/edit_title" style="@style/DetailsLabel.Medium.Bold"
+			android:padding="5dip" />
+		<ImageView android:id="@+id/edit_cover"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:adjustViewBounds="true" android:clickable="true"
+			android:focusable="true" android:src="@drawable/unknown_cover_no_shadow"
+			android:layout_below="@+id/edit_cover_label"
+			android:layout_marginLeft="8dip" android:background="#000000" />
+		<Button android:id="@+id/remove_cover" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="@string/edit_cover_remove_label"
+			android:layout_toRightOf="@id/edit_cover" android:layout_alignBottom="@id/edit_cover"
+			android:padding="5dip" android:state_enabled="false" />
+
+		<TextView android:layout_height="wrap_content" android:id="@+id/edit_ean_label"
+			android:text="@string/item_details_ean" android:layout_width="wrap_content"
+			android:layout_below="@id/edit_cover" android:layout_alignLeft="@id/edit_cover_label"
+			style="@style/DetailsLabel.Medium.Bold" android:padding="5dip" />
+		<EditText android:layout_height="wrap_content" android:id="@+id/edit_ean"
+			android:layout_width="fill_parent" android:layout_below="@+id/edit_ean_label"
+			android:padding="5dip" />
+
+		<TextView android:layout_height="wrap_content" android:id="@+id/edit_authors_label"
+			android:text="@string/edit_creator_label" android:layout_width="wrap_content"
+			android:layout_below="@id/edit_ean" android:layout_alignLeft="@id/edit_ean"
+			style="@style/DetailsLabel.Medium.Bold" android:padding="5dip" />
+		<EditText android:layout_height="wrap_content" android:id="@+id/edit_authors"
+			android:layout_width="fill_parent" android:layout_below="@+id/edit_authors_label"
+			android:padding="5dip" />
+
+		<TextView android:layout_height="wrap_content" android:id="@+id/edit_reviews_label"
+			android:text="@string/edit_description_label" android:layout_width="wrap_content"
+			android:layout_below="@id/edit_authors" android:layout_alignLeft="@id/edit_authors"
+			style="@style/DetailsLabel.Medium.Bold" android:padding="5dip" />
+		<EditText android:layout_height="wrap_content" android:id="@+id/edit_reviews"
+			android:layout_width="fill_parent" android:layout_below="@+id/edit_reviews_label"
+			android:lines="6" android:padding="5dip" />
+
+		<TextView android:layout_height="wrap_content" android:id="@+id/edit_publication_label"
+			android:text="@string/edit_publication_label" android:layout_width="wrap_content"
+			android:layout_below="@id/edit_reviews" android:layout_alignLeft="@id/edit_reviews"
+			style="@style/DetailsLabel.Medium.Bold" android:padding="5dip" />
+		<Spinner android:id="@+id/month_prompt" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:prompt="@string/month_prompt"
+			android:layout_below="@+id/edit_publication_label" />
+		<EditText android:id="@+id/edit_year" android:layout_height="wrap_content"
+			android:layout_width="wrap_content" android:maxLength="4"
+			android:ems="4" android:layout_below="@+id/edit_publication_label"
+			android:layout_toRightOf="@id/month_prompt" android:inputType="number" />
+
+		<TextView android:layout_height="wrap_content" android:id="@+id/edit_artists_label"
+			android:text="@string/item_details_artists" android:layout_width="wrap_content"
+			android:layout_below="@id/edit_year" android:layout_alignLeft="@id/edit_publication_label"
+			style="@style/DetailsLabel.Medium.Bold" android:padding="5dip" />
+		<EditText android:layout_height="wrap_content" android:id="@+id/edit_artists"
+			android:layout_width="fill_parent" android:layout_below="@+id/edit_artists_label"
+			android:padding="5dip" />
+
+		<TextView android:layout_height="wrap_content" android:id="@+id/edit_characters_label"
+			android:text="@string/item_details_characters" android:layout_width="wrap_content"
+			android:layout_below="@id/edit_artists" android:layout_alignLeft="@id/edit_artists"
+			style="@style/DetailsLabel.Medium.Bold" android:padding="5dip" />
+		<EditText android:layout_height="wrap_content" android:id="@+id/edit_characters"
+			android:layout_width="fill_parent" android:layout_below="@+id/edit_characters_label"
+			android:padding="5dip" />
+
+<TextView android:layout_height="wrap_content" android:id="@+id/edit_issue_label"
+			android:text="@string/item_details_issue" android:layout_width="wrap_content"
+			android:layout_below="@id/edit_characters" android:layout_alignLeft="@id/edit_characters"
+			style="@style/DetailsLabel.Medium.Bold" android:padding="5dip" />
+		<EditText android:layout_height="wrap_content" android:id="@+id/edit_issue"
+			android:layout_width="fill_parent" android:layout_below="@+id/edit_issue_label"
+			android:padding="5dip" />
+			
+		<TextView android:layout_height="wrap_content" android:id="@+id/edit_price_label"
+			android:text="@string/edit_price_label" android:layout_width="wrap_content"
+			android:layout_below="@id/edit_issue" android:layout_alignLeft="@id/edit_issue"
+			style="@style/DetailsLabel.Medium.Bold" android:padding="5dip" />
+		<EditText android:layout_height="wrap_content" android:id="@+id/edit_price"
+			android:layout_width="fill_parent" android:layout_below="@+id/edit_price_label"
+			android:padding="5dip" />
+			
+		<TextView android:layout_height="wrap_content" android:id="@+id/edit_rating_label"
+			android:text="@string/context_menu_item_rate_label"
+			android:layout_width="wrap_content" android:layout_below="@id/edit_price"
+			android:layout_alignLeft="@id/edit_price" style="@style/DetailsLabel.Medium.Bold"
+			android:padding="5dip" />
+		<RatingBar android:id="@+id/edit_rating"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:numStars="5" android:stepSize="1.0" android:layout_below="@+id/edit_rating_label" />
+
+		<TextView android:layout_height="wrap_content" android:id="@+id/edit_notes_label"
+			android:text="@string/edit_notes_label" android:layout_width="wrap_content"
+			android:layout_below="@id/edit_rating" android:layout_alignLeft="@id/edit_rating"
+			style="@style/DetailsLabel.Medium.Bold" android:padding="5dip" />
+		<EditText android:layout_height="wrap_content" android:id="@+id/edit_notes"
+			android:layout_width="fill_parent" android:layout_below="@+id/edit_notes_label"
+			android:lines="3" android:padding="5dip" />
+
+		<TextView android:layout_height="wrap_content" android:id="@+id/edit_quantity_label"
+			android:text="@string/quantity_label" android:layout_width="wrap_content"
+			android:layout_below="@id/edit_notes" android:layout_alignLeft="@id/edit_notes" style="@style/DetailsLabel.Medium.Bold"
+			android:padding="5dip" />
+		<EditText android:layout_height="wrap_content" android:id="@+id/edit_quantity"
+			android:layout_width="fill_parent" android:layout_below="@+id/edit_quantity_label"
+			android:inputType="number" android:padding="5dip" />
+                
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/edit_quantity"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical|bottom" >
+            			<Button android:id="@+id/cancel_button" android:text="@string/cancel_label"
+				android:layout_width="0dip" android:layout_weight="1.0"
+				android:layout_height="wrap_content" />
+            			
+			<Button android:text="@string/save_label" android:id="@+id/save_button"
+				android:layout_width="0dip" android:layout_weight="1.0"
+				android:layout_height="wrap_content" />
+
+		</LinearLayout>
+	</RelativeLayout>
+</ScrollView>

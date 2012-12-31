@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- All good German text by Walter Helbig, Michael Scholze, and Fabian Goiny. Lousy text 
+	by Google Translate Licensed under the Apache License, Version 2.0 (the "License"); 
+	you may not use this file except in compliance with the License. You may 
+	obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 
+	Unless required by applicable law or agreed to in writing, software distributed 
+	under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES 
+	OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
+	the specific language governing permissions and limitations under the License. -->
+
+<resources>
+	<string name="application_name">Shelves</string>
+	<string name="version">Version</string>
+
+	<string name="tab_item_selection">Sammlung</string>
+	<string name="tab_loaned_items">Ausgeliehen</string>
+
+	<string name="tab_wishlist">Wunschliste</string>
+		<string name="main_grid_item_views">Verberge/Zeige Sammlungen</string>
+	<string name="main_grid_item_dialog_title">Wähle die Sammlungen zum Verbergen</string>
+	<string name="main_grid_item_dialog_change">Verändere Sichtbarkeit</string>
+	<string name="main_grid_insult">Sie haben etwas Schlimmes getan. Wie soll Shelves
+		nun weiter laufen?</string>
+	<string name="main_grid_ok_button">Uhh&#8230;</string>
+	
+	<string name="apparel_label">Kleidung</string>
+	<string name="apparel_label_big">Kleidung</string>
+
+	<string name="boardgame_label">Brettspiel</string>
+	<string name="boardgame_label_plural_small">Brettspiele</string>
+	<string name="boardgame_label_single_big">Brettspiel</string>
+	<string name="boardgame_label_plural_big">Brettspiele</string>
+	
+	<string name="book_label">Buch</string>
+	<string name="book_label_plural_small">Bücher</string>
+	<string name="book_label_single_big">Buch</string>
+	<string name="book_label_plural_big">Bücher</string>
+
+	<string name="comic_label">Comic</string>
+	<string name="comic_label_plural_small">Comics</string>
+	<string name="comic_label_single_big">Comic</string>
+	<string name="comic_label_plural_big">Comics</string>
+
+	<string name="gadget_label">Gadget</string>
+	<string name="gadget_label_plural_small">Gadgets</string>
+	<string name="gadget_label_single_big">Gadget</string>
+	<string name="gadget_label_plural_big">Gadgets</string>
+
+	<string name="movie_label">Film</string>
+	<string name="movie_label_plural_small">Filme</string>
+	<string name="movie_label_single_big">Film</string>
+	<string name="movie_label_plural_big">Filme</string>
+
+	<string name="music_label">Musik</string>
+	<string name="music_label_plural_small">Alben</string>
+	<string name="music_label_single_big">Album</string>
+	<string name="music_label_big">Musik</string>
+
+	<string name="software_label">Software</string>
+	<string name="software_label_plural_small">Software</string>
+	<string name="software_label_big">Software</string>
+
+	<string name="tool_label">Werkzeug</string>
+	<string name="tool_label_plural_small">Werkzeuge</string>
+	<string name="tool_label_single_big">Werkzeug</string>
+	<string name="tool_label_plural_big">Werkzeuge</string>
+
+	<string name="toy_label">Spielzeug</string>
+	<string name="toy_label_plural_small">Spielzeuge</string>
+	<string name="toy_label_single_big">Spielzeug</string>
+	<string name="toy_label_plural_big">Spielzeuge</string>
+
+	<string name="videogame_label">Videospiel</string>
+	<string name="videogame_label_plural_small">Videospiele</string>
+	<string name="videogame_label_single_big">Videospiel</string>
+	<string name="videogame_label_plural_big">Videospiele</string>
+
+	<string name="error_no_items">Keine Artikel zum Anzeigen</string>
+	<string name="error_zxing_missing_title">Barcode Scanner ist nicht installiert.</string>
+	<string name="error_zxing_missing_message">Sie müssen zuerst den kostenlosen Barcode-Scanner installieren. Sie werden auf die Download-Seite weitergeleitet.</string>
+	<string name="zxing_go_get">Lade herunter!</string>
+	<string name="error_import_in_progress">Import läuft bereits</string>
+	<string name="error_export_in_progress">Export läuft bereits</string>
+	<string name="error_search_in_progress">Suche läuft bereits</string>
+	<string name="error_missing_import_file">Importdatei nicht gefunden</string>
+	<string name="error_import_asynch">Fehler beim Lesen der Importdatei. Bitte versuchen
+		Sie es erneut.</string>
+	<string name="error_missing_export_file">Exportdatei nicht gefunden</string>
+
+	<string name="error_adding_item">%s konnte nicht hinzugefügt werden.</string>
+	<string name="error_item_exists">%s existiert bereits</string>
+	<string name="error_with_server">Fehler bei der Lizenzprüfung! Achten Sie darauf,
+		dass Ihr Internet funktioniert, oder versuchen Sie es später erneut.
+	</string>
+	<string name="error_no_barcode">Fehlender Barcode</string>
+	
+	<string name="import_results">Die Ergebnisse des Imports</string>
+	<string name="import_result_description">Einige Artikel wurden nicht hinzugefügt, da die
+		Barcode-Informationen nicht online verfügbar sind. Versuchen Sie, die Elemente manuell hinzufügen.\nDiese Ergebnisse werden in einer Datei namens %s. Sie sind in dem &#8222;shelves&#8221;)-Ordner der SD-Karte gespeichert.</string>
+	<string name="import_missing_items_singular">%s Artikel konnte nicht hinzugefügt werden:\n</string>
+	<string name="import_missing_items_plural">%s Artikel konnte nicht hinzugefügt werden:\n</string>
+	<string name="import_missing_items_limit">%s Artikel konnte nicht hinzugefügt werden (25 abgebildet):\n</string>
+	<string name="import_existing_items_singular">%s Artikel ist verfügbar:\n</string>
+	<string name="import_existing_items_plural">%s Artikel ist verfügbar:\n</string>
+	<string name="import_existing_items_limit">%s Artikel ist verfügbar (25 abgebildet):\n
+	</string>
+
+	<string name="success_imported_item">%1$d %2$s erfolgreich importiert</string>
+	<string name="success_exported">Sammlung erfolgreich exportiert</string>
+	<string name="success_added">%s erfolgreich importiert</string>
+	<string name="success_item_not_found">%s nicht vorhanden</string>
+	<string name="success_item_deleted">%s gelöscht</string>
+	<string name="success_item_found">%1$d %2$s gefunden</string>
+	<string name="success_refreshing_cover">Erneuere Cover&#8230;</string>
+
+<string name="take_new_photo">Wählen Sie ein Foto</string>
+	
+	<string name="menu_item_add_from_internet_label">Von Onlinequelle hinzufügen</string>
+
+<string name="menu_item_add_manually_label">Füge neues leeres Element hinzu</string>
+		<string name="menu_item_scan_label">Scan</string>
+	<string name="menu_item_add_label">Scannen eines Artikels</string>
+	<string name="menu_item_add_bulk_label">Scannen mehrerer Artikel</string>
+	<string name="menu_item_check_label">Scannen für Shelves-Suche</string>
+	<string name="menu_item_check_online_label">Scannen für Online-Suche</string>
+	<string name="menu_item_search_label">Suche</string>
+	<string name="menu_item_sort_label">Sortieren</string>
+	<string name="menu_item_multiselect_label">Multi-Select</string> 
+	<string name="menu_item_filter_label">Filtern</string>
+	<string name="menu_item_settings_label">Einstellungen</string>
+	<string name="menu_item_help_label">Hilfe </string>
+	<string name="menu_item_view">Online ansehen/kaufen</string>
+	<string name="menu_item_view_short">Ansehen/Kaufen</string>
+	<string name="menu_item_change_style">Ändere Shelf Style</string>
+	<string name="menu_item_change_shelf">Zeige als Raster</string>
+	<string name="menu_item_change_list">Zeige als Liste</string>
+	<string name="menu_item_change_list_nocover">Zeige als Liste ohne Cover</string>
+	<string name="context_menu_item_quantity_label">Ändern Sie die Menge</string>
+	<string name="context_menu_item_wishlist_label">Auf den Wunschzettel</string>
+	<string name="context_menu_item_tag_label">Schlagworte</string>
+	<string name="context_menu_item_rate_label">Bewerten</string>
+	<string name="context_menu_item_change_cover_label">Cover ersetzen</string>
+	<string name="context_menu_item_loan_label">Als verliehen markieren</string>
+	<string name="context_menu_item_loan_return_label">Als zurückgegeben markieren</string>
+	<string name="context_menu_item_loan_change_label">Verleihstatus ändern</string>
+	<string name="context_menu_item_delete_label">Löschen</string>
+	
+	<string name="adding_label">Hinzufügen&#8230;</string>
+	<string name="import_label">Importiere&#8230;</string>
+	<string name="export_label">Exportiere&#8230;</string>
+	<string name="add_label">Hinzufügen</string>
+	<string name="save_label">Speichern</string>
+	<string name="cancel_label">Abbrechen</string>
+	<string name="okay_label">Sicher</string>
+	<string name="progress_dialog_wait">Bitte warten&#8230;</string>
+
+	<string name="search_add_hint_apparel">Titel, Designer oder Schlagwort</string>
+	<string name="search_add_hint_boardgame">Titel</string>
+	<string name="search_add_hint_book">Titel, Autor oder Schlagwort</string>
+	<string name="search_add_hint_comic">Titel, Autor oder Schlagwort</string>
+	<string name="search_add_hint_gadget">Titel, Hersteller oder Schlagwort</string>
+	<string name="search_add_hint_movie">Titel, Regisseur oder Schlagwort</string>
+	<string name="search_add_hint_music">Titel, Band oder Schlagwort</string>
+	<string name="search_add_hint_tool">Titel, Hersteller oder Schlagwort</string>
+	<string name="search_add_hint_toy">Titel, Hersteller oder Schlagwort</string>
+	<string name="search_add_hint_software">Titel, Publisher oder Schlagwort</string>
+	<string name="search_add_hint_videogame">Titel, Publisher oder Schlagwort</string>
+	<string name="search_progress">Suche&#8230;</string>
+
+	<string name="label_pages">%s Seiten</string>
+	<string name="label_minutes">%s Minuten</string>
+
+	<string name="dialog_add_message">Zur Sammlung hinzufügen?</string>
+	<string name="dialog_add_cancel">Nicht hinzufügen</string>
+	<string name="context_menu_add_details">Details anzeigen</string>
+
+	<string name="live_folder_apparel">Kleidung (Shelves)</string>
+	<string name="live_folder_boardgames">Brettspielen (Shelves)</string>
+	<string name="live_folder_books">Bücher (Shelves)</string>
+			<string name="live_folder_comics">Comics (Shelves)</string>
+			<string name="live_folder_gadgets">Gadgets (Shelves)</string>
+	<string name="live_folder_movies">Filme (Shelves)</string>
+	<string name="live_folder_music">Musik (Shelves)</string>
+	<string name="live_folder_software">Software (Shelves)</string>
+	<string name="live_folder_tools">Werkzeuge (Shelves)</string>
+	<string name="live_folder_toys">Spielzeug (Shelves)</string>
+	<string name="live_folder_videogames">Spiele (Shelves)</string>
+
+	<string name="item_details_tags">Schlagwörter</string>
+	<string name="item_details_artists">Künstlers</string>
+	<string name="item_details_characters">Charakters</string>
+	<string name="item_details_issue">Nummer</string>
+	<string name="item_details_format">Format</string>
+	<string name="item_details_actors">Schauspieler</string>
+	<string name="item_details_category">Kategorie</string>
+	<string name="item_details_edition">Edition</string>
+	<string name="item_details_department">Fachbereich</string>
+	<string name="item_details_fabric">Stoff</string>
+	<string name="item_details_genre">Genre</string>
+	<string name="item_details_platform">Plattform</string>
+	<string name="item_details_audience">Jugendfreigabe</string>
+	<string name="item_details_features">Techn. Daten</string>
+	<string name="item_details_theatrical_debut">Erscheinungsdatum</string>
+	<string name="item_details_languages">Sprachen</string>
+	<string name="item_details_tracks">Tracks</string>
+	<string name="item_details_label">Musiklabel</string>
+	<string name="item_details_ean">EAN</string>
+	<string name="item_details_upc">UPC</string>
+	<string name="item_details_isbn">ISBN</string>
+	<string name="item_details_dewey">Dewey</string>
+
+	<string name="item_details_min_players">Mindestanzahl Spieler</string>
+	<string name="item_details_max_players">Maximale Spieler</string>
+	<string name="item_details_age">Mindestalter</string>
+	<string name="item_details_playing_time">Spieldauer (in Minuten)</string>
+	
+	<string name="edit_title_label">Titel</string>
+	<string name="edit_cover_label">Cover</string>
+	<string name="edit_cover_remove_label">Cover entfernen?</string>
+	<string name="edit_authors_label">Autor</string>
+	<string name="edit_designer_label">Designer</string>
+	<string name="edit_manufacturer_label">Hersteller</string>
+	<string name="edit_directors_label">Directors</string>
+	<string name="edit_band_label">Band</string>
+	<string name="edit_studio_label">Studio</string>
+	<string name="edit_creator_label">Schöpfer</string>
+	<string name="edit_running_time_label">Spieldauer (in Minuten)</string>
+	<string name="edit_description_label">Beschreibung</string>
+	<string name="edit_notes_label">Notiz</string>
+	<string name="edit_publisher_label">Herausgeber</string>
+	<string name="edit_release_date_label">Premierentag</string>
+	<string name="edit_pages_label">Seiten</string>
+	<string name="edit_publication_label">Veröffentlichungsdatum</string>
+	<string name="edit_price_label">Preis</string>
+	<string name="edit_needs_title">Zum Speichern bitte einen Titel angeben.</string>
+	<string name="edit_set">Änderungen gespeichert.</string>
+
+	<string name="cannot_view_manual_item">Dieser Artikel wurde manuell erstellt.  Keine Onlinedaten vorhanden!</string>
+
+	<string name="month_prompt">Wählen Sie einen Monat</string>
+	<string-array name="month_array">
+	    <item></item>
+		<item>Januar</item>
+		<item>Februar</item>
+		<item>März</item>
+		<item>April</item>
+		<item>Mai</item>
+		<item>Juni</item>
+		<item>Juli</item>
+		<item>August</item>
+		<item>September</item>
+		<item>Oktober</item>
+		<item>November</item>
+		<item>Dezember</item>
+	</string-array>
+
+	<!-- GJT: Added these, for tagging -->
+	<string name="tag_dialog_title">Schlagwörter</string>
+	<string name="tags_fetching">Suche existierende Schlagwörter&#8230;</string>
+	<string name="tags_set">Tags gesetzt</string>
+	<string name="tag_add_error">Maximale Anzahl an Schlagwörtern erreicht.
+	</string>
+	<string name="tag_filter_title">Filtern nach Schlagwörtern</string>
+	<string name="tags_none">Filtern nicht möglich. Sie haben noch keine
+		Schlagwörter für ihre Artikel definiert.</string>
+	<string name="tagarea_hint">Gib oben einen Tag ein\noder wähle unten einen aus
+	</string>
+
+	<string name="multiselect_type_title">Welche Art von Mehrfachauswahl?
+	</string>
+	<string name="multiselect_verify">Möchten Sie diesen Artikel in den Multiauswahlpuffer? Tippen Sie einfach auf das Cover, statt langem Tastendruck.</string>
+	<string name="multiselect_finish">Multiauswahl der Artikel beenden?</string>
+
+	<!-- GJT: Added these, for rating -->
+	<string name="rate_one">Schlecht</string>
+	<string name="rate_two">Geht so&#8230;</string>
+	<string name="rate_three">Gut</string>
+	<string name="rate_four">Sehr gut</string>
+	<string name="rate_five">Hervorragend</string>
+	<string name="rate_set">Rating gesetzt</string>
+
+	<string name="quantity_label">Menge</string>
+	
+	<!-- GJT: Added these, for loaning -->
+	<string name="loan_item">Artikel verleihen</string>
+	<string name="loan_item_to_button">Kontakt auswählen</string>
+	<string name="loan_item_until">Verleihen bis</string>
+	<string name="loan_item_add_to_cal">Zum Kalender hinzufügen?</string>
+	<string name="loan_item_button">Verleihen</string>
+	<string name="loan_retrieving_dialog">Finde ausgeliehene Artikel&#8230;</string>
+	<string name="loan_none_found">Es wurde nichts verliehen.</string>
+	<string name="loan_error_need_contact">Sie müssen erst einen Kontakt hinzufügen, bevor
+		etwas verliehen werden kann.</string>
+	<string name="loan_successful">Status Ausgeliehen erfolgreich gesetzt.</string>
+	<string name="loan_unsuccessful">Status Ausgeliehen fehlgeschlagen: unerwarteter
+		Fehler. Bitte erneut versuchen.</string>
+	<string name="loaned_out">AUSGELIEHEN</string>
+	<string name="loan_returned">Gegenstand zurück erhalten</string>
+	<string name="loan_calendar_title">%1$s an %2$s verliehen</string>
+	<string name="loan_calendar_description">Sie sollten dieses Ereignis innerhalb der &#8222;Shelves&#8221;
+		Applikation verwalten.
+		Wenn Sie das Rückgabe-Datum hier ändern, wird
+		die Änderung nicht in &#8222;Shelves&#8221; erfasst. Titel und Beschreibung können
+		Sie direkt hier anpassen.
+		\n\nWenn Sie das Ereignis hier löschen, wird
+		es immer noch in &#8222;Shelves&#8221; angezeigt.</string>
+
+	<string name="wishlist_retrieving_dialog">Abrufen der Wunschliste…</string>
+	<string name="context_menu_item_wishlist_remove_label">Entfernen Sie dies aus der Wunschliste</string>
+	<string name="wishlist_added_item">Zur Wunschliste hinzugefügt</string>
+	<string name="wishlist_removed_item">Von der Wunschliste gelöscht</string>
+	<string name="wishlist_none_found">Es gibt hier nichts. Sie haben alles, was Sie wollen!</string>
+	<string name="wishlist_status">WUNSCHLISTE</string>
+
+	<string name="preferences_category_items">Artikel</string>
+
+	<string name="preferences_database">Region</string>
+	<string name="preferences_database_dialog_title">Wähle ein Land</string>
+	<string name="preferences_database_explanation">Vor der Verwendung von Shelves müssen Sie ein Land auszuwählen.
+		Das gewählte Land beeinflusst die Suchergebnisse. Im Allgemeinen bietet USA die
+		besten Ergebnisse.
+	</string>
+	<string name="preferences_database_summary">Ihr Land ist %s. Artikel werden innerhalb des
+		Landes gesucht.</string>
+	<string name="preferences_database_us">USA</string>
+	<string name="preferences_database_ca">Kanada</string>
+	<string name="preferences_database_uk">Grossbritannien</string>
+	<string name="preferences_database_fr">Frankreich</string>
+	<string name="preferences_database_de">Deutschland</string>
+	<string name="preferences_database_jp">Japan</string>
+		<string name="preferences_database_it">Italien</string>
+	<string name="preferences_database_cn">China</string>
+	<string name="preferences_database_us_value">USA</string>
+	<string name="preferences_database_ca_value">Kanada</string>
+	<string name="preferences_database_uk_value">Grossbritannien</string>
+	<string name="preferences_database_fr_value">Frankreich</string>
+	<string name="preferences_database_de_value">Deutschland</string>
+	<string name="preferences_database_jp_value">Japan</string>
+	<string name="preferences_database_it_value">Italy</string>
+	<string name="preferences_database_cn_value">China</string>
+	
+	<string name="preferences_sort_recently_added_desc_label">Vor kurzem hinzugefügt</string>
+	<string name="preferences_sort_author_asc_label">Nach Urheber, #-a-z</string>
+	<string name="preferences_sort_author_desc_label">Nach Urheber, z-a-#</string>
+	<string name="preferences_sort_format_asc_label">Nach Format, #-a-z</string>
+	<string name="preferences_sort_format_desc_label">Nach Format, z-a-#</string>
+	<string name="preferences_sort_pages_asc_label">Nach Seiten, aufsteigend</string>
+	<string name="preferences_sort_pages_desc_label">Nach Seiten, absteigend</string>
+	<string name="preferences_sort_publisher_asc_label">Nach Verlag, #-a-z</string>
+	<string name="preferences_sort_publisher_desc_label">Nach Verlag, z-a-#</string>
+	<string name="preferences_sort_rating_asc_label">Nach Bewertung, aufsteigend</string>
+	<string name="preferences_sort_rating_desc_label">Nach Bewertung, absteigend</string>
+	<string name="preferences_sort_title_asc_label">Nach Titel, #-a-z</string>
+	<string name="preferences_sort_title_desc_label">Nach Titel, z-a-#</string>
+	<string name="preferences_sort_price_asc_label">Nach Preis, aufsteigend</string>
+	<string name="preferences_sort_price_desc_label">Nach Preis, absteigend</string>
+	<string name="preferences_sort_dewey_asc_label">Nach Dewey-System #, aufsteigend</string>
+	<string name="preferences_sort_dewey_desc_label">Nach Dewey-System #, absteigend</string>
+	<string name="preferences_sort_department_asc_label">Nach Fachbereich, #-a-z</string>
+	<string name="preferences_sort_department_desc_label">Nach Fachbereich, z-a-#</string>
+	<string name="preferences_sort_fabric_asc_label">Nach Stoff, #-a-z</string>
+	<string name="preferences_sort_fabric_desc_label">Nach Stoff, z-a-#</string>
+	<string name="preferences_sort_audience_asc_label">Nach Publikum, #-a-z</string>
+	<string name="preferences_sort_audience_desc_label">Nach Publikum, z-a-#</string>
+	<string name="preferences_sort_label_asc_label">Nach Studio, #-a-z</string>
+	<string name="preferences_sort_label_desc_label">Nach Studio, z-a-#</string>
+	<string name="preferences_sort_platform_asc_label">Nach Platform, #-a-z</string>
+	<string name="preferences_sort_platform_desc_label">Nach Platform, z-a-#</string>
+	<string name="preferences_sort_esrb_asc_label">Nach ESRB, #-a-z</string>
+	<string name="preferences_sort_esrb_desc_label">Nach ESRB, z-a-#</string>
+	<string name="preferences_sort_age_asc_label">Nach Mindestalter, aufsteigend</string>
+	<string name="preferences_sort_age_desc_label">Nach Mindestalter, absteigend</string>
+	<string name="preferences_sort_min_player_asc_label">Nach Mindestanzahl Spieler, aufsteigend</string>
+	<string name="preferences_sort_min_player_desc_label">Nach Mindestanzahl Spieler, absteigend</string>
+	<string name="preferences_sort_max_player_asc_label">Nach Maximale Spieler, aufsteigend</string>
+	<string name="preferences_sort_max_player_desc_label">Nach Maximale Spieler, absteigend</string>
+	<string name="preferences_sort_playing_time_asc_label">Nach Spieldauer, aufsteigend</string>
+	<string name="preferences_sort_playing_time_desc_label">Nach Spieldauer, absteigend</string>
+	<string name="preferences_sort_issue_asc_label">Nach Nummer, aufsteigend</string>
+	<string name="preferences_sort_issue_desc_label">Nach Nummer, absteigend</string>
+	
+	<string name="preferences_number_of_sorts_title">Anzahl der Sortierungen</string>
+	<string name="sort_num_summary">Definieren Sie, wie viele Parameter Sie verwenden, um Ihre Artikel sortieren möchten. Derzeit ist dies %s.</string>
+	
+	<string name="preferences_calendar">Kalender</string>
+	<string name="preferences_calendar_summary">Google Kalender der den Verleihstatus erfasst. Gegenwärtig: %s
+	</string>
+	<string name="preferences_calendar_default_shelves">Nein</string>
+	<string name="preferences_calendar_default">default_calendar_id</string>
+	<string name="preferences_calendar_default_id">1</string>
+
+	<string name="preferences_category_data">Datenverwaltung</string>
+
+	<string name="preferences_category_import_and_export">Import und Export</string>
+	
+	<string name="preferences_import_override_title">Bevorzuge importierte Daten</string>
+	<string name="preferences_import_override_summary">Wenn aktiviert, werden Daten aus den importierten Daten übernommen.
+	</string>
+
+	<string name="preferences_import">Import&#8230;</string>
+	<string name="preferences_import_summary">Importiert eine Liste von Elementen von der SD
+		Karte (Root-Ordner)
+	</string>
+	<string name="preferences_import_apparel">Importiere Kleidung</string>
+	<string name="preferences_import_boardgames">Importiere Brettspielen</string>
+	<string name="preferences_import_books">Importiere Bücher</string>
+	<string name="preferences_import_comics">Importiere Comics</string>
+	<string name="preferences_import_gadgets">Importiere Gadgets</string>
+	<string name="preferences_import_movies">Importiere Filme</string>
+	<string name="preferences_import_music">Importiere Musik</string>
+	<string name="preferences_import_software">Importiere Software</string>
+	<string name="preferences_import_tools">Importiere Werkzeuge</string>
+	<string name="preferences_import_toys">Importiere Spielzeug</string>
+	<string name="preferences_import_videogames">Importiere Videospiele</string>
+
+	<string name="preferences_import_bulk_apparel_summary">Bei einem vorherigen Import wurde Kleidung
+		gefunden, jedoch nicht hinzugefügt.</string>
+	<string name="preferences_import_bulk_apparel">Kleidung Multi-Scan</string>
+	<string name="preferences_dl">Delicious Library</string>
+
+	<string name="preferences_import_dl_apparel_summary">Import gespeichert in Delicious_Library_Kleidung.txt
+	</string>
+
+	<string name="preferences_import_shelves_apparel_summary">Import wurde in Shelves_to_Shelves_Kleidung.txt
+		gespeichert</string>
+	<string name="preferences_import_list_of_apparel">Liste der Kleidungsstücke</string>
+	<string name="preferences_import_list_of_apparel_summary">Import einer Liste aus EANs, definiert in
+		liste_der_Kleidung.txt</string>
+
+<string name="preferences_import_boardgamegeek_summary">Importiere Brettspiele aus
+		BGG_Brettspielen.csv</string>
+<string name="preferences_import_shelves_boardgames_summary">Importiere Brettspiele aus Shelves_to_Shelves_Brettspielen.txt
+		Datei</string>
+		
+	<string name="preferences_import_bulk_book_summary">Bei einem vorherigen Import wurden Bücher gefunden,
+		jedoch nicht hinzugefügt.</string>
+	<string name="preferences_import_bulk_book">Bücher Multi-Scan</string>
+	<string name="preferences_import_dl_books_summary">Import wurde in Delicious_Library_Bücher.txt
+		gespeichert.
+	</string>
+	<string name="preferences_import_google_library_books">Google Bücher</string>
+	<string name="preferences_import_google_library_books_summary">Importiere Bücher aus XML-Datei</string>
+	<string name="preferences_import_library_thing_books">Library Thing</string>
+	<string name="preferences_import_library_thing_books_summary">Importiere Bücher aus LibraryThing_Bücher.tsv</string>
+	<string name="preferences_import_mediaman_books">Mediaman Bücher</string>
+	<string name="preferences_import_mediaman_books_summary">Importiere Bücher aus Mediaman_Bücher.csv Datei
+	</string>
+	<string name="preferences_import_shelfari_books">Shelfari Bücher</string>
+	<string name="preferences_import_shelfari_books_summary">Importiere Bücher aus My_Shelfari_Bücher.tsv
+	</string>
+	<string name="preferences_import_shelves_books_summary">Importiere Bücher aus Shelves_to_Shelves_Bücher.txt</string>
+	<string name="preferences_import_list_of_books">Liste der Bücher</string>
+	<string name="preferences_import_list_of_books_summary">Import einer Liste von ISBNs, definiert in
+		liste_der_bücher.txt
+	</string>
+
+<string name="preferences_import_shelves_comics_summary">Importiere Comics aus Shelves_to_Shelves_Comics.txt</string>
+		
+	<string name="preferences_import_bulk_gadget_summary">Bei einem vorherigen Import wurden Gadgets
+		gefunden, jedoch nicht hinzugefügt.</string>
+	<string name="preferences_import_bulk_gadget">Gadgets Multi-Scan</string>
+	<string name="preferences_import_dl_gadgets_summary">Importiere Gadgets, definiert in
+		Delicious_Library_Gadgets.txt </string>
+	<string name="preferences_import_shelves_gadgets_summary">Importiere Gadgets aus
+		Shelves_to_Shelves_Gadgets.txt</string>
+	<string name="preferences_import_list_of_gadgets">Liste der Gadgets</string>
+	<string name="preferences_import_list_of_gadgets_summary">Import einer Liste von EANs, definiert in
+		liste_der_gadgets.txt </string>
+
+	<string name="preferences_import_bulk_movie_summary">Bei einem vorherigen Import wurden Filme gefunden,
+		jedoch nicht hinzugefügt.</string>
+	<string name="preferences_import_bulk_movie">Filme Multi-Scan</string>
+	<string name="preferences_import_dl_movies_summary">Importiere Filme aus Delicious_Library_Filme.txt
+	</string>
+	<string name="preferences_import_mediaman_movies">MediaMan Filme</string>
+	<string name="preferences_import_mediaman_movies_summary">Importiere Filme aus MediaMan_Filme.csv
+	</string>
+	<string name="preferences_import_shelves_movies_summary">Import Filme, definiert in
+		Shelves_to_Shelves_Filme.txt</string>
+	<string name="preferences_import_list_of_movies">Liste der Filme</string>
+	<string name="preferences_import_list_of_movies_summary">Import einer Liste von EANs , definiert in
+		liste_der_filme.txt
+	</string>
+
+	<string name="preferences_import_bulk_music_summary">Bei einem vorherigen Import wurde Musik gefunden,
+		jedoch nicht hinzugefügt.</string>
+	<string name="preferences_import_bulk_music">Musik Multi-Scan</string>
+	<string name="preferences_import_dl_music_summary">Import Musik, definiert in
+		Delicious_Library_Musik.txt
+	</string>
+	<string name="preferences_import_mediaman_music">MediaMan Musik</string>
+	<string name="preferences_import_mediaman_music_summary">Import Musik, definiert in MediaMan_Musik.csv
+	</string>
+	<string name="preferences_import_shelves_music_summary">Importiere Musik, definiert in
+		Shelves_to_Shelves_Musik.txt</string>
+	<string name="preferences_import_list_of_music">Liste der Musik</string>
+	<string name="preferences_import_list_of_music_summary">Import einer Liste von EANs, definiert in
+		liste_der_musik.txt
+	</string>
+
+	<string name="preferences_import_bulk_software_summary">Bei einem vorherigen Import wurde Software
+		gefunden, jedoch nicht hinzugefügt.</string>
+	<string name="preferences_import_bulk_software">Software Multi-Scan</string>
+	<string name="preferences_import_dl_software_summary">Importiere Software, definiert in
+		Delicious_Library_Software.txt </string>
+	<string name="preferences_import_shelves_software_summary">Importiere Software, definiert in
+		Shelves_to_Shelves_Software.txt</string>
+	<string name="preferences_import_list_of_software">Liste der Software</string>
+	<string name="preferences_import_list_of_software_summary">Import einer Liste von EANs, definiert in
+		liste_der_software.txt </string>
+
+	<string name="preferences_import_bulk_tool_summary">Bei einem vorherigen Import wurden Werkzeuge
+		gefunden, jedoch nicht hinzugefügt.</string>
+	<string name="preferences_import_bulk_tool">Werkzeuge Multi-Scan</string>
+	<string name="preferences_import_dl_tools_summary">Importiere Werkzeuge, definiert in
+		Delicious_Library_Werkzeuge.txt
+	</string>
+	<string name="preferences_import_shelves_tools_summary">Importiere werkzeuge, definiert in
+		Shelves_to_Shelves_Werkzeuge.txt</string>
+	<string name="preferences_import_list_of_tools">Liste der Werkzeuge</string>
+	<string name="preferences_import_list_of_tools_summary">Import einer Liste von EANs, definiert in
+		liste_der_werkzeuge.txt
+	</string>
+
+	<string name="preferences_import_bulk_toy_summary">Bei einem vorherigen Import wurde Spielzeug
+		gefunden, jedoch nicht hinzugefügt.</string>
+	<string name="preferences_import_bulk_toy">Spielzeug Multi-Scan</string>
+	<string name="preferences_import_dl_toys_summary">Importiere Spielzeug, definiert in
+		Delicious_Library_Spielzeug.txt
+	</string>
+	<string name="preferences_import_shelves_toys_summary">Importiere Spielzeug, definiert in
+		Shelves_to_Shelves_Spielzeug.txt
+	</string>
+	<string name="preferences_import_list_of_toys">Liste der Spielzeuge</string>
+	<string name="preferences_import_list_of_toys_summary">Import einer Liste von EANs, definiert in
+		liste_der_spielzeug.txt
+	</string>
+
+	<string name="preferences_import_bulk_videogame_summary">Bei einem vorherigen Import wurden Videospiele gefunden,
+		jedoch nicht hinzugefügt.</string>
+	<string name="preferences_import_bulk_videogame">Videospiele Multi-Scan</string>
+	<string name="preferences_import_dl_videogames_summary">Importiere Videospiele, definiert in
+		Delicious_Library_Videospiele.txt </string>
+	<string name="preferences_import_mediaman_videogames">MediaMan Videospiele</string>
+	<string name="preferences_import_mediaman_videogames_summary">Importiere Videospiele, definiert in
+		MediaMan_Videospiele.csv
+	</string>
+	<string name="preferences_import_shelves_videogames_summary">Importiere Videospiele, definiert in
+		Shelves_to_Shelves_Videospiele.txt</string>
+	<string name="preferences_import_list_of_videogames">Liste der Videospiele</string>
+	<string name="preferences_import_list_of_videogames_summary">Import einer Liste von EANs, definiert in
+		liste_der_videospiele.txt </string>
+
+	<string name="preferences_export">Export&#8230;</string>
+	<string name="preferences_export_summary">Exportiert die Sammlung auf SD-Karte (Root-Ordner)
+	</string>
+
+	<string name="preferences_export_everything">Alles Exportieren</string>
+	<string name="preferences_export_apparel">Exportiere Kleidung</string>
+	<string name="preferences_export_boardgames">Exportiere Brettspiele</string>
+	<string name="preferences_export_books">Exportiere Bücher</string>
+	<string name="preferences_export_comics">Exportiere Comics</string>
+	<string name="preferences_export_gadgets">Exportiere Gadgets</string>
+	<string name="preferences_export_movies">Exportiere Filme</string>
+	<string name="preferences_export_music">Exportiere Musik</string>
+	<string name="preferences_export_software">Exportiere Software</string>
+	<string name="preferences_export_tools">Exportiere Werkzeuge</string>
+	<string name="preferences_export_toys">Exportiere Spielzeug</string>
+	<string name="preferences_export_videogames">Exportiere Videospiele</string>
+
+	<string name="preferences_export_dl_apparel_summary">Exportiere Kleidung als Shelves_to_DL_Kleidung.txt
+	</string>
+	<string name="preferences_export_shelves_apparel_summary">Exportiere Kleidung als
+		Shelves_to_Shelves_Kleidung.txt (TSV-Datei)
+	</string>
+
+	<string name="preferences_export_shelves_boardgames_summary">Exportiere Brettspiele als
+		Shelves_to_Shelves_Brettspielen.txt (TSV-Datei)
+	</string>
+	
+		<string name="preferences_export_shelves_comics_summary">Exportiere Comics als
+		Shelves_to_Shelves_Comics.txt (TSV-Datei)
+	</string>
+	
+	<string name="preferences_export_dl_books_summary">Exportiere Bücher als Shelves_to_DL_Bücher.txt
+	</string>
+	<string name="preferences_export_google_library_books">Google Bücher</string>
+	<string name="preferences_export_google_library_books_summary">Exportiere Bücher als Shelves_to_Google_Books.txt
+	</string>
+	<string name="preferences_export_library_thing_books_summary">Exportiere Bücher als Shelves_to_LibraryThing_Bücher.csv
+	</string>
+	<string name="preferences_export_mediaman_books_summary">Exportiere Bücher als Shelves_to_MediaMan_Bücher.txt
+	</string>
+	<string name="preferences_export_shelfari_books">Shelfari Bücher</string>
+	<string name="preferences_export_shelfari_books_summary">Exportiere Bücher als Shelves_to_Shelfari_Bücher.txt
+	</string>
+	<string name="preferences_export_shelves_books_summary">Exportiere Bücher als Shelves_to_Shelves_Bücher.txt
+		(TSV-Datei)
+	</string>
+
+	<string name="preferences_export_dl_gadgets_summary">Exportiere Gadgets als Shelves_to_DL_Gadgets.txt
+	</string>
+	<string name="preferences_export_shelves_gadgets_summary">Exportiere Gadgets als
+		Shelves_to_Shelves_Gadgets.txt (TSV-Datei)
+	</string>
+
+	<string name="preferences_export_dl_movies_summary">Exportiere Filme als Shelves_to_DL_Filme.txt
+	</string>
+	<string name="preferences_export_mediaman_movies_summary">Exportiere Filme als Shelves_to_MediaMan_Filme.txt
+	</string>
+	<string name="preferences_export_shelves_movies_summary">Exportiere Filme als Shelves_to_Shelves_Filme.txt
+		(TSV-Datei)
+	</string>
+
+	<string name="preferences_export_dl_music_summary">Exportiere Musik als Shelves_to_DL_Musik.txt
+	</string>
+	<string name="preferences_export_mediaman_music_summary">Exportiere Musik als Shelves_to_MediaMan_Musik.txt
+	</string>
+	<string name="preferences_export_shelves_music_summary">Exportiere Musik als Shelves_to_Shelves_Musik.txt
+		(TSV-Datei)
+	</string>
+
+	<string name="preferences_export_dl_software_summary">Exportiere Software als Shelves_to_DL_Software.txt
+	</string>
+	<string name="preferences_export_shelves_software_summary">Exportiere Software als
+		Shelves_to_Shelves_Software.txt (TSV-Datei)
+	</string>
+
+	<string name="preferences_export_dl_tools_summary">Exportiere Werkzeuge als Shelves_to_DL_Werkzeuge.txt
+	</string>
+	<string name="preferences_export_shelves_tools_summary">Exportiere Werkzeuge als Shelves_to_Shelves_Werkzeuge.txt
+		(TSV-Datei)
+	</string>
+
+	<string name="preferences_export_dl_toys_summary">Exportiere Spielzeug als Shelves_to_DL_Spielzeug.txt
+	</string>
+	<string name="preferences_export_shelves_toys_summary">Exportiere Spielzeug als
+		Shelves_to_Shelves_Spielzeug.txt (TSV-Datei)</string>
+
+	<string name="preferences_export_dl_videogames_summary">Exportiere Videospiele als Shelves_to_DL_Videospiele.txt
+	</string>
+	<string name="preferences_export_mediaman_videogames_summary">Exportiere Videospiele als
+		Shelves_to_MediaMan_Videospiele.txt
+	</string>
+	<string name="preferences_export_shelves_videogames_summary">Exportiere Videospiele als
+		Shelves_to_Shelves_Videospiele.txt (TSV-Datei)</string>
+
+	<string name="no_account_found_title">Kein Konto gefunden</string>
+	<string name="no_account_found">Kein Google-Konto gefunden um die Sammlung hochzuladen.</string>
+	<string name="choose_account_title">Kein Google Drive-Konto gefunden um die Sammlung hochzuladen.
+	</string>
+	<string name="error_sending_to_docs">Es gab einen Fehler beim Versenden Ihrer Sammlung an
+		Google Drive. Bitte versuchen Sie es später erneut.</string>
+	<string name="error_bringing_from_docs">Es gab einen Fehler beim Herunterladen Ihrer Sammlung
+		von
+		Google Drive. Bitte versuchen Sie es später erneut.</string>
+	<string name="error_could_not_find_spreadsheet">Konnte nicht gefunden werden Tabellenkalkulation
+		auf Google Drive.</string>
+	<string name="error_sending_to_docs_filesize_limit">Ihre Kollektion, %s, ist über 1 MB, und kann nicht
+		zu Google Drive hochgeladen werden. Diese Beschränkung besteht durch Google, nicht durch Shelves.
+	</string>
+	<string name="progress_message_authenticating_docs">Einloggen in Google Drive&#8230;</string>
+	<string name="progress_message_sending_docs">Sende Sammlung an Google Drive&#8230;</string>
+	<string name="status_have_been_uploaded_to_docs">Ihre Sammlung wurde bei drive.google.com hochgeladen.
+	</string>
+	<string name="progress_message_bringing_docs">Hole Sammlung von Google Drive&#8230;</string>
+	<string name="status_have_been_downloaded_to_docs">Ihre Sammlung wurde von drive.google.com heruntergeladen.
+		Importiere&#8230;
+	</string>
+
+	<string name="preference_send_to_google">Sende an Google Drive</string>
+	<string name="preference_send_to_google_summary">Sendet Ihre Sammlung zu Google Drive als
+		Tabellenkalkulation. Die Dateien müssen weniger als 1 MB sein.
+	</string>
+	<string name="preference_bring_from_google">Wiederherstellen von Google Drive</string>
+	<string name="preference_bring_from_google_summary">Importiere aus Google Drive.</string>
+
+	<string name="preference_authenticate_to_dropbox">Authentifizieren Dropbox</string>
+	<string name="preference_authenticate_to_dropbox_summary">Loggen Sie sich in Dropbox. Shelves nicht speichert tut Ihre Anmeldeinformationen.
+	</string>
+	<string name="preference_send_to_dropbox">Sende an Dropbox</string>
+	<string name="preference_send_to_dropbox_summary">Sendet Ihre Sammlung zu Dropbox.
+	</string>
+	
+	<string name="preference_bring_from_dropbox">Restore from Dropbox</string>
+	<string name="preference_bring_from_dropbox_summary">Imports your collection from its Google Drive
+		spreadsheet.
+	</string>
+	
+	<string name="preferences_delete">Lösche Sammlungen&#8230;</string>
+	<string name="preferences_delete_summary">Bitte die zu löschenden Sammlungen auswählen.
+	</string>
+
+	<string name="preferences_delete_all_apparel">Kleidung löschen</string>
+	<string name="preferences_delete_all_apparel_summary">Löscht alle Ihre Shelves Kleidung</string>
+		<string name="preferences_delete_all_boardgames">Brettspielen löschen</string>
+	<string name="preferences_delete_all_boardgames_summary">Löscht alle Ihre Shelves Brettspiele</string>
+	<string name="preferences_delete_all_books">Bücher löschen</string>
+	<string name="preferences_delete_all_books_summary">Löscht alle Ihre Shelves Bücher</string>
+		<string name="preferences_delete_all_comics">Comics löschen</string>
+	<string name="preferences_delete_all_comics_summary">Löscht alle Ihre Shelves Comics</string>
+	<string name="preferences_delete_all_gadgets">Gadgets löschen</string>
+	<string name="preferences_delete_all_gadgets_summary">Löscht alle Ihre Shelves Gadgets</string>
+	<string name="preferences_delete_all_movies">Filme löschen</string>
+	<string name="preferences_delete_all_movies_summary">Löscht alle Ihre Shelves Filme</string>
+	<string name="preferences_delete_all_music">Musik löschen</string>
+	<string name="preferences_delete_all_music_summary">Löscht alle Ihre Shelves Musik</string>
+	<string name="preferences_delete_all_software">Software löschen</string>
+	<string name="preferences_delete_all_software_summary">Löscht alle Ihre Shelves Software</string>
+	<string name="preferences_delete_all_tools">Werkzeuge löschen</string>
+	<string name="preferences_delete_all_tools_summary">Löscht alle Ihre Shelves Werkzeuge</string>
+	<string name="preferences_delete_all_toys">Spielzeug löschen</string>
+	<string name="preferences_delete_all_toys_summary">Löscht alle Ihre Shelves Spielzeug</string>
+	<string name="preferences_delete_all_videogames">Videospiele löschen</string>
+	<string name="preferences_delete_all_videogames_summary">Löscht alle Ihre Shelves Videospiele</string>
+
+	<string name="preferences_delete_everything_dialog">Dies löscht unwiderruflich die komplette Sammlung.
+		Sind Sie sicher?</string>
+	<string name="preferences_delete_everything_ok_button">Lösche alles</string>
+	<string name="preferences_delete_everything_cancel_button">Abbrechen</string>
+	<string name="preferences_delete_everything_progress_text">Lösche&#8230;</string>
+	<string name="preferences_delete_everything_success">Sammlung gelöscht</string>
+
+	<string name="preferences_category_about">Über Shelves</string>
+
+	<string name="help_back_button">Zurück</string>
+	<string name="help_done_button">Fertig</string>
+
+	<string name="crash_toast_text">Irgendetwas stimmt nicht mit Shelves! Ihre Daten
+		sind aber sicher. Ein Problembericht wurde an den Entwickler
+		geschickt.\n\nStarte Shelves neu&#8230;</string>
+
+	<string name="buy_from_market">Im Google Play kaufen\n(Handy neu starten um Werbung zu entfernen)</string>
+	<string name="support_the_dev">Pardon! Diese Funktion steht erst zur Verfügung, nachdem Sie den Shelves Unlocker aus dem Google Play gekauft haben.</string>
+
+	<string name="error_no_market">Google Play nicht auf diesem Gerät vorhanden!</string>
+
+	<string name="IMPORT_FILE_DL_APPAREL">Delicious_Library_Kleidung.txt</string>
+	<string name="IMPORT_FILE_SHELVES_APPAREL">Shelves_to_Shelves_Kleidung.txt</string>
+	<string name="IMPORT_FILE_LIST_OF_APPAREL">liste_der_Kleidung.txt</string>
+
+<string name="IMPORT_FILE_BOARDGAMEGEEK_BOARDGAMES">BGG_Brettspielen.csv</string>
+<string name="IMPORT_FILE_SHELVES_BOARDGAMES">Shelves_to_Shelves_Brettspielen.txt</string>
+
+	<string name="IMPORT_FILE_DL_BOOKS">Delicious_Library_Bücher.txt</string>
+	<string name="IMPORT_FILE_SHELFARI_BOOKS">My_Shelfari_Bücher.tsv</string>
+	
+	<string name="IMPORT_FILE_LIBRARY_THING_BOOKS">LibraryThing_Bücher.tsv</string>
+	<string name="IMPORT_FILE_MEDIAMAN_BOOKS">MediaMan_Bücher.csv</string>
+	<string name="IMPORT_FILE_SHELVES_BOOKS">Shelves_to_Shelves_Bücher.txt</string>
+	<string name="IMPORT_FILE_LIST_OF_BOOKS">liste_der_bücher.txt</string>
+
+	<string name="IMPORT_FILE_SHELVES_COMICS">Shelves_to_Shelves_Comics.txt</string>
+
+	<string name="IMPORT_FILE_DL_GADGETS">Delicious_Library_Gadgets.txt</string>
+	<string name="IMPORT_FILE_SHELVES_GADGETS">Shelves_to_Shelves_Gadgets.txt</string>
+	<string name="IMPORT_FILE_LIST_OF_GADGETS">liste_der_gadgets.txt</string>
+
+	<string name="IMPORT_FILE_DL_MOVIES">Delicious_Library_Filme.txt</string>
+	<string name="IMPORT_FILE_MEDIAMAN_MOVIES">MediaMan_Filme.csv</string>
+	<string name="IMPORT_FILE_SHELVES_MOVIES">Shelves_to_Shelves_Filme.txt</string>
+	<string name="IMPORT_FILE_LIST_OF_MOVIES">liste_der_filme.txt</string>
+
+	<string name="IMPORT_FILE_DL_MUSIC">Delicious_Library_Musik.txt</string>
+	<string name="IMPORT_FILE_MEDIAMAN_MUSIC">MediaMan_Musik.csv</string>
+	<string name="IMPORT_FILE_SHELVES_MUSIC">Shelves_to_Shelves_Musik.txt</string>
+	<string name="IMPORT_FILE_LIST_OF_MUSIC">liste_der_musik.txt</string>
+
+	<string name="IMPORT_FILE_DL_SOFTWARE">Delicious_Library_Software.txt</string>
+	<string name="IMPORT_FILE_SHELVES_SOFTWARE">Shelves_to_Shelves_Software.txt</string>
+	<string name="IMPORT_FILE_LIST_OF_SOFTWARE">liste_der_software.txt</string>
+
+	<string name="IMPORT_FILE_DL_TOOLS">Delicious_Library_Werkzeuge.txt</string>
+	<string name="IMPORT_FILE_SHELVES_TOOLS">Shelves_to_Shelves_Werkzeuge.txt</string>
+	<string name="IMPORT_FILE_LIST_OF_TOOLS">liste_der_werkzeuge.txt</string>
+
+	<string name="IMPORT_FILE_DL_TOYS">Delicious_Library_Spielzeug.txt</string>
+	<string name="IMPORT_FILE_SHELVES_TOYS">Shelves_to_Shelves_Spielzeug.txt</string>
+	<string name="IMPORT_FILE_LIST_OF_TOYS">liste_der_spielzeug.txt</string>
+
+	<string name="IMPORT_FILE_DL_VIDEOGAMES">Delicious_Library_Videospiele.txt</string>
+	<string name="IMPORT_FILE_MEDIAMAN_VIDEOGAMES">MediaMan_Videospiele.csv</string>
+	<string name="IMPORT_FILE_SHELVES_VIDEOGAMES">Shelves_to_Shelves_Videospiele.txt</string>
+	<string name="IMPORT_FILE_LIST_OF_VIDEOGAMES">liste_der_videospiele.txt</string>
+	
+	<string name="EXPORT_FILE_DL_APPAREL">Shelves_to_DL_Bücher.txt</string>
+	<string name="EXPORT_FILE_SHELVES_APPAREL">Shelves_to_Shelves_Bücher.txt</string>
+	
+	<string name="EXPORT_FILE_SHELVES_BOARDGAMES">Shelves_to_Shelves_Brettspielen.txt</string>
+	
+	<string name="EXPORT_FILE_DL_BOOKS">Shelves_to_DL_Bücher.txt</string>
+	<string name="EXPORT_FILE_LIBRARY_THING_BOOKS">Shelves_to_LibraryThing_Bücher.csv</string>
+	<string name="EXPORT_FILE_MEDIAMAN_BOOKS">Shelves_to_MediaMan_Bücher.txt</string>
+	<string name="EXPORT_FILE_SHELFARI_BOOKS">Shelves_to_Shelfari_Bücher.txt</string>	
+	<string name="EXPORT_FILE_SHELVES_BOOKS">Shelves_to_Shelves_Bücher.txt</string>
+
+	<string name="EXPORT_FILE_SHELVES_COMICS">Shelves_to_Shelves_Comics.txt</string>
+
+	<string name="EXPORT_FILE_DL_GADGETS">Shelves_to_DL_Gadgets.txt</string>
+	<string name="EXPORT_FILE_SHELVES_GADGETS">Shelves_to_Shelves_Gadgets.txt</string>
+
+	<string name="EXPORT_FILE_DL_MOVIES">Shelves_to_DL_Filme.txt</string>
+	<string name="EXPORT_FILE_MEDIAMAN_MOVIES">Shelves_to_MediaMan_Filme.txt</string>
+	<string name="EXPORT_FILE_SHELVES_MOVIES">Shelves_to_Shelves_Filme.txt</string>
+
+	<string name="EXPORT_FILE_DL_MUSIC">Shelves_to_DL_Musik.txt</string>
+	<string name="EXPORT_FILE_MEDIAMAN_MUSIC">Shelves_to_MediaMan_Musik.txt</string>
+	<string name="EXPORT_FILE_SHELVES_MUSIC">Shelves_to_Shelves_Musik.txt</string>
+
+	<string name="EXPORT_FILE_DL_SOFTWARE">Shelves_to_DL_Software.txt</string>
+	<string name="EXPORT_FILE_SHELVES_SOFTWARE">Shelves_to_Shelves_Software.txt</string>
+
+	<string name="EXPORT_FILE_DL_TOOLS">Shelves_to_DL_Werkzeuge.txt</string>
+	<string name="EXPORT_FILE_SHELVES_TOOLS">Shelves_to_Shelves_Werkzeuge.txt</string>
+
+	<string name="EXPORT_FILE_DL_TOYS">Shelves_to_DL_Spielzeug.txt</string>
+	<string name="EXPORT_FILE_SHELVES_TOYS">Shelves_to_Shelves_Spielzeug.txt</string>
+
+	<string name="EXPORT_FILE_DL_VIDEOGAMES">Shelves_to_DL_Videospiele.txt</string>
+	<string name="EXPORT_FILE_MEDIAMAN_VIDEOGAMES">Shelves_to_MediaMan_Videospiele.txt</string>
+	<string name="EXPORT_FILE_SHELVES_VIDEOGAMES">Shelves_to_Shelves_Videospiele.txt</string>
+	
+	<string name="not_supported_for_this_item">Pardon! Diese Funktion existiert nicht für diesen Artikel. Weitere Informationen finden Sie in der Hilfe.</string>
+</resources>

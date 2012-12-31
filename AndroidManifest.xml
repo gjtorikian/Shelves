@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2008 Romain Guy Copyright (C) 2010 Garen J. Torikian Licensed 
+	under the Apache License, Version 2.0 (the "License"); you may not use this 
+	file except in compliance with the License. You may obtain a copy of the 
+	License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by 
+	applicable law or agreed to in writing, software distributed under the License 
+	is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY 
+	KIND, either express or implied. See the License for the specific language 
+	governing permissions and limitations under the License.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:installLocation="auto"
+    package="com.miadzin.shelves"
+    android:versionCode="70"
+    android:versionName="3.6">
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Permissions for uploading collection -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.wise" />
+    <uses-permission android:name="com.google.android.googleapps.permission.GOOGLE_AUTH.writely" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.wifi"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <application
+        android:name="ShelvesApplication"
+        android:backupAgent=".util.backup.ShelvesBackupAgent"
+        android:allowBackup = "true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/application_name"
+        android:theme="@style/Theme.StandardUI" >
+        <meta-data
+            android:name="com.google.android.backup.api_key"
+            android:value="AEdPqrEAAAAIxxa9DzGGmsgebVkUxLqrfjFLAmbj1QqyV1BCzQ" />
+
+        <activity
+            android:name="com.google.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+        <activity
+            android:name=".activity.TabSelector"
+            android:configChanges="keyboardHidden|orientation"
+            android:label="@string/application_name"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainGridActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".base.BaseItemActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.StandardUI"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".activity.apparel.ApparelActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="shelves.intent.action.ACTION_IMPORT_SHELVES_APPAREL" />
+                <action android:name="shelves.intent.action.ACTION_EXPORT_SHELVES_APPAREL" />
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"
+                android:searchSuggestAuthority="ApparelProvider"
+                android:searchSuggestIntentData="content://ApparelProvider/apparel" />
+        </activity>
+        <activity
+            android:name=".activity.boardgames.BoardGamesActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="shelves.intent.action.ACTION_IMPORT_SHELVES_BOARDGAMES" />
+                <action android:name="shelves.intent.action.ACTION_EXPORT_SHELVES_BOARDGAMES" />
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"
+                android:searchSuggestAuthority="shelves"
+                android:searchSuggestIntentData="content://BoardGamesProvider/boardgames" />
+        </activity>
+        <activity
+            android:name=".activity.books.BooksActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="shelves.intent.action.ACTION_IMPORT_SHELVES_BOOKS" />
+                <action android:name="shelves.intent.action.ACTION_EXPORT_SHELVES_BOOKS" />
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"
+                android:searchSuggestAuthority="shelves"
+                android:searchSuggestIntentData="content://shelves/books" />
+        </activity>
+        <activity
+            android:name=".activity.comics.ComicsActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="shelves.intent.action.ACTION_IMPORT_SHELVES_COMICS" />
+                <action android:name="shelves.intent.action.ACTION_EXPORT_SHELVES_COMICS" />
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"
+                android:searchSuggestAuthority="shelves"
+                android:searchSuggestIntentData="content://ComicsProvider/comics" />
+        </activity>
+        <activity
+            android:name=".activity.gadgets.GadgetsActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="shelves.intent.action.ACTION_IMPORT_SHELVES_GADGETS" />
+                <action android:name="shelves.intent.action.ACTION_EXPORT_SHELVES_GADGETS" />
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"
+                android:searchSuggestAuthority="GadgetsProvider"
+                android:searchSuggestIntentData="content://GadgetsProvider/gadgets" />
+        </activity>
+        <activity
+            android:name=".activity.movies.MoviesActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="shelves.intent.action.ACTION_IMPORT_SHELVES_MOVIES" />
+                <action android:name="shelves.intent.action.ACTION_EXPORT_SHELVES_MOVIES" />
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"
+                android:searchSuggestAuthority="MoviesProvider"
+                android:searchSuggestIntentData="content://MoviesProvider/movies" />
+        </activity>
+        <activity
+            android:name=".activity.music.MusicActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden"
+             android:exported="false">
+            <intent-filter>
+                <action android:name="shelves.intent.action.ACTION_IMPORT_SHELVES_MUSIC" />
+                <action android:name="shelves.intent.action.ACTION_EXPORT_SHELVES_MUSIC" />
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"
+                android:searchSuggestAuthority="MusicProvider"
+                android:searchSuggestIntentData="content://MusicProvider/music" />
+        </activity>
+        <activity
+            android:name=".activity.software.SoftwareActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" 
+            android:exported="false">
+            <intent-filter>
+                <action android:name="shelves.intent.action.ACTION_IMPORT_SHELVES_SOFTWARE" />
+                <action android:name="shelves.intent.action.ACTION_EXPORT_SHELVES_SOFTWARE" />
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"
+                android:searchSuggestAuthority="SoftwareProvider"
+                android:searchSuggestIntentData="content://SoftwareProvider/software" />
+        </activity>
+        <activity
+            android:name=".activity.tools.ToolsActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden" 
+            android:exported="false">
+            <intent-filter>
+                <action android:name="shelves.intent.action.ACTION_IMPORT_SHELVES_TOOLS" />
+                <action android:name="shelves.intent.action.ACTION_EXPORT_SHELVES_TOOLS" />
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"
+                android:searchSuggestAuthority="ToolsProvider"
+                android:searchSuggestIntentData="content://ToolsProvider/tools" />
+        </activity>
+        <activity
+            android:name=".activity.toys.ToysActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="shelves.intent.action.ACTION_IMPORT_SHELVES_TOYS" />
+                <action android:name="shelves.intent.action.ACTION_EXPORT_SHELVES_TOYS" />
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"
+                android:searchSuggestAuthority="ToysProvider"
+                android:searchSuggestIntentData="content://ToysProvider/toys" />
+        </activity>
+        <activity
+            android:name=".activity.videogames.VideoGamesActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="shelves.intent.action.ACTION_IMPORT_SHELVES_VIDEOGAMES" />
+                <action android:name="shelves.intent.action.ACTION_EXPORT_SHELVES_VIDEOGAMES" />
+                <action android:name="android.intent.action.SEARCH" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable"
+                android:searchSuggestAuthority="VideoGamesProvider"
+                android:searchSuggestIntentData="content://VideoGamesProvider/videogames" />
+        </activity>
+        <activity
+            android:name=".activity.apparel.AddApparelActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.StandardUI" />
+        <activity
+            android:name=".activity.boardgames.AddBoardGamesActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.StandardUI" />
+        <activity
+            android:name=".activity.books.AddBookActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.StandardUI" />
+        <activity
+            android:name=".activity.comics.AddComicActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.StandardUI" />
+        <activity
+            android:name=".activity.gadgets.AddGadgetActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.StandardUI" />
+        <activity
+            android:name=".activity.movies.AddMovieActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.StandardUI" />
+        <activity
+            android:name=".activity.music.AddMusicActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.StandardUI" />
+        <activity
+            android:name=".activity.software.AddSoftwareActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.StandardUI" />
+        <activity
+            android:name=".activity.tools.AddToolActivity"
+            android:theme="@style/Theme.StandardUI" />
+        <activity
+            android:name=".activity.toys.AddToyActivity"
+            android:theme="@style/Theme.StandardUI" />
+        <activity
+            android:name=".activity.videogames.AddVideoGameActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.StandardUI" />
+        <activity
+            android:name=".base.BaseManualAddActivity"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".activity.apparel.ApparelDetailsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.StandardUI"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.miadzin.shelves.apparel" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.boardgames.BoardGameDetailsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.StandardUI"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.miadzin.shelves.boardgames" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.books.BookDetailsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.StandardUI"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.miadzin.shelves.books" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.comics.ComicDetailsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.StandardUI"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.miadzin.shelves.comics" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.gadgets.GadgetDetailsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.StandardUI"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.miadzin.shelves.gadgets" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.movies.MovieDetailsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.StandardUI"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.miadzin.shelves.movies" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.music.MusicDetailsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.StandardUI"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.miadzin.shelves.music" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.software.SoftwareDetailsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.StandardUI"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.miadzin.shelves.software" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.tools.ToolDetailsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.StandardUI"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.miadzin.shelves.tools" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.toys.ToyDetailsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.StandardUI"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.miadzin.shelves.toys" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.videogames.VideoGameDetailsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.StandardUI"
+            android:windowSoftInputMode="stateAlwaysHidden"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="vnd.android.cursor.item/vnd.com.miadzin.shelves.videogames" />
+            </intent-filter>
+        </activity>
+
+        <!-- GJT: Added this, for Tag support -->
+        <activity
+            android:name=".activity.TagActivity"
+            android:label="@string/tag_dialog_title"
+            android:windowSoftInputMode="stateHidden" />
+
+        <!-- GJT: Added this, for Import Results support -->
+        <activity
+            android:name=".util.ImportResults"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- GJT: Added this, for Rate support -->
+        <activity
+            android:name=".activity.RateActivity"
+            android:label="@string/context_menu_item_rate_label"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- GJT: Added this, for changing cover support -->
+        <activity
+            android:name=".activity.LoadImagesActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <!-- GJT: Added these, for Loan support -->
+        <activity
+            android:name=".activity.LoanActivity"
+            android:label="@string/loan_item"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.LoanViewActivity"
+            android:configChanges="orientation|keyboardHidden" />
+        <activity
+            android:name=".activity.WishlistViewActivity"
+            android:configChanges="orientation|keyboardHidden" />
+
+        <activity
+            android:name=".activity.QuantityActivity"
+            android:label="@string/quantity_label"
+            android:theme="@android:style/Theme.Dialog"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        
+        <!-- GJT: Added this, for Live Folder support -->
+        <activity
+            android:name=".activity.apparel.ApparelLiveFolder"
+            android:icon="@drawable/ic_livefolder_apparel_icon"
+            android:label="@string/live_folder_apparel"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_LIVE_FOLDER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.boardgames.BoardGamesLiveFolder"
+            android:icon="@drawable/ic_livefolder_boardgame_icon"
+            android:label="@string/live_folder_boardgames"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_LIVE_FOLDER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.books.BooksLiveFolder"
+            android:icon="@drawable/ic_livefolder_book_icon"
+            android:label="@string/live_folder_books"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_LIVE_FOLDER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.comics.ComicsLiveFolder"
+            android:icon="@drawable/ic_livefolder_comic_icon"
+            android:label="@string/live_folder_comics"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_LIVE_FOLDER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.gadgets.GadgetsLiveFolder"
+            android:icon="@drawable/ic_livefolder_gadget_icon"
+            android:label="@string/live_folder_gadgets"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_LIVE_FOLDER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.movies.MoviesLiveFolder"
+            android:icon="@drawable/ic_livefolder_movie_icon"
+            android:label="@string/live_folder_movies"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_LIVE_FOLDER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.music.MusicLiveFolder"
+            android:icon="@drawable/ic_livefolder_music_icon"
+            android:label="@string/live_folder_music"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_LIVE_FOLDER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.software.SoftwareLiveFolder"
+            android:icon="@drawable/ic_livefolder_software_icon"
+            android:label="@string/live_folder_software"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_LIVE_FOLDER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.tools.ToolsLiveFolder"
+            android:icon="@drawable/ic_livefolder_tool_icon"
+            android:label="@string/live_folder_tools"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_LIVE_FOLDER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.toys.ToysLiveFolder"
+            android:icon="@drawable/ic_livefolder_toy_icon"
+            android:label="@string/live_folder_toys"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_LIVE_FOLDER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.videogames.VideoGamesLiveFolder"
+            android:icon="@drawable/ic_livefolder_videogame_icon"
+            android:label="@string/live_folder_videogames"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_LIVE_FOLDER" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".activity.HelpActivity"
+            android:label="@string/menu_item_help_label"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
+        <provider
+            android:name=".provider.apparel.ApparelProvider"
+            android:authorities="ApparelProvider" 
+            android:exported="false"
+            />
+        <provider
+            android:name=".provider.boardgames.BoardGamesProvider"
+            android:authorities="BoardGamesProvider"
+            android:exported="false" />
+        <provider
+            android:name=".provider.books.BooksProvider"
+            android:authorities="shelves"
+            android:exported="false" />
+        <provider
+            android:name=".provider.comics.ComicsProvider"
+            android:authorities="ComicsProvider"
+            android:exported="false" />
+        <provider
+            android:name=".provider.gadgets.GadgetsProvider"
+            android:authorities="GadgetsProvider"
+            android:exported="false" />
+        <provider
+            android:name=".provider.movies.MoviesProvider"
+            android:authorities="MoviesProvider"
+            android:exported="false" />
+        <provider
+            android:name=".provider.music.MusicProvider"
+            android:authorities="MusicProvider"
+            android:exported="false" />
+        <provider
+            android:name=".provider.software.SoftwareProvider"
+            android:authorities="SoftwareProvider"
+            android:exported="false" />
+        <provider
+            android:name=".provider.tools.ToolsProvider"
+            android:authorities="ToolsProvider"
+            android:exported="false" />
+        <provider
+            android:name=".provider.toys.ToysProvider"
+            android:authorities="ToysProvider"
+            android:exported="false" />
+        <provider
+            android:name=".provider.videogames.VideoGamesProvider"
+            android:authorities="VideoGamesProvider"
+            android:exported="false" />
+
+        <meta-data
+            android:name="android.app.default_searchable"
+            android:value=".activity.BooksActivity" />
+
+        <!-- GJT: Added this, for ACRA -->
+        <activity
+            android:name="org.acra.CrashReportDialog"
+            android:launchMode="singleInstance"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <data android:scheme="db-7lvjtfbse6wc06h" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

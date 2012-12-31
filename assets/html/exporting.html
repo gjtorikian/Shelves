@@ -1,0 +1,111 @@
+<html> 
+<head> 
+  <title>Exporting</title> 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no;"/> 
+</head> 
+<body> 
+<h2>Exporting</h2>
+	<p>You can transfer your Shelves collection to another program by exporting your library as a file on your SD card. Review the help pages of the other application to learn more about importing into it.</p>
+<p>Exporting requires access to your device's SD card. To get that access:
+	<ol>
+		<li>Connect your Android device to your computer with a USB cable.</li>
+		<li>Tap the notification bar at the very top of the screen and drag your finger down to slide it out.</li>
+		<li>Tap <strong>USB Connected</strong>.</li>
+		<li>Tap <strong>Mount</strong> and your Android device will be connected to your computer like a USB drive.</li>
+	</ol>
+<p>This method should work under Windows, Mac, and Linux. Use the operating system's file manager to move files back and forth between your computer and your device.</p>
+<p>Shelves supports exporting to the following applications:
+	<ul>
+	<li>Delicious Library</li>
+	<li>Shelves</li>
+	<li>Google Books (only for books)</li>
+	<li>MediaMan (only for books, movies, music, video games)</li>
+	<li>Shelfari (only for books)</li>
+	<li>LibraryThing (only for books)</li>
+	</ul>
+<dl>
+<dt><h3>Delicious Library</h3></dt>
+<dd>To export items to your Delicious Library:
+	<ol>
+		<li>Open Shelves. Tap the <strong>Menu</strong> button, then <strong>Settings&rarr;Export&rarr;[Item]&rarr;Delicious Library</strong>. This creates a file called <em>Shelves_to_DL_[Item].txt</em>, where [Item] is the capitalized plural name of the item you're exporting.</li>
+		<li>Connect your Android device to your computer by following the previous instructions.</li>
+		<li>Copy <em>Shelves_to_DL_[Item].txt</em> from the root of your device's SD card to your computer. In most cases this is just the top directory. Its path should be <em>/sdcard/Shelves_to_DL_[Item].txt</em></li>
+		<li>Safely disconnect your device.</li>
+		<li>Open Delicious Library. Click <strong>File&rarr;Import&rarr;Import From Text File...</strong>.</li>
+		<li>Select the location of your saved <em>Shelves_to_DL_[Item].txt</em> file.</li>
+		<li>Verify that the import is using tabs as a field delimiter, then click <strong>Import</strong>.</li>
+	</ol>
+	</dd>
+<dd>The import process begins for your items. Note that any irregularities, such as incorrect characters, might be errors of the importing software.</dd>
+<dt><h3>Shelves</h3></dt>
+<dd>To export items to another Shelves collection:
+	<ol>
+		<li>Open Shelves.</li>
+		<li>Click the <strong>Menu</strong> button, then <strong>Settings&rarr;Export&rarr;[Item]&rarr;Shelves</strong>. This creates a file called <em>Shelves_to_Shelves_[Item].txt</em>, where [Item] is the capitalized plural name of the item you're exporting.</li>
+		<li>Connect your Android device to your computer by following the previous instructions.</li>
+		<li>Copy <em>Shelves_to_Shelves_[Item].txt</em> to the root of your device's SD card. In most cases this is just the top directory. Its path should be <em>/sdcard/Shelves_to_Shelves_Books.txt</em></li>
+		<li>Safely disconnect your device.</li>
+	</ol>
+	</dd>
+<dd>You can now import these items from the <strong>Settings</strong> menu in Shelves. Exporting preserves your information like tags and ratings.</dd>	
+<dd>You can export to Shelves, edit the text file, delete your collection, and reimport to Shelves for mass-editing operations, such as <a href="tagging.html">mass-tagging</a>.</dd>
+	
+<dt><h3>Google Books</h3></dt>
+<dd>To export books to Google Books:
+	<ol>
+		<li>Open Shelves. Tap the <strong>Menu</strong> button, then <strong>Settings&rarr;Export&rarr;Books&rarr;Google Books</strong>. This creates a file called <em>Shelves_to_Google_Books.txt</em>.</li>
+		<li>Connect your Android device to your computer by following the previous instructions.</li>
+		<li>Copy <em>Shelves_to_Google_Books.txt</em> from the root of your device's SD card to your computer. In most cases this is just the top directory. Its path should be <em>/sdcard/Shelves_to_Google_Books.txt</em></li>
+		<li>Safely disconnect your device.</li>
+		<li>Go to Google Books. Go to one of your collections, like Favorites.</li>
+		<li>Click <strong>Options&rarr;Add by ISBN</strong>.
+		<li>Open your saved <em>Shelves_to_Google_Books.txt</em>, and copy paste those numbers into Google Books.</li>
+		<li>Click <strong>Add Books</strong>.</li>
+	</ol>
+	</dd>
+<dd>Your books will then be imported. Note that any irregularities, such as missing characters, might be errors of the importing software.</dd>
+<dt><h3>MediaMan</h3></dt>
+<dd>To export items to MediaMan:
+	<ol>
+		<li>Open Shelves. Tap the <strong>Menu</strong> button, then <strong>Settings&rarr;Export&rarr;[Item]&rarr;Shelves</strong>. This creates a file called <em>Shelves_to_MediaMan_[Item].txt</em>, where [Item] is the capitalized plural name of the item you're exporting.</li>
+		<li>Connect your Android device to your computer by following the previous instructions.</li>
+		<li>Copy <em>Shelves_to_MediaMan_[Item].txt</em> from the root of your device's SD card to your computer. In most cases this is just the top directory. Its path should be <em>/sdcard/Shelves_to_MediaMan_[Item].txt</em></li>
+		<li>Safely disconnect your device.</li>
+		<li>Open MediaMan. Click <strong>Import</strong> from the top menu bar.</li>
+		<li>Where it says "Import from...", select the item type  you want to import, like Books, Movies, Music, or Video Games.</li>
+		<li>At the bottom bar, click <strong>Read input from File</strong>.</li>
+		<li>Open the text file that Shelves created.</li>
+	</ol>
+	</dd>
+<dd>Your items will then be imported. Note that any irregularities, such as missing characters, might be errors of the importing software.</dd>
+<dt><h3>Shelfari</h3></dt>
+<dd>To export books to Shelfari:
+		<ol>
+			<li>Open Shelves. Tap the <strong>Menu</strong> button, then <strong>Settings&rarr;Export&rarr;Books&rarr;Shelfari</strong>. This creates a file called <em>Shelves_to_Shelfari_Books.txt</em>.</li>
+			<li>Connect your Android device to your computer by following the previous instructions.</li>
+			<li>Copy <em>Shelves_to_Shelfari_Books.txt</em> from the root of your device's SD card to your computer. In most cases this is just the top directory. Its path should be <em>/sdcard/Shelves_to_Shelfari_Books.txt</em></li>
+			<li>Safely disconnect your device.</li>
+			<li>Go to Shelfari. Click <strong>Your shelf&rarr;Import books</strong>.</li>
+			<li>Under <strong>Import from file</strong>, click <strong>Choose file</strong>, then select the location of your saved <em>Shelves_to_Shelfari_Books.txt</em> file.</li>
+			<li>Click <strong>Import</strong>.</li>
+		</ol>
+		</p>
+	<dd>Your books will then be imported. Note that any irregularities, such as missing characters, might be errors of the importing software.</dd>	
+	<dt><h3>LibraryThing</h3></dt>
+	<dd>To export books to LibraryThing:
+			<ol>
+				<li>Open Shelves. Tap the <strong>Menu</strong> button, then <strong>Settings&rarr;Export&rarr;Books&rarr;Shelfari</strong>. This creates a file called <em>Shelves_to_Shelfari_Books.txt</em>.</li>
+				<li>Connect your Android device to your computer by following the previous instructions.</li>
+				<li>Copy <em>Shelves_to_Shelfari_Books.txt</em> from the root of your device's SD card to your computer. In most cases this is just the top directory. Its path should be <em>/sdcard/Shelves_to_Shelfari_Books.txt</em></li>
+				<li>Safely disconnect your device.</li>
+				<li>Go to Shelfari. Click <strong>Your shelf&rarr;Import books</strong>.</li>
+				<li>Under <strong>Import from file</strong>, click <strong>Choose file</strong>, then select the location of your saved <em>Shelves_to_Shelfari_Books.txt</em> file.</li>
+				<li>Click <strong>Import</strong>.</li>
+			</ol>
+			</p>
+		<dd>Your books will then be imported. Note that any irregularities, such as missing characters, might be errors of the importing software.</dd>
+</dl>
+</p>
+</body> 
+</html>
