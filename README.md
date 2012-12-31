@@ -55,7 +55,7 @@ As such, there are probably a bunch of things that could be abstracted and impro
 
 Shelves began as [a sample project by Romain Guy](http://www.curious-creature.org/2009/01/19/shelves-an-open-source-android-application/) in January 2009. It was used to demonstrate various capabilities of the Android OS, way back on Cupcake (1.5). It only managed book data.
 
-After it became apparent that the project would not be distributed through <strike>the Android Market</strike> Google Play, I brought out my own fork in April 2010. Over the years, I added much more functionality, and gained a lot of insight into dealing with the quirks of various Android devices, versions, form factors, and manufacturers. 
+After it became apparent that the project would not be distributed through Google Play, I brought out my own fork in April 2010. Over the years, I added much more functionality, and gained a lot of insight into dealing with the quirks of various Android devices, versions, form factors, and manufacturers. 
 
 Unfortunately, it's gotten to the point where Shelves is simply too difficult for one person to maintain. Rather than abandon the project, I opted to make most of my code open-source. And here we are. The only closed-source implementation is the actual server-side lookup, as described above--but it shouldn't be too hard to figure out what to do.
 
