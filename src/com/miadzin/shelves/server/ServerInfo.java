@@ -37,6 +37,7 @@ import android.net.Uri;
 import android.util.Xml;
 import android.view.InflateException;
 
+import com.miadzin.shelves.activity.SettingsActivity;
 import com.miadzin.shelves.provider.books.BooksStore;
 import com.miadzin.shelves.util.CookieStore;
 import com.miadzin.shelves.util.Entities;
@@ -144,6 +145,7 @@ public class ServerInfo {
 	/*
 	 * FILL THIS SET OUT WITH YOUR OWN SERVER CONTENT
 	 */
+	private static final String SERVER_SCRIPT = "YOU ARE SUPPOSED TO FILL THIS OUT!";
 	protected static final String DETAIL_START = "YOU ARE SUPPOSED TO FILL THIS OUT!";
 	public static final String IMAGE_START = "YOU ARE SUPPOSED TO FILL THIS OUT!";
 	protected static final String API_REST_HOST = "YOU ARE SUPPOSED TO FILL THIS OUT!";
@@ -251,9 +253,14 @@ public class ServerInfo {
 	protected static Uri.Builder buildGetMethod(String method, Context context) {
 		final Uri.Builder builder = new Uri.Builder();
 
-		/*
-		 * You have to create something here.
-		 */
+		builder.path(SERVER_SCRIPT);
+		builder.appendQueryParameter("EndpointUri",
+				SettingsActivity.getDatabaseRegion(context) + API_REST_URL);
+		builder.appendQueryParameter(PARAM_API_KEY, randomAPIKey());
+		builder.appendQueryParameter(PARAM_API_VERSION, VALUE_VERSION);
+		builder.appendQueryParameter(PARAM_API_SERVICE, VALUE_SERVICE);
+		builder.appendQueryParameter(PARAM_OPERATION, method);
+		builder.appendQueryParameter(PARAM_ASSOCIATETAG, VALUE_ASSOCIATEID);
 
 		return builder;
 	}
