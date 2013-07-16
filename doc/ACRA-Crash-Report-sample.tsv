@@ -1,0 +1,1038 @@
+Timestamp  REPORT_ID	APP_VERSION_CODE	APP_VERSION_NAME	PACKAGE_NAME	FILE_PATH	PHONE_MODEL	BRAND	PRODUCT	ANDROID_VERSION	BUILD	TOTAL_MEM_SIZE	AVAILABLE_MEM_SIZE	CUSTOM_DATA	IS_SILENT	STACK_TRACE	INITIAL_CONFIGURATION	CRASH_CONFIGURATION	DISPLAY	USER_COMMENT	USER_EMAIL	USER_APP_START_DATE	USER_CRASH_DATE	DUMPSYS_MEMINFO	DROPBOX	LOGCAT	EVENTSLOG	RADIOLOG	DEVICE_ID	INSTALLATION_ID	DEVICE_FEATURES	ENVIRONMENT	SHARED_PREFERENCES	SETTINGS_SYSTEM	SETTINGS_SECURE																																																																				
+8/18/2011 17:41:24	10f67950-2372-4910-ae92-ad4456f1b3a4	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	T-Mobile myTouch 3G Slide	tmobile	htc_espresso	2.1-update1	"BOARD=espresso
+BRAND=tmobile
+CPU_ABI=armeabi
+DEVICE=espresso
+DISPLAY=ERE27
+FINGERPRINT=tmobile/htc_espresso/espresso/espresso:2.1-update1/ERE27/216830:user/release-keys
+HOST=Oven-X06
+ID=ERE27
+MANUFACTURER=HTC
+MODEL=T-Mobile myTouch 3G Slide
+PRODUCT=htc_espresso
+TAGS=release-keys
+TIME=1280138040000
+TYPE=user
+USER=root
+"	152174592	15695872			"java.lang.OutOfMemoryError: bitmap size exceeds VM budget
+	at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+	at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:476)
+	at com.miadzin.shelves.util.c.c(ImageUtilities.java:379)
+	at com.miadzin.shelves.util.c.a(ImageUtilities.java:168)
+	at com.miadzin.shelves.activity.af.bindView(BaseItemAdapter.java:222)
+	at android.widget.CursorAdapter.getView(CursorAdapter.java:186)
+	at android.widget.AbsListView.obtainView(AbsListView.java:1256)
+	at android.widget.GridView.makeAndAddView(GridView.java:1218)
+	at android.widget.GridView.makeRow(GridView.java:265)
+	at android.widget.GridView.fillUp(GridView.java:303)
+	at android.widget.GridView.fillGap(GridView.java:196)
+	at android.widget.AbsListView.trackMotionScroll(AbsListView.java:2531)
+	at android.widget.AbsListView$FlingRunnable.run(AbsListView.java:2353)
+	at android.os.Handler.handleCallback(Handler.java:587)
+	at android.os.Handler.dispatchMessage(Handler.java:92)
+	at android.os.Looper.loop(Looper.java:123)
+	at android.app.ActivityThread.main(ActivityThread.java:4702)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:521)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:860)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:618)
+	at dalvik.system.NativeStart.main(Native Method)
+"	"customTheme=Surf_com.tmobile.theme.Surf
+locale=en_US
+hardKeyboardHidden=HARDKEYBOARDHIDDEN_YES
+keyboard=KEYBOARD_QWERTY
+keyboardHidden=KEYBOARDHIDDEN_NO
+fontScale=1.0
+mcc=310
+mnc=260
+navigation=NAVIGATION_TRACKBALL
+navigationHidden=NAVIGATIONHIDDEN_NO
+orientation=ORIENTATION_PORTRAIT
+screenLayout=SCREENLAYOUT_SIZE_NORMAL+SCREENLAYOUT_LONG_NO
+touchscreen=TOUCHSCREEN_FINGER
+userSetLocale=false
+"	"customTheme=Surf_com.tmobile.theme.Surf
+locale=en_US
+hardKeyboardHidden=HARDKEYBOARDHIDDEN_NO
+keyboard=KEYBOARD_QWERTY
+keyboardHidden=KEYBOARDHIDDEN_NO
+fontScale=1.0
+mcc=310
+mnc=260
+navigation=NAVIGATION_TRACKBALL
+navigationHidden=NAVIGATIONHIDDEN_NO
+orientation=ORIENTATION_LANDSCAPE
+screenLayout=SCREENLAYOUT_SIZE_NORMAL+SCREENLAYOUT_LONG_NO
+touchscreen=TOUCHSCREEN_FINGER
+userSetLocale=false
+"	"width=480
+height=320
+pixelFormat=1
+refreshRate=60.0fps
+metrics.density=x1.0
+metrics.scaledDensity=x1.0
+metrics.widthPixels=480
+metrics.heightPixels=320
+metrics.xdpi=159.37254
+metrics.ydpi=160.42105"		N/A	2011-08-18T00:17:20.000-05:00	2011-08-18T19:41:16.000-05:00	"Currently running services:
+  meminfo
+-------------------------------------------------------------------------------
+DUMP OF SERVICE meminfo:
+Applications Memory Usage (kB):
+Uptime: 99404178 Realtime: 254140909
+
+** MEMINFO in pid 5691 [com.miadzin.shelves] **
+                    native   dalvik    other    total    limit   bitmap nativeBmp
+            size:    19828     7495      N/A    27323    16384      N/A      N/A
+       allocated:    18005     4932      N/A    22937      N/A     8873        0
+            free:     1822     2563      N/A     4385      N/A      N/A      N/A
+           (Pss):    14480     6237     8810    29527      N/A      N/A      N/A
+  (shared dirty):     2104     4152     1252     7508      N/A      N/A      N/A
+    (priv dirty):    14440     5680     2856    22976      N/A      N/A      N/A
+ 
+ Objects
+           Views:      397        ViewRoots:        6
+     AppContexts:        7       Activities:        6
+          Assets:        3    AssetManagers:        3
+   Local Binders:       64    Proxy Binders:       19
+Death Recipients:        1
+ OpenSSL Sockets:        0
+ 
+ SQL
+            heap:     1669          dbFiles:        0
+       numPagers:       12   inactivePageKB:     1311
+    activePageKB:        0
+ 
+ Asset Allocations
+    zip:/system/framework/com.htc.resources.apk:/resources.arsc: 461K
+"					351809041480269	21941105-4a97-441f-bb84-50f4f47e0a68	"android.hardware.wifi
+android.hardware.location.network
+android.hardware.telephony
+android.hardware.location
+android.hardware.touchscreen.multitouch
+android.hardware.sensor.compass
+android.hardware.camera
+android.hardware.bluetooth
+android.hardware.sensor.proximity
+android.hardware.sensor.light
+android.hardware.location.gps
+android.hardware.telephony.gsm
+android.hardware.camera.autofocus
+android.hardware.touchscreen
+android.hardware.sensor.accelerometer
+android.hardware.camera.flash
+glEsVersion = 2.0
+"	"getDataDirectory=/data
+getDefaultStorageDirectory=/sdcard
+getDownloadCacheDirectory=/cache
+getExternalStorageDirectory=/sdcard
+getExternalStorageState=mounted
+getPhoneStorageDirectory=/emmc
+getPhoneStorageState=removed
+getRootDirectory=/system
+getSupportedStorages=1
+"	"default
+firstRun=false
+default_calendar_id=1
+
+"	"ACCELEROMETER_ROTATION=1
+AIRPLANE_MODE_ON=0
+AIRPLANE_MODE_RADIOS=cell,bluetooth,wifi
+AIRPLANE_MODE_TOGGLEABLE_RADIOS=wifi
+ALARM_ALERT=content://media/internal/audio/media/69
+AUTO_APPLY_UPDATE=1
+AUTO_TIME=1
+AUTO_UPDATE_BY_LOC=1
+BE_POLITE=0
+BLUETOOTH_NAME=The Karate Kid
+CALENDAR_NOTIFICATION_SOUND=content://media/internal/audio/media/94
+CALL_AUTO_RETRY=0
+DATE_FORMAT=EE, MMM d, yyyy
+DATE_FORMAT_SHORT=EE, MMM d
+DIM_SCREEN=1
+DTMF_TONE_TYPE_WHEN_DIALING=0
+EMERGENCY_TONE=0
+FONT_SCALE=1.0
+HAPTIC_FEEDBACK_ENABLED=1
+HEARING_AID=0
+MODE_RINGER=1
+MODE_RINGER_STREAMS_AFFECTED=166
+MUTE_STREAMS_AFFECTED=46
+NETWORK_SELECTION=0
+NEXT_ALARM_FORMATTED=
+NOTIFICATIONS_USE_RING_VOLUME=0
+NOTIFICATION_LIGHT_PULSE=1
+NOTIFICATION_SOUND=content://media/external/audio/media/64
+POCKET_MODE=0
+POWER_SAVE_3G=0
+RINGTONE=content://media/external/audio/media/63
+SCREEN_BRIGHTNESS=102
+SCREEN_BRIGHTNESS_MODE=1
+SCREEN_OFF_TIMEOUT=60000
+SETTING_ROAMING_RINGTONE=1
+SETTING_SD_CARD_NOTIFICATIONS=0
+SETUP_WIZARD_HAS_RUN=1
+SILENT_MODE=2
+STAY_ON_WHILE_PLUGGED_IN=0
+TRANSITION_ANIMATION_SCALE=1.0
+TTY_MODE=0
+VIBRATE_ON=5
+VOLUME_ALARM=6
+VOLUME_MUSIC=11
+VOLUME_NOTIFICATION=0
+VOLUME_RING=0
+VOLUME_SYSTEM=0
+VOLUME_VOICE=5
+WEATHER_WALLPAPER_ANIMATION_ALLOWED=0
+WINDOW_ANIMATION_SCALE=1.0
+"	"ADB_ENABLED=0
+ALLOW_MOCK_LOCATION=0
+ANDROID_ID=20013ff7ecf23a4d
+ASSISTED_GPS_ENABLED=1
+BACKUP_ENABLED=1
+BACKUP_PROVISIONED=1
+BACKUP_TRANSPORT=com.android.updater/.BackupTransportService
+BLUETOOTH_ON=0
+CDMA_CELL_BROADCAST_SMS=1
+CFU_QUERY_WHEN_CAMPON_MESSAGE=1
+CHECKIN_SEND_LAST_KMSG_TIME=1309408739
+DATA_ROAMING=0
+DATA_ROAMING_GUARD=0
+DEFAULT_INPUT_METHOD=com.swype.android.inputmethod/.SwypeInputMethod
+DEVICE_PROVISIONED=1
+ENABLED_INPUT_METHODS=com.swype.android.inputmethod/.SwypeInputMethod:com.nuance.vsuite/.vmodeime.VoiceModeIME:com.htc.android.htcime/.HTCIMEService
+GPSONE_ALLOWED=1
+INSTALL_NON_MARKET_APPS=1
+LOCATION_PROVIDERS_ALLOWED=network,gps
+LOGGING_ID2=51757a42dba814e5
+MOBILEDATA_ON=1
+NETWORK_PREFERENCE=1
+PARENTAL_CONTROL_ENABLED=false
+PREFERRED_CDMA_SUBSCRIPTION=1
+PREFERRED_NETWORK_MODE=0
+ROAMING_SOUND_ON=1
+USB_MASS_STORAGE_ENABLED=1
+USE_LOCATION_FOR_SERVICES=0
+WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=0
+WIFI_NUM_ALLOWED_CHANNELS=11
+WIFI_ON=0
+"
+8/18/2011 18:13:57	2e1ddeb9-2a31-406c-b0c1-3a0ef9d1c0a8	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	DROIDX	verizon	shadow_vzw	2.3.3	"BOARD=shadow
+BOOTLOADER=3004
+BRAND=verizon
+CPU_ABI=armeabi-v7a
+CPU_ABI2=armeabi
+DEVICE=cdma_shadow
+DISPLAY=4.5.1_57_DX5-26
+FINGERPRINT=verizon/shadow_vzw/cdma_shadow:2.3.3/4.5.1_57_DX5-26/110429:user/release-keys
+HARDWARE=mapphone_cdma
+HOST=il93lnxdroid09
+ID=4.5.1_57_DX5-26
+MANUFACTURER=motorola
+MODEL=DROIDX
+PRODUCT=shadow_vzw
+RADIO=unknown
+SERIAL=015A99290700B018
+TAGS=release-keys
+TIME=1304138977000
+TYPE=user
+UNKNOWN=unknown
+USER=qgd748
+"	7084326912	6052483072			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.books.BookDetailsActivity}: java.lang.NullPointerException
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1696)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1716)
+	at android.app.ActivityThread.access$1500(ActivityThread.java:124)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:968)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:123)
+	at android.app.ActivityThread.main(ActivityThread.java:3806)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:507)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:839)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+	at com.miadzin.shelves.activity.books.BookDetailsActivity.onCreate(BookDetailsActivity.java:56)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1660)
+	... 11 more
+java.lang.NullPointerException
+	at com.miadzin.shelves.activity.books.BookDetailsActivity.onCreate(BookDetailsActivity.java:56)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1660)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1716)
+	at android.app.ActivityThread.access$1500(ActivityThread.java:124)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:968)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:123)
+	at android.app.ActivityThread.main(ActivityThread.java:3806)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:507)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:839)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
+	at dalvik.system.NativeStart.main(Native Method)
+"	"locale=en_US
+hardKeyboardHidden=HARDKEYBOARDHIDDEN_YES
+keyboard=KEYBOARD_NOKEYS
+keyboardHidden=KEYBOARDHIDDEN_NO
+fontScale=1.0
+mcc=310
+mnc=4
+navigation=NAVIGATION_NONAV
+navigationHidden=NAVIGATIONHIDDEN_NO
+orientation=ORIENTATION_PORTRAIT
+screenLayout=SCREENLAYOUT_SIZE_NORMAL+SCREENLAYOUT_LONG_YES
+seq=308
+touchscreen=TOUCHSCREEN_FINGER
+uiMode=UI_MODE_TYPE_NORMAL+UI_MODE_NIGHT_NO
+userSetLocale=false
+"	"locale=en_US
+hardKeyboardHidden=HARDKEYBOARDHIDDEN_YES
+keyboard=KEYBOARD_NOKEYS
+keyboardHidden=KEYBOARDHIDDEN_NO
+fontScale=1.0
+mcc=310
+mnc=4
+navigation=NAVIGATION_NONAV
+navigationHidden=NAVIGATIONHIDDEN_NO
+orientation=ORIENTATION_PORTRAIT
+screenLayout=SCREENLAYOUT_SIZE_NORMAL+SCREENLAYOUT_LONG_YES
+seq=308
+touchscreen=TOUCHSCREEN_FINGER
+uiMode=UI_MODE_TYPE_NORMAL+UI_MODE_NIGHT_NO
+userSetLocale=false
+"	"width=480
+height=854
+pixelFormat=5
+refreshRate=68.0fps
+metrics.density=x1.5
+metrics.scaledDensity=x1.5
+metrics.widthPixels=480
+metrics.heightPixels=854
+metrics.xdpi=230.03773
+metrics.ydpi=228.33263"		N/A	2011-08-18T21:14:07.000-04:00	2011-08-18T21:14:10.000-04:00	"Applications Memory Usage (kB):
+Uptime: 483530002 Realtime: 870605776
+
+** MEMINFO in pid 26859 [com.miadzin.shelves] **
+                    native   dalvik    other    total
+            size:    10048     6535      N/A    16583
+       allocated:     9825     3900      N/A    13725
+            free:       14     2635      N/A     2649
+           (Pss):     3392     1119    13429    17940
+  (shared dirty):     2116     1776     5640     9532
+    (priv dirty):     3336      396     7416    11148
+ 
+ Objects
+           Views:        0        ViewRoots:        0
+     AppContexts:        0       Activities:        0
+          Assets:        4    AssetManagers:        4
+   Local Binders:       25    Proxy Binders:       16
+Death Recipients:        2
+ OpenSSL Sockets:        0
+ 
+ SQL
+               heap:     1165         MEMORY_USED:     1165
+ PAGECACHE_OVERFLOW:      881         MALLOC_SIZE:       50
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b)  Dbname
+         1       14             30  webview.db
+         1       17             93  google_analytics.db
+         1      827            172  books.db
+         1      271             44  webviewCache.db
+"					A0000022451751	008a0ad2-0747-44c4-bb14-8b7e1a6ac0af	"android.hardware.wifi
+android.hardware.location.network
+android.hardware.telephony
+android.hardware.location
+android.hardware.touchscreen.multitouch
+android.hardware.sensor.compass
+android.hardware.camera
+android.hardware.bluetooth
+android.hardware.touchscreen.multitouch.distinct
+android.hardware.sensor.proximity
+android.hardware.microphone
+android.hardware.sensor.light
+android.hardware.location.gps
+android.hardware.camera.autofocus
+android.hardware.telephony.cdma
+android.software.live_wallpaper
+android.hardware.sensor.accelerometer
+android.hardware.touchscreen
+android.hardware.camera.flash
+glEsVersion = 2.0
+"	"getDataDirectory=/data
+getDownloadCacheDirectory=/cache
+getExternalStorageAndroidDataDir=/mnt/sdcard/Android/data
+getExternalStorageDirectory=/mnt/sdcard
+getExternalStorageState=mounted
+getRootDirectory=/system
+getSecureDataDirectory=/data
+getSystemSecureDirectory=/data/system
+isEncryptedFilesystemEnabled=false
+isExternalStorageRemovable=true
+"	"default
+firstRun=false
+default_calendar_id=1
+
+"	"ACCELEROMETER_ROTATION=1
+AIRPLANE_MODE_ON=0
+AIRPLANE_MODE_RADIOS=cell,wifi,bluetooth
+AIRPLANE_MODE_TOGGLEABLE_RADIOS=bluetooth,wifi
+ALARM_ALERT=content://media/internal/audio/media/5
+AUTO_TIME=1
+CALL_AUTO_RETRY=0
+CAR_DOCK_SOUND=/system/media/audio/ui/Dock.ogg
+CAR_UNDOCK_SOUND=/system/media/audio/ui/Undock.ogg
+DATE_FORMAT=
+DESK_DOCK_SOUND=/system/media/audio/ui/Dock.ogg
+DESK_UNDOCK_SOUND=/system/media/audio/ui/Undock.ogg
+DIM_SCREEN=1
+DOCK_SOUNDS_ENABLED=0
+DTMF_TONE_TYPE_WHEN_DIALING=0
+DTMF_TONE_WHEN_DIALING=0
+EMERGENCY_TONE=0
+FONT_SCALE=1.0
+HAPTIC_FEEDBACK_ENABLED=1
+HEARING_AID=0
+LOCKSCREEN_SOUNDS_ENABLED=0
+LOCK_SOUND=/system/media/audio/ui/Lock.ogg
+LOW_BATTERY_SOUND=/system/media/audio/ui/LowBattery.ogg
+MODE_RINGER=2
+MODE_RINGER_STREAMS_AFFECTED=166
+MUTE_STREAMS_AFFECTED=46
+NEXT_ALARM_FORMATTED=Fri 8:00 am
+NOTIFICATIONS_USE_RING_VOLUME=1
+NOTIFICATION_LIGHT_PULSE=1
+NOTIFICATION_SOUND=content://media/internal/audio/media/94
+POWER_SOUNDS_ENABLED=1
+RINGTONE=content://media/internal/audio/media/39
+SCREEN_BRIGHTNESS=39
+SCREEN_BRIGHTNESS_MODE=1
+SCREEN_OFF_TIMEOUT=120000
+SHOW_WEB_SUGGESTIONS=1
+SOUND_EFFECTS_ENABLED=0
+STAY_ON_WHILE_PLUGGED_IN=0
+TIME_12_24=12
+TRANSITION_ANIMATION_SCALE=0.0
+TTY_MODE=0
+UNLOCK_SOUND=/system/media/audio/ui/Unlock.ogg
+VIBRATE_IN_SILENT=1
+VIBRATE_ON=6
+VOLUME_ALARM=15
+VOLUME_BLUETOOTH_SCO=15
+VOLUME_MUSIC=9
+VOLUME_NOTIFICATION=10
+VOLUME_RING=11
+VOLUME_SYSTEM=15
+VOLUME_VOICE=6
+WIFI_USE_STATIC_IP=0
+WINDOW_ANIMATION_SCALE=0.0
+"	"ADB_ENABLED=1
+ALLOWED_GEOLOCATION_ORIGINS=
+ALLOW_MOCK_LOCATION=0
+ANDROID_ID=22a0000022451751
+ASSISTED_GPS_ENABLED=0
+BACKGROUND_DATA=1
+BACKUP_ENABLED=0
+BACKUP_PROVISIONED=1
+BACKUP_TRANSPORT=
+BLUETOOTH_ON=0
+CDMA_CELL_BROADCAST_SMS=1
+CDMA_ROAMING_MODE=2
+DATA_ROAMING=0
+DEFAULT_INPUT_METHOD=com.swype.android.inputmethod/.SwypeInputMethod
+DEVICE_PROVISIONED=1
+DISABLED_SYSTEM_INPUT_METHODS=
+ENABLED_ACCESSIBILITY_SERVICES=
+ENABLED_INPUT_METHODS=com.swype.android.inputmethod/.SwypeInputMethod:com.android.inputmethod.latin/.LatinIME
+ENHANCED_VOICE_PRIVACY_ENABLED=1
+INSTALL_NON_MARKET_APPS=0
+LAST_SETUP_SHOWN=eclair_1
+LOCATION_PROVIDERS_ALLOWED=network
+LOCK_PATTERN_ENABLED=0
+MOUNT_PLAY_NOTIFICATION_SND=1
+MOUNT_UMS_AUTOSTART=0
+MOUNT_UMS_NOTIFY_ENABLED=1
+MOUNT_UMS_PROMPT=1
+NETWORK_PREFERENCE=1
+PREFERRED_CDMA_SUBSCRIPTION=1
+PREFERRED_NETWORK_MODE=4
+SEND_ACTION_APP_ERROR=1
+THROTTLE_RESET_DAY=1
+TTS_DEFAULT_COUNTRY=USA
+TTS_DEFAULT_LANG=eng
+TTS_DEFAULT_RATE=100
+TTS_DEFAULT_SYNTH=com.svox.pico
+TTS_DEFAULT_VARIANT=
+TTS_USE_DEFAULTS=0
+USB_MASS_STORAGE_ENABLED=1
+VOICE_RECOGNITION_SERVICE=com.google.android.voicesearch/.GoogleRecognitionService
+WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=0
+WIFI_NUM_ALLOWED_CHANNELS=11
+WIFI_ON=1
+"
+8/18/2011 18:14:17	c51e1ad0-afd1-4bdb-a64a-365e32195d54	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	DROIDX	verizon	shadow_vzw	2.3.3	"BOARD=shadow
+BOOTLOADER=3004
+BRAND=verizon
+CPU_ABI=armeabi-v7a
+CPU_ABI2=armeabi
+DEVICE=cdma_shadow
+DISPLAY=4.5.1_57_DX5-26
+FINGERPRINT=verizon/shadow_vzw/cdma_shadow:2.3.3/4.5.1_57_DX5-26/110429:user/release-keys
+HARDWARE=mapphone_cdma
+HOST=il93lnxdroid09
+ID=4.5.1_57_DX5-26
+MANUFACTURER=motorola
+MODEL=DROIDX
+PRODUCT=shadow_vzw
+RADIO=unknown
+SERIAL=015A99290700B018
+TAGS=release-keys
+TIME=1304138977000
+TYPE=user
+UNKNOWN=unknown
+USER=qgd748
+"	7084326912	6052478976			"java.lang.RuntimeException: Unable to start activity ComponentInfo{com.miadzin.shelves/com.miadzin.shelves.activity.books.BookDetailsActivity}: java.lang.NullPointerException
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1696)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1716)
+	at android.app.ActivityThread.access$1500(ActivityThread.java:124)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:968)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:123)
+	at android.app.ActivityThread.main(ActivityThread.java:3806)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:507)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:839)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
+	at dalvik.system.NativeStart.main(Native Method)
+Caused by: java.lang.NullPointerException
+	at com.miadzin.shelves.activity.books.BookDetailsActivity.onCreate(BookDetailsActivity.java:56)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1660)
+	... 11 more
+java.lang.NullPointerException
+	at com.miadzin.shelves.activity.books.BookDetailsActivity.onCreate(BookDetailsActivity.java:56)
+	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1047)
+	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:1660)
+	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:1716)
+	at android.app.ActivityThread.access$1500(ActivityThread.java:124)
+	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:968)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:123)
+	at android.app.ActivityThread.main(ActivityThread.java:3806)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:507)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:839)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:597)
+	at dalvik.system.NativeStart.main(Native Method)
+"	"locale=en_US
+hardKeyboardHidden=HARDKEYBOARDHIDDEN_YES
+keyboard=KEYBOARD_NOKEYS
+keyboardHidden=KEYBOARDHIDDEN_NO
+fontScale=1.0
+mcc=310
+mnc=4
+navigation=NAVIGATION_NONAV
+navigationHidden=NAVIGATIONHIDDEN_NO
+orientation=ORIENTATION_PORTRAIT
+screenLayout=SCREENLAYOUT_SIZE_NORMAL+SCREENLAYOUT_LONG_YES
+seq=310
+touchscreen=TOUCHSCREEN_FINGER
+uiMode=UI_MODE_TYPE_NORMAL+UI_MODE_NIGHT_NO
+userSetLocale=false
+"	"locale=en_US
+hardKeyboardHidden=HARDKEYBOARDHIDDEN_YES
+keyboard=KEYBOARD_NOKEYS
+keyboardHidden=KEYBOARDHIDDEN_NO
+fontScale=1.0
+mcc=310
+mnc=4
+navigation=NAVIGATION_NONAV
+navigationHidden=NAVIGATIONHIDDEN_NO
+orientation=ORIENTATION_PORTRAIT
+screenLayout=SCREENLAYOUT_SIZE_NORMAL+SCREENLAYOUT_LONG_YES
+seq=310
+touchscreen=TOUCHSCREEN_FINGER
+uiMode=UI_MODE_TYPE_NORMAL+UI_MODE_NIGHT_NO
+userSetLocale=false
+"	"width=480
+height=854
+pixelFormat=5
+refreshRate=68.0fps
+metrics.density=x1.5
+metrics.scaledDensity=x1.5
+metrics.widthPixels=480
+metrics.heightPixels=854
+metrics.xdpi=230.03773
+metrics.ydpi=228.33263"		N/A	2011-08-18T21:14:29.000-04:00	2011-08-18T21:14:31.000-04:00	"Applications Memory Usage (kB):
+Uptime: 483550916 Realtime: 870626689
+
+** MEMINFO in pid 26945 [com.miadzin.shelves] **
+                    native   dalvik    other    total
+            size:    10440     6407      N/A    16847
+       allocated:    10104     3419      N/A    13523
+            free:      123     2988      N/A     3111
+           (Pss):     3240     1173    13479    17892
+  (shared dirty):     2116     1716     5656     9488
+    (priv dirty):     3184      452     7496    11132
+ 
+ Objects
+           Views:        0        ViewRoots:        0
+     AppContexts:        0       Activities:        0
+          Assets:        4    AssetManagers:        4
+   Local Binders:       19    Proxy Binders:       16
+Death Recipients:        2
+ OpenSSL Sockets:        0
+ 
+ SQL
+               heap:     1161         MEMORY_USED:     1161
+ PAGECACHE_OVERFLOW:      880         MALLOC_SIZE:       50
+ 
+ DATABASES
+      pgsz     dbsz   Lookaside(b)  Dbname
+         1       14             30  webview.db
+         1      827            134  books.db
+         1      271             44  webviewCache.db
+         1       17             94  google_analytics.db
+"					A0000022451751	008a0ad2-0747-44c4-bb14-8b7e1a6ac0af	"android.hardware.wifi
+android.hardware.location.network
+android.hardware.telephony
+android.hardware.location
+android.hardware.touchscreen.multitouch
+android.hardware.sensor.compass
+android.hardware.camera
+android.hardware.bluetooth
+android.hardware.touchscreen.multitouch.distinct
+android.hardware.sensor.proximity
+android.hardware.microphone
+android.hardware.sensor.light
+android.hardware.location.gps
+android.hardware.camera.autofocus
+android.hardware.telephony.cdma
+android.software.live_wallpaper
+android.hardware.sensor.accelerometer
+android.hardware.touchscreen
+android.hardware.camera.flash
+glEsVersion = 2.0
+"	"getDataDirectory=/data
+getDownloadCacheDirectory=/cache
+getExternalStorageAndroidDataDir=/mnt/sdcard/Android/data
+getExternalStorageDirectory=/mnt/sdcard
+getExternalStorageState=mounted
+getRootDirectory=/system
+getSecureDataDirectory=/data
+getSystemSecureDirectory=/data/system
+isEncryptedFilesystemEnabled=false
+isExternalStorageRemovable=true
+"	"default
+firstRun=false
+default_calendar_id=1
+
+"	"ACCELEROMETER_ROTATION=1
+AIRPLANE_MODE_ON=0
+AIRPLANE_MODE_RADIOS=cell,wifi,bluetooth
+AIRPLANE_MODE_TOGGLEABLE_RADIOS=bluetooth,wifi
+ALARM_ALERT=content://media/internal/audio/media/5
+AUTO_TIME=1
+CALL_AUTO_RETRY=0
+CAR_DOCK_SOUND=/system/media/audio/ui/Dock.ogg
+CAR_UNDOCK_SOUND=/system/media/audio/ui/Undock.ogg
+DATE_FORMAT=
+DESK_DOCK_SOUND=/system/media/audio/ui/Dock.ogg
+DESK_UNDOCK_SOUND=/system/media/audio/ui/Undock.ogg
+DIM_SCREEN=1
+DOCK_SOUNDS_ENABLED=0
+DTMF_TONE_TYPE_WHEN_DIALING=0
+DTMF_TONE_WHEN_DIALING=0
+EMERGENCY_TONE=0
+FONT_SCALE=1.0
+HAPTIC_FEEDBACK_ENABLED=1
+HEARING_AID=0
+LOCKSCREEN_SOUNDS_ENABLED=0
+LOCK_SOUND=/system/media/audio/ui/Lock.ogg
+LOW_BATTERY_SOUND=/system/media/audio/ui/LowBattery.ogg
+MODE_RINGER=2
+MODE_RINGER_STREAMS_AFFECTED=166
+MUTE_STREAMS_AFFECTED=46
+NEXT_ALARM_FORMATTED=Fri 8:00 am
+NOTIFICATIONS_USE_RING_VOLUME=1
+NOTIFICATION_LIGHT_PULSE=1
+NOTIFICATION_SOUND=content://media/internal/audio/media/94
+POWER_SOUNDS_ENABLED=1
+RINGTONE=content://media/internal/audio/media/39
+SCREEN_BRIGHTNESS=39
+SCREEN_BRIGHTNESS_MODE=1
+SCREEN_OFF_TIMEOUT=120000
+SHOW_WEB_SUGGESTIONS=1
+SOUND_EFFECTS_ENABLED=0
+STAY_ON_WHILE_PLUGGED_IN=0
+TIME_12_24=12
+TRANSITION_ANIMATION_SCALE=0.0
+TTY_MODE=0
+UNLOCK_SOUND=/system/media/audio/ui/Unlock.ogg
+VIBRATE_IN_SILENT=1
+VIBRATE_ON=6
+VOLUME_ALARM=15
+VOLUME_BLUETOOTH_SCO=15
+VOLUME_MUSIC=9
+VOLUME_NOTIFICATION=10
+VOLUME_RING=11
+VOLUME_SYSTEM=15
+VOLUME_VOICE=6
+WIFI_USE_STATIC_IP=0
+WINDOW_ANIMATION_SCALE=0.0
+"	"ADB_ENABLED=1
+ALLOWED_GEOLOCATION_ORIGINS=
+ALLOW_MOCK_LOCATION=0
+ANDROID_ID=22a0000022451751
+ASSISTED_GPS_ENABLED=0
+BACKGROUND_DATA=1
+BACKUP_ENABLED=0
+BACKUP_PROVISIONED=1
+BACKUP_TRANSPORT=
+BLUETOOTH_ON=0
+CDMA_CELL_BROADCAST_SMS=1
+CDMA_ROAMING_MODE=2
+DATA_ROAMING=0
+DEFAULT_INPUT_METHOD=com.swype.android.inputmethod/.SwypeInputMethod
+DEVICE_PROVISIONED=1
+DISABLED_SYSTEM_INPUT_METHODS=
+ENABLED_ACCESSIBILITY_SERVICES=
+ENABLED_INPUT_METHODS=com.swype.android.inputmethod/.SwypeInputMethod:com.android.inputmethod.latin/.LatinIME
+ENHANCED_VOICE_PRIVACY_ENABLED=1
+INSTALL_NON_MARKET_APPS=0
+LAST_SETUP_SHOWN=eclair_1
+LOCATION_PROVIDERS_ALLOWED=network
+LOCK_PATTERN_ENABLED=0
+MOUNT_PLAY_NOTIFICATION_SND=1
+MOUNT_UMS_AUTOSTART=0
+MOUNT_UMS_NOTIFY_ENABLED=1
+MOUNT_UMS_PROMPT=1
+NETWORK_PREFERENCE=1
+PREFERRED_CDMA_SUBSCRIPTION=1
+PREFERRED_NETWORK_MODE=4
+SEND_ACTION_APP_ERROR=1
+THROTTLE_RESET_DAY=1
+TTS_DEFAULT_COUNTRY=USA
+TTS_DEFAULT_LANG=eng
+TTS_DEFAULT_RATE=100
+TTS_DEFAULT_SYNTH=com.svox.pico
+TTS_DEFAULT_VARIANT=
+TTS_USE_DEFAULTS=0
+USB_MASS_STORAGE_ENABLED=1
+VOICE_RECOGNITION_SERVICE=com.google.android.voicesearch/.GoogleRecognitionService
+WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=0
+WIFI_NUM_ALLOWED_CHANNELS=11
+WIFI_ON=1
+"
+8/19/2011 10:39:17	fbcf34f3-f27e-44ce-a4f8-dbba75b96301	45	3.0.2	com.miadzin.shelves	/data/data/com.miadzin.shelves/files	ADR6400L	verizon_wwe	htc_mecha	2.2.1	"BOARD=mecha
+BOOTLOADER=1.04.0000
+BRAND=verizon_wwe
+CPU_ABI=armeabi-v7a
+CPU_ABI2=armeabi
+DEVICE=mecha
+DISPLAY=FRG83D
+FINGERPRINT=verizon_wwe/htc_mecha/mecha/mecha:2.2.1/FRG83D/343953:user/release-keys
+HARDWARE=mecha
+HOST=AA139
+ID=FRG83D
+MANUFACTURER=HTC
+MODEL=ADR6400L
+PRODUCT=htc_mecha
+RADIO=unknown
+TAGS=release-keys
+TIME=1309159558000
+TYPE=user
+UNKNOWN=unknown
+USER=root
+"	2800533504	696397824			"java.lang.OutOfMemoryError: bitmap size exceeds VM budget(Heap Size=7095KB, Allocated=5745KB, Bitmap Size=17143KB)
+	at android.graphics.BitmapFactory.nativeDecodeStream(Native Method)
+	at android.graphics.BitmapFactory.decodeStream(BitmapFactory.java:605)
+	at com.miadzin.shelves.util.c.c(ImageUtilities.java:379)
+	at com.miadzin.shelves.util.c.a(ImageUtilities.java:168)
+	at com.miadzin.shelves.activity.af.bindView(BaseItemAdapter.java:222)
+	at android.widget.CursorAdapter.getView(CursorAdapter.java:186)
+	at android.widget.AbsListView.obtainView(AbsListView.java:1336)
+	at android.widget.GridView.makeAndAddView(GridView.java:1219)
+	at android.widget.GridView.makeRow(GridView.java:265)
+	at android.widget.GridView.fillSpecific(GridView.java:463)
+	at android.widget.GridView.layoutChildren(GridView.java:1122)
+	at android.widget.AbsListView.onLayout(AbsListView.java:1165)
+	at android.view.View.layout(View.java:7252)
+	at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1249)
+	at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1125)
+	at android.widget.LinearLayout.onLayout(LinearLayout.java:1042)
+	at android.view.View.layout(View.java:7252)
+	at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1249)
+	at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1125)
+	at android.widget.LinearLayout.onLayout(LinearLayout.java:1042)
+	at android.view.View.layout(View.java:7252)
+	at android.widget.FrameLayout.onLayout(FrameLayout.java:333)
+	at android.view.View.layout(View.java:7252)
+	at android.widget.FrameLayout.onLayout(FrameLayout.java:333)
+	at android.view.View.layout(View.java:7252)
+	at android.view.ViewRoot.performTraversals(ViewRoot.java:1049)
+	at android.view.ViewRoot.handleMessage(ViewRoot.java:1748)
+	at android.os.Handler.dispatchMessage(Handler.java:99)
+	at android.os.Looper.loop(Looper.java:143)
+	at android.app.ActivityThread.main(ActivityThread.java:5073)
+	at java.lang.reflect.Method.invokeNative(Native Method)
+	at java.lang.reflect.Method.invoke(Method.java:521)
+	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:858)
+	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:616)
+	at dalvik.system.NativeStart.main(Native Method)
+"	"skin=com.htc.skin.Wood
+locale=en_US
+keyboard=KEYBOARD_NOKEYS
+keyboardHidden=KEYBOARDHIDDEN_NO
+hardKeyboardHidden=HARDKEYBOARDHIDDEN_YES
+mcc=310
+mnc=12
+navigation=NAVIGATION_NONAV
+navigationHidden=NAVIGATIONHIDDEN_NO
+orientation=ORIENTATION_LANDSCAPE
+screenLayout=SCREENLAYOUT_SIZE_NORMAL+SCREENLAYOUT_LONG_YES
+seq=108
+fontScale=1.0
+touchscreen=TOUCHSCREEN_FINGER
+uiMode=UI_MODE_TYPE_NORMAL+UI_MODE_NIGHT_NO
+userSetLocale=false
+"	"skin=com.htc.skin.Wood
+locale=en_US
+keyboard=KEYBOARD_NOKEYS
+keyboardHidden=KEYBOARDHIDDEN_NO
+hardKeyboardHidden=HARDKEYBOARDHIDDEN_YES
+mcc=310
+mnc=12
+navigation=NAVIGATION_NONAV
+navigationHidden=NAVIGATIONHIDDEN_NO
+orientation=ORIENTATION_PORTRAIT
+screenLayout=SCREENLAYOUT_SIZE_NORMAL+SCREENLAYOUT_LONG_YES
+seq=129
+fontScale=1.0
+touchscreen=TOUCHSCREEN_FINGER
+uiMode=UI_MODE_TYPE_NORMAL+UI_MODE_NIGHT_NO
+userSetLocale=false
+"	"width=480
+height=800
+pixelFormat=1
+refreshRate=60.0fps
+metrics.density=x1.5
+metrics.scaledDensity=x1.5
+metrics.widthPixels=480
+metrics.heightPixels=800
+metrics.xdpi=217.71428
+metrics.ydpi=216.17021"		N/A	2011-08-19T12:32:26.000-05:00	2011-08-19T12:39:29.000-05:00	"Applications Memory Usage (kB):
+Uptime: 29403310 Realtime: 48104620
+
+** MEMINFO in pid 11289 [com.miadzin.shelves] **
+                    native   dalvik    other    total    limit   bitmap nativeBmp
+            size:    31320     6839      N/A    38159    24576      N/A      N/A
+       allocated:    30834     5814      N/A    36648      N/A    17143        0
+            free:      280     1025      N/A     1305      N/A      N/A      N/A
+           (Pss):    10135     6928    35793    52856      N/A      N/A      N/A
+  (shared dirty):     1452     3924     1068     6444      N/A      N/A      N/A
+    (priv dirty):    10108     6016    31076    47200      N/A      N/A      N/A
+ 
+ Objects
+           Views:        0        ViewRoots:        0
+     AppContexts:        0       Activities:        0
+          Assets:        4    AssetManagers:        4
+   Local Binders:       32    Proxy Binders:       19
+Death Recipients:        1
+ OpenSSL Sockets:        0
+ 
+ SQL
+            heap:     1025       memoryUsed:     1025
+pageCacheOverflo:      112  largestMemAlloc:       50
+ 
+ DATABASES
+  Pagesize   Dbsize  Lookaside  Dbname
+      1024        6         31  videogames.db
+      1024        6         31  software.db
+      1024        6         31  gadgets.db
+      1024       20        268  books.db
+      1024        6         32  toys.db
+      1024        6         31  apparel.db
+      1024        6         32  tools.db
+      1024       64         48  webviewCache.db
+      1024        6         32  music.db
+      1024       15        432  google_analytics.db
+      1024       14         34  webview.db
+      1024        6         31  movies.db
+"					99000032820282	c93fb9c2-f0d3-4784-9a5d-e14a2cf2e476	"android.hardware.wifi
+android.hardware.location.network
+android.hardware.telephony
+com.verizon.hardware.telephony.ehrpd
+android.hardware.location
+android.hardware.touchscreen.multitouch
+android.hardware.sensor.compass
+android.hardware.camera
+android.hardware.bluetooth
+android.hardware.touchscreen.multitouch.distinct
+android.hardware.sensor.proximity
+com.htc.android.rosie.widget
+android.hardware.microphone
+android.hardware.sensor.light
+com.verizon.hardware.telephony.lte
+android.hardware.location.gps
+android.hardware.camera.autofocus
+android.hardware.telephony.cdma
+android.hardware.sensor.accelerometer
+android.hardware.touchscreen
+android.software.live_wallpaper
+android.hardware.camera.flash
+glEsVersion = 2.0
+"	"getDataDirectory=/data
+getDefaultStorageDirectory=/mnt/sdcard
+getDownloadCacheDirectory=/cache
+getExternalStorageAndroidDataDir=/mnt/sdcard/Android/data
+getExternalStorageDirectory=/mnt/sdcard
+getExternalStorageState=mounted
+getPhoneStorageDirectory=/mnt/emmc
+getPhoneStorageState=removed
+getRootDirectory=/system
+getSupportedStorages=1
+"	"default
+firstRun=false
+default_calendar_id=1
+
+"	"ACCELEROMETER_ROTATION=1
+AIRPLANE_MODE_ON=0
+AIRPLANE_MODE_RADIOS=cell,bluetooth,wifi
+AIRPLANE_MODE_TOGGLEABLE_RADIOS=wifi
+ALARM_ALERT=content://media/internal/audio/media/81
+AUTO_TIME=1
+BE_POLITE=1
+BLUETOOTH_DISCOVERABILITY_END_TIMESTAMP=1311217988761
+BLUETOOTH_FTP_SETTINGS=1
+CALENDAR_NOTIFICATION_SOUND=content://media/internal/audio/media/7
+CALL_AUTO_RETRY=0
+CAR_DOCK_SOUND=/system/media/audio/ui/Dock.ogg
+CAR_UNDOCK_SOUND=/system/media/audio/ui/Undock.ogg
+DATE_FORMAT=EE, MMM d, yyyy
+DATE_FORMAT_SHORT=EE, MMM d
+DESK_DOCK_SOUND=/system/media/audio/ui/Dock.ogg
+DESK_UNDOCK_SOUND=/system/media/audio/ui/Undock.ogg
+DIM_SCREEN=1
+DOCK_SOUNDS_ENABLED=0
+DTMF_TONE_TYPE_WHEN_DIALING=0
+EMERGENCY_TONE=0
+FLIP_TO_SPEAKER=1
+FOTA_PERIODIC_CHECKIN=0
+HAPTIC_FEEDBACK_ENABLED=0
+HEARING_AID=0
+HOTSPOT_CHANNEL=0
+HOTSPOT_DHCP_ON=1
+HOTSPOT_DHCP_STARTING_IP=192.168.1.10
+HOTSPOT_IP_ADDRESS=192.168.1.1
+HOTSPOT_MACFILTER_ON=0
+HOTSPOT_MAX_CONNECTION=5
+HOTSPOT_ON=0
+HOTSPOT_PASSWORD=1234567890
+HOTSPOT_SECURITY_TYPE=wpa2-psk
+HOTSPOT_SLEEP_POLICY=1
+HOTSPOT_SSID=Verizon ADR6400L B92C
+HOTSPOT_SUBNET_MASK=255.255.255.0
+INACTIVITY_TIME=900
+LOCKSCREEN_SOUNDS_ENABLED=0
+LOCK_SOUND=/system/media/audio/ui/Lock.ogg
+LOW_BATTERY_SOUND=/system/media/audio/ui/LowBattery.ogg
+MODE_RINGER=2
+MODE_RINGER_STREAMS_AFFECTED=166
+MUTE_STREAMS_AFFECTED=46
+NETWORK_SELECTION=0
+NEXT_ALARM_FORMATTED=Fri 13:30
+NOTIFICATIONS_USE_RING_VOLUME=0
+NOTIFICATION_LIGHT_PULSE=1
+NOTIFICATION_SOUND=content://media/internal/audio/media/25
+POCKET_MODE=1
+POWER_SAVE_3G=0
+POWER_SOUNDS_ENABLED=1
+RINGTONE=content://media/external/audio/media/19
+SCREEN_BRIGHTNESS=102
+SCREEN_BRIGHTNESS_MODE=0
+SCREEN_OFF_TIMEOUT=120000
+SETTING_ROAMING_RINGTONE=1
+SETTING_SD_CARD_NOTIFICATIONS=0
+SETUP_WIZARD_HAS_RUN=1
+SILENT_MODE=1
+STAY_ON_WHILE_PLUGGED_IN=3
+TIME_12_24=24
+TRANSITION_ANIMATION_SCALE=0.0
+TTY_MODE=0
+UNLOCK_SOUND=/system/media/audio/ui/Unlock.ogg
+VIBRATE_IN_SILENT=1
+VIBRATE_ON=5
+VOLUME_ALARM=7
+VOLUME_BLUETOOTH_SCO=5
+VOLUME_MUSIC=15
+VOLUME_NOTIFICATION=5
+VOLUME_RING=7
+VOLUME_SYSTEM=7
+VOLUME_VOICE=4
+WEATHER_WALLPAPER_ANIMATION_ALLOWED=0
+WIFI_SLEEP_POLICY=2
+WIFI_USE_STATIC_IP=0
+WINDOW_ANIMATION_SCALE=0.0
+"	"ADB_ENABLED=1
+ALLOWED_GEOLOCATION_ORIGINS=http://www.google.co.uk http://www.google.com
+ALLOW_MOCK_LOCATION=1
+ANDROID_ID=e0f9aa1135fdf83e
+ASSISTED_GPS_ENABLED=1
+BACKGROUND_DATA=1
+BACKUP_ENABLED=1
+BACKUP_PROVISIONED=1
+BACKUP_TRANSPORT=com.google.android.backup/.BackupTransportService
+BLUETOOTH_ON=1
+CDMA_CELL_BROADCAST_SMS=1
+CDMA_ROAMING_MODE=2
+CFU_QUERY_WHEN_CAMPON_MESSAGE=1
+DATA_ROAMING=0
+DATA_ROAMING_GUARD=0
+DEFAULT_INPUT_METHOD=com.htc.android.htcime/.HTCIMEService
+DEFAULT_INSTALL_LOCATION=0
+DEVICE_PROVISIONED=1
+DISABLED_SYSTEM_INPUT_METHODS=
+ENABLED_ACCESSIBILITY_SERVICES=
+ENABLED_INPUT_METHODS=com.htc.android.htcime/.HTCIMEService
+ENABLE_HTC_FASTBOOT=1
+ENHANCED_VOICE_PRIVACY_ENABLED=1
+GPSONE_ALLOWED=1
+HTC_ERROR_REPORT_PREFER_NETWORK=0
+HTC_ERROR_REPORT_SETTING=0
+HTC_LOCATE_ALLOWED=1
+INSTALL_NON_MARKET_APPS=1
+LAST_SETUP_SHOWN=eclair_1
+LOCATION_PROVIDERS_ALLOWED=network,gps,vzw_lbs
+LOCK_PATTERN_ENABLED=0
+MOBILE_DATA=1
+MOUNT_PLAY_NOTIFICATION_SND=1
+MOUNT_UMS_AUTOSTART=0
+MOUNT_UMS_NOTIFY_ENABLED=1
+MOUNT_UMS_PROMPT=1
+NETWORK_PREFERENCE=12
+PREFERRED_CDMA_SUBSCRIPTION=1
+PREFERRED_NETWORK_MODE=8
+PREFERRED_TTY_MODE=0
+ROAMING_SOUND_ON=1
+SELECT_RESOLUTION_TYPE=0
+SEND_ACTION_APP_ERROR=1
+SEND_HTC_ERROR_REPORT=0
+SET_INSTALL_LOCATION=0
+THROTTLE_RESET_DAY=10
+TTS_DEFAULT_COUNTRY=USA
+TTS_DEFAULT_LANG=eng
+TTS_DEFAULT_RATE=100
+TTS_DEFAULT_SYNTH=com.svox.pico
+TTS_DEFAULT_VARIANT=
+TTS_ENABLED_PLUGINS=
+TTS_USE_DEFAULTS=0
+USBNET_ON=0
+USB_MASS_STORAGE_ENABLED=1
+VOICE_RECOGNITION_SERVICE=com.google.android.voicesearch/.GoogleRecognitionService
+WIFI_NETWORKS_AVAILABLE_NOTIFICATION_ON=1
+WIFI_NUM_ALLOWED_CHANNELS=11
+WIFI_ON=1
+WIFI_PWR_ACTIVE_MODE=0
+"
