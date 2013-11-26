@@ -186,6 +186,7 @@ public class SettingsActivity extends PreferenceActivity implements
 	private final String LOG_TAG = "SettingsActivity";
 
 	private String[] titleArray;
+	private String[] importFileArray;
 
 	private ProgressDialog sendToGoogleDialog;
 	private AlertDialog sendToGoogleResultDialog;
@@ -265,6 +266,18 @@ public class SettingsActivity extends PreferenceActivity implements
 				getString(R.string.tool_label_plural_big),
 				getString(R.string.toy_label_plural_big),
 				getString(R.string.videogame_label_plural_big) };
+
+		importFileArray = new String[] { getString(R.string.IMPORT_FILE_SHELVES_APPAREL),
+				getString(R.string.IMPORT_FILE_SHELVES_BOARDGAMES),
+				getString(R.string.IMPORT_FILE_SHELVES_BOOKS),
+				getString(R.string.IMPORT_FILE_SHELVES_COMICS),
+				getString(R.string.IMPORT_FILE_SHELVES_GADGETS),
+				getString(R.string.IMPORT_FILE_SHELVES_MOVIES),
+				getString(R.string.IMPORT_FILE_SHELVES_MUSIC),
+				getString(R.string.IMPORT_FILE_SHELVES_SOFTWARE),
+				getString(R.string.IMPORT_FILE_SHELVES_TOOLS),
+				getString(R.string.IMPORT_FILE_SHELVES_TOYS),
+				getString(R.string.IMPORT_FILE_SHELVES_VIDEOGAMES) };
 
 		intentArray[0] = new Intent(
 				"shelves.intent.action.ACTION_IMPORT_SHELVES_APPAREL");
@@ -945,7 +958,7 @@ public class SettingsActivity extends PreferenceActivity implements
 				final BringFromDocs sender = new BringFromDocs(this,
 						authMap.get(SendToDocs.GDATA_SERVICE_NAME_TRIX),
 						authMap.get(SendToDocs.GDATA_SERVICE_NAME_DOCLIST),
-						titleArray[selectedCollectionIndex]);
+						selectedCollectionIndex);
 				Runnable onCompletion = new Runnable() {
 					public void run() {
 						setProgressValue(100);
@@ -1200,9 +1213,7 @@ public class SettingsActivity extends PreferenceActivity implements
 												outputStream, null);
 										TextUtilities.writeStringToFile(
 												IOUtilities
-														.getExternalFile("Shelves_to_Shelves_"
-																+ titleArray[selectedCollectionIndex]
-																+ ".txt"),
+														.getExternalFile(importFileArray[selectedCollectionIndex]),
 												new String(outputStream
 														.toByteArray()));
 									} catch (DropboxException e) {

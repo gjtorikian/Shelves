@@ -62,7 +62,7 @@ public class BringFromDocs {
 	private final HandlerThread handlerThread;
 	private final Handler handler;
 
-	private final String collectionToBring;
+	private final int collectionIndex;
 	private String workSheetId = null;
 
 	private boolean success = true;
@@ -70,15 +70,43 @@ public class BringFromDocs {
 	private Runnable onCompletion = null;
 
 	private final String LOG_TAG = "BringFromDocs";
+	
+	private final String[] importFileArray;
+	private final String[] collectionNameArray;
 
 	public BringFromDocs(Activity activity, AuthManager trixAuth,
-			AuthManager docListAuth, String collectionToBring) {
+			AuthManager docListAuth, int collectionIndex) {
 		this.activity = activity;
 		this.trixAuth = trixAuth;
 		this.docListAuth = docListAuth;
-		this.collectionToBring = collectionToBring;
+		this.collectionIndex = collectionIndex;
 
-		Log.d(LOG_TAG, "Bringing from Google Docs: " + collectionToBring);
+		importFileArray = new String[] { this.activity.getString(R.string.IMPORT_FILE_SHELVES_APPAREL),
+				this.activity.getString(R.string.IMPORT_FILE_SHELVES_BOARDGAMES),
+				this.activity.getString(R.string.IMPORT_FILE_SHELVES_BOOKS),
+				this.activity.getString(R.string.IMPORT_FILE_SHELVES_COMICS),
+				this.activity.getString(R.string.IMPORT_FILE_SHELVES_GADGETS),
+				this.activity.getString(R.string.IMPORT_FILE_SHELVES_MOVIES),
+				this.activity.getString(R.string.IMPORT_FILE_SHELVES_MUSIC),
+				this.activity.getString(R.string.IMPORT_FILE_SHELVES_SOFTWARE),
+				this.activity.getString(R.string.IMPORT_FILE_SHELVES_TOOLS),
+				this.activity.getString(R.string.IMPORT_FILE_SHELVES_TOYS),
+				this.activity.getString(R.string.IMPORT_FILE_SHELVES_VIDEOGAMES) };
+
+		collectionNameArray = new String[] { this.activity.getString(R.string.apparel_label_big),
+				this.activity.getString(R.string.boardgame_label_plural_big),
+				this.activity.getString(R.string.book_label_plural_big),
+				this.activity.getString(R.string.comic_label_plural_big),
+				this.activity.getString(R.string.gadget_label_plural_big),
+				this.activity.getString(R.string.movie_label_plural_big),
+				this.activity.getString(R.string.music_label_big),
+				this.activity.getString(R.string.software_label_big),
+				this.activity.getString(R.string.tool_label_plural_big),
+				this.activity.getString(R.string.toy_label_plural_big),
+				this.activity.getString(R.string.videogame_label_plural_big) };
+
+		
+		Log.d(LOG_TAG, "Bringing from Google Docs: " + collectionNameArray[this.collectionIndex]);
 		handlerThread = new HandlerThread("BringFromGoogleDocs");
 		handlerThread.start();
 		handler = new Handler(handlerThread.getLooper());
@@ -164,7 +192,7 @@ public class BringFromDocs {
 
 			int progressLeft = 50 / 3;
 
-			final String sheetTitle = collectionToBring + " (Shelves)";
+			final String sheetTitle = collectionNameArray[collectionIndex] + " (Shelves)";
 
 			String spreadsheetId = null;
 			// First try to find the spreadsheet:
@@ -204,7 +232,7 @@ public class BringFromDocs {
 			}
 
 			SettingsActivity.getInstance().getAndSetProgressValue(progressLeft);
-			if (!getShelvesData(trixWrapper, spreadsheetId, collectionToBring)) {
+			if (!getShelvesData(trixWrapper, spreadsheetId, collectionIndex)) {
 				Log.e(LOG_TAG, "Failed downloading spreadsheet");
 			}
 			Log.i(LOG_TAG, "Done downloading doc.");
@@ -233,13 +261,13 @@ public class BringFromDocs {
 
 	@SuppressWarnings("unchecked")
 	private boolean getShelvesData(final GDataWrapper trixWrapper,
-			String spreadsheetId, final String name)
+			String spreadsheetId, final int collectionIdx)
 			throws AuthenticationException,
 			IOException,
 			com.google.android.apps.mytracks.io.gdata.GDataWrapper.ParseException,
 			ConflictDetectedException,
 			com.google.android.apps.mytracks.io.gdata.GDataWrapper.HttpException {
-		Log.i(LOG_TAG, "Downloading spreadsheet for " + name);
+		Log.i(LOG_TAG, "Downloading spreadsheet for " + collectionNameArray[collectionIdx]);
 
 		final String url = String.format(DOCS_DOWNLOAD_URL, spreadsheetId);
 
@@ -273,8 +301,7 @@ public class BringFromDocs {
 					final String result = sb.toString();
 
 					TextUtilities.writeStringToFile(
-							IOUtilities.getExternalFile("Shelves_to_Shelves_"
-									+ name + ".txt"), result);
+							IOUtilities.getExternalFile(importFileArray[collectionIdx]), result);
 
 					if (TextUtilities.isEmpty(result))
 						throw new IOException();
