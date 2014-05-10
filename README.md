@@ -27,7 +27,6 @@ Although the code is open-source, there are a few differences between it and the
 
 * All item lookups are not supported.  
 In order to perform a lookup for item information, Shelves pings a server (that I own) that does most of the "hard work." The server then returns the results in an XML format for Shelves to parse and represent. I can't provide access to this server publically, since it'll make my costs skyrocket. However, you can run your own server, and implement your own lookups.  
-
 This doesn't affect board games or comic books.
 
 * License checks are not enforced in the open source version.  
@@ -35,7 +34,7 @@ This code automatically assumes that the app is not paid for. However, you can e
 
 ## Dummy Data
 
-If you wish to play around with some Shelves data, the _databases_ folder contains some simple databases for each item type. You'll want to place these in your phone's _data/data/madzin.shelves/databases_ folder. This is impossible for real devices that are not rooted, but emulators and rooted phones can access the foler through DDMS. 
+If you wish to play around with some Shelves data, the _databases_ folder contains some simple databases for each item type. You'll want to place these in your phone's _data/data/miadzin.shelves/databases_ folder. This is impossible for real devices that are not rooted, but emulators and rooted phones can access the folder through DDMS. 
 
 ## Wishlist
 
