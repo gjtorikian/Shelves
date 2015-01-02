@@ -232,7 +232,7 @@ public class Entities {
 				// noticed with Reading like a Writer
 				if (str.length() >= i + 6) {
 					if (str.substring(i + 1, i + 6).equals("#8212")) {
-						buf.append('Ñ');
+						buf.append('Ã‘');
 						i = i + 5;
 						continue;
 					}

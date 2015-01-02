@@ -1,7 +1,7 @@
 /*
  * 
  * Copyright (c) 2009 Tim Su
- * Copyright (c) 2010 Garen J. Torikianå
+ * Copyright (c) 2010 Garen J. Torikian
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
