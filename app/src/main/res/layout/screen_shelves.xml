@@ -9,7 +9,7 @@
 	governing permissions and limitations under the License. -->
 
 <merge xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:shelves="http://schemas.android.com/apk/res/com.miadzin.shelves">
+	xmlns:shelves="http://schemas.android.com/apk/res-auto">
 	<LinearLayout android:id="@+id/shelvesRoot"
 		android:layout_width="fill_parent" android:layout_height="fill_parent"
 		android:orientation="vertical">
