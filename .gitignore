@@ -4,6 +4,7 @@
 /.idea/libraries
 .DS_Store
 /build
+app/build/
 
 # private stuff
-src/com/miadzin/shelves/secret/
+secrets.env
