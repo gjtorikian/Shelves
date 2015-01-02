@@ -12,12 +12,22 @@ android {
             sourceCompatibility JavaVersion.VERSION_1_5
             targetCompatibility JavaVersion.VERSION_1_5
         }
+
+        def envFile = new File('secrets.env').exists() ? new File('secrets.env') : new File('secrets_sample.env')
+
+        envFile.eachLine { line ->
+            def split_line = line.split("=")
+            buildConfigField "String", split_line[0], split_line[1]
+        }
     }
 
     buildTypes {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt')
+        }
+        debug {
+
         }
     }
 }

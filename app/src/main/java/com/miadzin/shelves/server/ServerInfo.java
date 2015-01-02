@@ -37,6 +37,7 @@ import android.net.Uri;
 import android.util.Xml;
 import android.view.InflateException;
 
+import com.miadzin.shelves.BuildConfig;
 import com.miadzin.shelves.activity.SettingsActivity;
 import com.miadzin.shelves.provider.books.BooksStore;
 import com.miadzin.shelves.util.CookieStore;
@@ -145,42 +146,43 @@ public class ServerInfo {
 	/*
 	 * FILL THIS SET OUT WITH YOUR OWN SERVER CONTENT
 	 */
-	private static final String SERVER_SCRIPT = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	protected static final String DETAIL_START = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	public static final String IMAGE_START = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	protected static final String API_REST_HOST = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	protected static final String API_REST_URL = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	protected static final String API_ITEM_LOOKUP = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	protected static final String API_ITEM_SEARCH = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	protected static final String PARAM_API_KEY = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	protected static final String PARAM_API_VERSION = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	protected static final String PARAM_API_SERVICE = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	protected static final String PARAM_OPERATION = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	protected static final String PARAM_IDTYPE = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	protected static final String PARAM_SEARCHINDEX = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	protected static final String PARAM_ITEMID = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	protected static final String PARAM_RESPONSEGROUP = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	protected static final String PARAM_KEYWORDS = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	protected static final String PARAM_ASSOCIATETAG = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	protected static final String PARAM_ITEMPAGE = "YOU ARE SUPPOSED TO FILL THIS OUT!";
+    private static final String SERVER_SCRIPT = BuildConfig.SERVER_SCRIPT; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    protected static final String DETAIL_START = BuildConfig.DETAIL_START; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    public static final String IMAGE_START = BuildConfig.IMAGE_START; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    protected static final String API_REST_HOST = BuildConfig.API_REST_HOST; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    protected static final String API_REST_URL = BuildConfig.API_REST_URL; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    protected static final String API_ITEM_LOOKUP = BuildConfig.API_ITEM_LOOKUP; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    protected static final String API_ITEM_SEARCH = BuildConfig.API_ITEM_SEARCH; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    protected static final String PARAM_API_KEY = BuildConfig.PARAM_API_KEY; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    protected static final String PARAM_API_VERSION = BuildConfig.PARAM_API_VERSION; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    protected static final String PARAM_API_SERVICE = BuildConfig.PARAM_API_SERVICE; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    protected static final String PARAM_OPERATION = BuildConfig.PARAM_OPERATION; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    protected static final String PARAM_IDTYPE = BuildConfig.PARAM_IDTYPE; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    protected static final String PARAM_SEARCHINDEX = BuildConfig.PARAM_SEARCHINDEX; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    protected static final String PARAM_ITEMID = BuildConfig.PARAM_ITEMID; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    protected static final String PARAM_RESPONSEGROUP = BuildConfig.PARAM_RESPONSEGROUP; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    protected static final String PARAM_KEYWORDS = BuildConfig.PARAM_KEYWORDS; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    protected static final String PARAM_ASSOCIATETAG = BuildConfig.PARAM_ASSOCIATETAG; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    protected static final String PARAM_ITEMPAGE = BuildConfig.PARAM_ITEMPAGE; // YOU ARE SUPPOSED TO FILL THIS OUT!
 
-	protected static final String VALUE_SERVICE = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	protected static final String VALUE_VERSION = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	protected static final String VALUE_ASSOCIATEID = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	public static final String API_REST_HOST_US = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	public static final String API_REST_HOST_CA = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	public static final String API_REST_HOST_UK = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	public static final String API_REST_HOST_FR = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	public static final String API_REST_HOST_DE = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	public static final String API_REST_HOST_JP = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	public static final String API_REST_HOST_IT = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	public static final String API_REST_HOST_CN = "YOU ARE SUPPOSED TO FILL THIS OUT!";
+    protected static final String VALUE_SERVICE = BuildConfig.VALUE_SERVICE; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    protected static final String VALUE_VERSION = BuildConfig.VALUE_VERSION; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    protected static final String VALUE_ASSOCIATEID = BuildConfig.VALUE_ASSOCIATEID; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    public static final String API_REST_HOST_US = BuildConfig.API_REST_HOST_US; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    public static final String API_REST_HOST_CA = BuildConfig.API_REST_HOST_CA; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    public static final String API_REST_HOST_UK = BuildConfig.API_REST_HOST_UK; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    public static final String API_REST_HOST_FR = BuildConfig.API_REST_HOST_FR; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    public static final String API_REST_HOST_DE = BuildConfig.API_REST_HOST_DE; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    public static final String API_REST_HOST_JP = BuildConfig.API_REST_HOST_JP; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    public static final String API_REST_HOST_IT = BuildConfig.API_REST_HOST_IT; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    public static final String API_REST_HOST_CN = BuildConfig.API_REST_HOST_CN; // YOU ARE SUPPOSED TO FILL THIS OUT!
 
-	private static final String[] API_KEYS = { "YOUR KEY", "YOUR KEY" };
+    // YOU ARE SUPPOSED TO FILL THESE OUT!
+	private static final String[] API_KEYS = { BuildConfig.API_KEYS_ONE, BuildConfig.API_KEYS_TWO };
 
 	// Dropbox stuff
-	public final static String DROPBOX_APP_KEY = "YOU ARE SUPPOSED TO FILL THIS OUT!";
-	public final static String DROPBOX_APP_SECRET = "YOU ARE SUPPOSED TO FILL THIS OUT!";
+	public final static String DROPBOX_APP_KEY = BuildConfig.DROPBOX_APP_KEY; // YOU ARE SUPPOSED TO FILL THIS OUT!
+	public final static String DROPBOX_APP_SECRET = BuildConfig.DROPBOX_APP_SECRET; // YOU ARE SUPPOSED TO FILL THIS OUT!
 	/*
 	 * END FILL; HAVE A NICE DAY!
 	 */
