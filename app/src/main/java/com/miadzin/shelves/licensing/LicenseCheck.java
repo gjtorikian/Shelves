@@ -8,7 +8,7 @@ import android.util.Log;
 public class LicenseCheck  {
     public static boolean check(Context context) {
         if (BuildConfig.DEBUG)
-            return true;
+            return false;
         PackageManager manager = context.getPackageManager();
         return isUnlockerInstalled(context) && manager.checkSignatures("com.miadzin.shelves", "com.miadzin.shelves.unlocker") == PackageManager.SIGNATURE_MATCH;
     }
