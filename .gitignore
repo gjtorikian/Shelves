@@ -9,4 +9,5 @@ app/build/
 # private stuff
 secrets.env
 
-app/src/main/java/com/miadzin/shelves/licensing/LicensingCallback.java
+app/app-release.apk
+app/proguard/*.txt
