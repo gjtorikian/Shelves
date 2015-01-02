@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- From: file:/Users/garentorikian/AndroidstudioProjects/Shelves/app/src/main/res/values-land/strings.xml -->
-    <eat-comment/>
-    <string name="tagarea_hint">Enter a tag above, or choose a predefined one from the left</string>
-</resources>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- From: file:/Users/garentorikian/AndroidstudioProjects/Shelves/app/src/main/res/values-fr-land/strings.xml -->
-    <eat-comment/>
-    <string name="tagarea_hint">Entrez un marqueur ci-dessus, ou choisissez-en un listé de la gauche</string>
-</resources>
