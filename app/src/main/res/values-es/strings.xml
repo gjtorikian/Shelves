@@ -352,7 +352,6 @@
     <string name="preferences_import_shelves_apparel_summary">Importar ropa definida en Shelves_to_Shelves_Ropal.txt </string>
     <string name="preferences_import_list_of_apparel">Lista de ropa</string>
     <string name="preferences_import_list_of_apparel_summary">Importar una lista de EANs definidos en lista_de_ropa.tx</string>
-    <string name="preferences_import_boardgamegeek_boardgames">BoardGameGeek.com </string>
     <string name="preferences_import_boardgamegeek_summary">Importar juegos de mesa definidos en BGG_Juegos_de_mesa.csv </string>
     <string name="preferences_import_shelves_boardgames_summary">Importar juegos de mesa definidos en Shelves_to_Shelves_Juegos_de_mesa.txt </string>
     <string name="preferences_import_bulk_book_summary">Importar libros encontrados durante el anterios escáner al por mayor, pero nunca añadidos.</string>
