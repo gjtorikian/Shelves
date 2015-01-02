@@ -11,3 +11,4 @@ secrets.env
 
 app/app-release.apk
 app/proguard/*.txt
+app/manifest-merger-release-report.txt
