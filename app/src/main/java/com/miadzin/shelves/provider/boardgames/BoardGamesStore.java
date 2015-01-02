@@ -485,7 +485,13 @@ public class BoardGamesStore extends BGGInfo {
 				}
 			} else if (RESPONSE_TAG_IMAGESET.equals(name)) {
 				if (parser.next() == XmlPullParser.TEXT) {
-					final String imgURL = parser.getText();
+					String imgURL = parser.getText();
+
+					// If the image url does not include the protocol then we need to add it.
+					if (imgURL.matches("^//.*$")) {
+						imgURL = "http:" + imgURL;
+					}
+
 					boardgame.mImages.put(ImageSize.TINY, imgURL);
 					boardgame.mImages.put(ImageSize.MEDIUM, imgURL);
 					boardgame.mImages.put(ImageSize.LARGE, imgURL);
