@@ -26,11 +26,11 @@ You can loan items to friends in your contact list, or rate items for your perso
 Although the code is open-source, there are a few differences between it and the version distributed through Google Play:
 
 * All item lookups are not supported.  
-In order to perform a lookup for item information, Shelves pings a server (that I own) that does most of the "hard work." The server then returns the results in an XML format for Shelves to parse and represent. I can't provide access to this server publically, since it'll make my costs skyrocket. However, you can run your own server, and implement your own lookups.  
+In order to perform a lookup for item information, Shelves pings a server (that I own) that does most of the "hard work." The server then returns the results in an XML format for Shelves to parse and represent. I can't provide access to this server publicaly, since it'll make my costs skyrocket. However, you can run your own server, and implement your own lookups.
 This doesn't affect board games or comic books.
 
-* License checks are not enforced in the open source version.  
-This code automatically assumes that the app is not paid for. However, you can easily set a flag to just enable all the features and remove ads. You'll need to find references to `LicenseCallback` and just have the result set to `true`. This is currently only used in two places: `TabSelector` and `UIUtilities`.
+* License checks are not enforced in the open source version. It'll simply always show the ads.
+This code automatically assumes that the app is not paid for. However, you can easily set a flag to just enable all the features and remove ads. You'll need to find references in `LicenseCheck` and just have the result set to `true`. License checking is currently only used in two places: `TabSelector` and `UIUtilities`.
 
 ## Dummy Data
 

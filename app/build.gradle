@@ -1,0 +1,43 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 'Google Inc.:Google APIs:16'
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.miadzin.shelves"
+        minSdkVersion 7
+        targetSdkVersion 17
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_5
+            targetCompatibility JavaVersion.VERSION_1_5
+        }
+
+        def envFile = new File('secrets.env').exists() ? new File('secrets.env') : new File('secrets_sample.env')
+
+        envFile.eachLine { line ->
+            def split_line = line.split("=")
+            buildConfigField "String", split_line[0], split_line[1]
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard/proguard.cfg'
+        }
+        debug {
+            debuggable true
+        }
+    }
+}
+
+dependencies {
+    compile files('libs/GoogleAdMobAdsSdk-6.1.0.jar')
+    compile files('libs/acra-4.2.3.jar')
+    compile files('libs/dropbox-android-sdk-1.5.1.jar')
+    compile files('libs/google-common.jar')
+    compile files('libs/googleloginclient-helper.jar')
+    compile files('libs/json_simple-1.1.jar')
+    compile files('libs/libGoogleAnalytics.jar')
+}
