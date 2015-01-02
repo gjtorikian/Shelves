@@ -17,7 +17,7 @@ android {
     buildTypes {
         release {
             minifyEnabled true
-            proguardFiles 'proguard.cfg'
+            proguardFiles getDefaultProguardFile('proguard-android.txt')
         }
     }
 }
