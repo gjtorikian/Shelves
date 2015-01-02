@@ -16,6 +16,7 @@ import android.view.View;
 import android.widget.TabHost;
 import android.widget.TabHost.OnTabChangeListener;
 
+import com.miadzin.shelves.BuildConfig;
 import com.miadzin.shelves.R;
 import com.miadzin.shelves.provider.InternalAdapter;
 import com.miadzin.shelves.util.ActivityHelper;
@@ -215,10 +216,11 @@ public class TabSelector extends TabActivity {
 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-		/*
-		 * final boolean valid = LicenseCallback.check(resultCode, data,
-		 * mDbHelper, this, getContentResolver()); setupView(valid);
-		 */
-		setupView(false);
+        if (BuildConfig.DEBUG) {
+            final boolean valid = LicenseCallback.check(resultCode, data, mDbHelper, this, getContentResolver());
+            setupView(valid);
+        }
+        else
+		    setupView(false);
 	}
 }
