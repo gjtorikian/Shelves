@@ -53,8 +53,6 @@ public class ShelvesApplication extends Application {
 
 	public static final Map<String, Uri> TYPES_TO_URI = new HashMap<String, Uri>();
 
-	// public static boolean DEBUG_MODE = false;
-
 	private AuthManager auth;
 	private final HashMap<String, AuthManager> authMap = new HashMap<String, AuthManager>();
 	private final AccountChooser accountChooser = new AccountChooser();

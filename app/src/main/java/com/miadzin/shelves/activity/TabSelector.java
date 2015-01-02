@@ -21,6 +21,7 @@ import com.miadzin.shelves.R;
 import com.miadzin.shelves.provider.InternalAdapter;
 import com.miadzin.shelves.util.ActivityHelper;
 import com.miadzin.shelves.util.UIUtilities;
+import com.miadzin.shelves.licensing.LicenseCheck;
 
 public class TabSelector extends TabActivity {
 	static ActivityHelper mActivityHelper;
@@ -37,28 +38,7 @@ public class TabSelector extends TabActivity {
 		setContentView(R.layout.main_tab_screen);
 
 		mDbHelper = new InternalAdapter(this);
-		final PackageManager packageManager = this.getPackageManager();
-		PackageInfo info = null;
-		try {
-			info = packageManager.getPackageInfo(
-					"com.miadzin.shelves.unlocker", 0);
-		} catch (NameNotFoundException e) {
-			e.printStackTrace();
-		}
-
-		// GJT: Shelves.unlocker is installed...
-		if (info != null) {
-			Log.i(LOG_TAG, "Checking validity of unlocker...");
-
-			final Intent checkUnlockerIntent = new Intent(
-					"com.miadzin.shelves.unlocker.SET");
-
-			startActivityForResult(checkUnlockerIntent, 34);
-		} else {
-			Log.i(LOG_TAG, "Unlocker not installed...");
-
-			setupView(false);
-		}
+        setupView(LicenseCheck.check(getBaseContext()));
 	}
 
 	private void setupView(boolean purchased) {
@@ -216,11 +196,6 @@ public class TabSelector extends TabActivity {
 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (BuildConfig.DEBUG) {
-            final boolean valid = LicenseCallback.check(resultCode, data, mDbHelper, this, getContentResolver());
-            setupView(valid);
-        }
-        else
-		    setupView(false);
+        setupView(LicenseCheck.check(getBaseContext()));
 	}
 }

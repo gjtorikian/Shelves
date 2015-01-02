@@ -33,7 +33,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.miadzin.shelves.BuildConfig;
+import com.miadzin.shelves.licensing.LicenseCheck;
 import com.miadzin.shelves.R;
 
 public class UIUtilities {
@@ -163,9 +163,6 @@ public class UIUtilities {
 	}
 
 	public static boolean isPaid(ContentResolver cr, Context context) {
-        if (BuildConfig.DEBUG)
-		    LicenseCallback.isPaid(cr, context);
-        else
-		    return true;
+        return LicenseCheck.check(context);
 	}
 }
