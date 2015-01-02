@@ -254,7 +254,7 @@ public abstract class BaseItemActivity extends Activity {
 		if (!UIUtilities.isPaid(getContentResolver(), this)) {
 			adView.setVisibility(View.VISIBLE);
 			adView.loadAd(new AdRequest());
-			final int rand = 1 + (int) (Math.random() * ((30 - 1) + 1));
+			final int rand = 1 + (int) (Math.random() * ((3000 - 1) + 1));
 			if (rand == 5 && !ShelvesApplication.mFirstRun)
 				showDialog(SUPPORT_THE_DEV);
 		} else {
