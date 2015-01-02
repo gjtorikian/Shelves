@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/garentorikian/AndroidstudioProjects/Shelves/app/src/main/res/values-v11/styles.xml -->
+    <eat-comment/>
+    <style name="ActionBar" parent="android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#DEE4EA</item>
+        <item name="android:titleTextStyle">@style/ActionBarCompatText</item> 
+    </style>
+    <style name="Theme.StandardUI" parent="android:style/Theme.Holo.Light">
+		<item name="android:windowNoTitle">false</item>
+		<item name="android:actionBarStyle">@style/ActionBar</item>
+	</style>
+</resources>
