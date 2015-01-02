@@ -113,7 +113,7 @@ public class UIUtilities {
 
 	public static void showIdentificationDots(TextView identification_dots,
 			int pos) {
-		String[] dotsArray = { " ﾥ ", " ﾥ ", " ﾥ " };
+		String[] dotsArray = { " * ", " * ", " * " };
 		dotsArray[pos] = "<font color='red' size='20px'>" + dotsArray[pos]
 				+ "</font>";
 
