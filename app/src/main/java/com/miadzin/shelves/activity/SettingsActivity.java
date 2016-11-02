@@ -13,7 +13,7 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- * 
+ *
  * GJT: Modifications in this file include all the stuff necessary for storing
  * the sort preferences in KEY_STORE
  */
@@ -382,52 +382,52 @@ public class SettingsActivity extends PreferenceActivity implements
 		 * findPreference(Preferences.DOWNLOAD_COVER_APPAREL);
 		 * downloadCoverApparelPref .setOnPreferenceClickListener(new
 		 * DownloadCoverClickListener());
-		 * 
+		 *
 		 * PreferenceScreen downloadCoverBoardGamesPref = (PreferenceScreen)
 		 * findPreference(Preferences.DOWNLOAD_COVER_BOARDGAMES);
 		 * downloadCoverBoardGamesPref .setOnPreferenceClickListener(new
 		 * DownloadCoverClickListener());
-		 * 
+		 *
 		 * PreferenceScreen downloadCoverBooksPref = (PreferenceScreen)
 		 * findPreference(Preferences.DOWNLOAD_COVER_BOOKS);
 		 * downloadCoverBooksPref .setOnPreferenceClickListener(new
 		 * DownloadCoverClickListener());
-		 * 
+		 *
 		 * PreferenceScreen downloadCoverComicsPref = (PreferenceScreen)
 		 * findPreference(Preferences.DOWNLOAD_COVER_COMICS);
 		 * downloadCoverComicsPref .setOnPreferenceClickListener(new
 		 * DownloadCoverClickListener());
-		 * 
+		 *
 		 * PreferenceScreen downloadCoverGadgetsPref = (PreferenceScreen)
 		 * findPreference(Preferences.DOWNLOAD_COVER_GADGETS);
 		 * downloadCoverGadgetsPref .setOnPreferenceClickListener(new
 		 * DownloadCoverClickListener());
-		 * 
+		 *
 		 * PreferenceScreen downloadCoverMoviesPref = (PreferenceScreen)
 		 * findPreference(Preferences.DOWNLOAD_COVER_MOVIES);
 		 * downloadCoverMoviesPref .setOnPreferenceClickListener(new
 		 * DownloadCoverClickListener());
-		 * 
+		 *
 		 * PreferenceScreen downloadCoverMusicPref = (PreferenceScreen)
 		 * findPreference(Preferences.DOWNLOAD_COVER_MUSIC);
 		 * downloadCoverMusicPref .setOnPreferenceClickListener(new
 		 * DownloadCoverClickListener());
-		 * 
+		 *
 		 * PreferenceScreen downloadCoverSoftwarePref = (PreferenceScreen)
 		 * findPreference(Preferences.DOWNLOAD_COVER_SOFTWARE);
 		 * downloadCoverSoftwarePref .setOnPreferenceClickListener(new
 		 * DownloadCoverClickListener());
-		 * 
+		 *
 		 * PreferenceScreen downloadCoverToolsPref = (PreferenceScreen)
 		 * findPreference(Preferences.DOWNLOAD_COVER_TOOLS);
 		 * downloadCoverToolsPref .setOnPreferenceClickListener(new
 		 * DownloadCoverClickListener());
-		 * 
+		 *
 		 * PreferenceScreen downloadCoverToysPref = (PreferenceScreen)
 		 * findPreference(Preferences.DOWNLOAD_COVER_TOYS);
 		 * downloadCoverToysPref .setOnPreferenceClickListener(new
 		 * DownloadCoverClickListener());
-		 * 
+		 *
 		 * PreferenceScreen downloadCoverVideoGamesPref = (PreferenceScreen)
 		 * findPreference(Preferences.DOWNLOAD_COVER_VIDEOGAMES);
 		 * downloadCoverVideoGamesPref .setOnPreferenceClickListener(new
@@ -536,8 +536,8 @@ public class SettingsActivity extends PreferenceActivity implements
 	}
 
 	private void setDatabasePreferenceEntries(ListPreference preference) {
-		final CharSequence[] values = new CharSequence[8];
-		final CharSequence[] labels = new CharSequence[8];
+		final CharSequence[] values = new CharSequence[9];
+		final CharSequence[] labels = new CharSequence[9];
 
 		values[0] = ServerInfo.API_REST_HOST_US;
 		labels[0] = getString(R.string.preferences_database_us);
@@ -555,6 +555,8 @@ public class SettingsActivity extends PreferenceActivity implements
 		labels[6] = getString(R.string.preferences_database_it);
 		values[7] = ServerInfo.API_REST_HOST_CN;
 		labels[7] = getString(R.string.preferences_database_cn);
+		values[8] = ServerInfo.API_REST_HOST_ES;
+		labels[8] = getString(R.string.preferences_database_es);
 
 		preference.setEntries(labels);
 		preference.setEntryValues(values);
@@ -592,6 +594,8 @@ public class SettingsActivity extends PreferenceActivity implements
 			orderFromXML = getString(R.string.preferences_database_it_value);
 		} else if (database.equals(ServerInfo.API_REST_HOST_CN)) {
 			orderFromXML = getString(R.string.preferences_database_cn_value);
+		} else if (database.equals(ServerInfo.API_REST_HOST_ES)) {
+			orderFromXML = getString(R.string.preferences_database_es_value);
 		}
 
 		preference.setSummary(getString(R.string.preferences_database_summary,
@@ -743,7 +747,7 @@ public class SettingsActivity extends PreferenceActivity implements
 	 * Ensures that the default calendar preference is pointing to
 	 * user-modifiable calendar that exists. If the calendar does not exist
 	 * anymore, the preference is reset to default value.
-	 * 
+	 *
 	 * @param context
 	 *            Context
 	 */
@@ -1312,7 +1316,7 @@ public class SettingsActivity extends PreferenceActivity implements
 	 * Just like showDialog, but will catch a BadTokenException that sometimes
 	 * (very rarely) gets thrown. This might happen if the user hits the "back"
 	 * button immediately after sending tracks to google.
-	 * 
+	 *
 	 * @param id
 	 *            the dialog id
 	 */

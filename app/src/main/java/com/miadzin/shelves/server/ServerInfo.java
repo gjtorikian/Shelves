@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2010 Garen J. Torikian
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
@@ -176,6 +176,7 @@ public class ServerInfo {
     public static final String API_REST_HOST_JP = BuildConfig.API_REST_HOST_JP; // YOU ARE SUPPOSED TO FILL THIS OUT!
     public static final String API_REST_HOST_IT = BuildConfig.API_REST_HOST_IT; // YOU ARE SUPPOSED TO FILL THIS OUT!
     public static final String API_REST_HOST_CN = BuildConfig.API_REST_HOST_CN; // YOU ARE SUPPOSED TO FILL THIS OUT!
+    public static final String API_REST_HOST_ES = BuildConfig.API_REST_HOST_ES; // YOU ARE SUPPOSED TO FILL THIS OUT!
 
     // YOU ARE SUPPOSED TO FILL THESE OUT!
 	private static final String[] API_KEYS = { BuildConfig.API_KEYS_ONE, BuildConfig.API_KEYS_TWO };
@@ -245,10 +246,10 @@ public class ServerInfo {
 	 * Builds an HTTP GET request for the specified API method. The returned
 	 * request contains the web service path, the query parameter for the API
 	 * KEY and the query parameter for the specified method.
-	 * 
+	 *
 	 * @param method
 	 *            The API method to invoke.
-	 * 
+	 *
 	 * @return A Uri.Builder containing the GET path, the API key and the method
 	 *         already encoded.
 	 */
@@ -310,10 +311,10 @@ public class ServerInfo {
 	 * Constructs the query used to search for an item. The query can be any
 	 * combination of keywords. The store is free to interpret the keywords in
 	 * any way.
-	 * 
+	 *
 	 * @param query
 	 *            A free form text query to search for item.
-	 * 
+	 *
 	 * @return The Uri to the list of item matching the query.
 	 */
 
@@ -333,10 +334,10 @@ public class ServerInfo {
 	 * Constructs the query used to find an item identified by its id. The
 	 * unique identifier should be either the EAN (ISBN-13) or ISBN (ISBN-10) of
 	 * the item to find.
-	 * 
+	 *
 	 * @param id
 	 *            The EAN or ISBN of the item to find.
-	 * 
+	 *
 	 * @return The Uri to the item details for this store.
 	 */
 
@@ -376,13 +377,13 @@ public class ServerInfo {
 	/**
 	 * Executes an HTTP request on a REST web service. If the response is ok,
 	 * the content is sent to the specified response handler.
-	 * 
+	 *
 	 * @param host
 	 * @param get
 	 *            The GET request to executed.
 	 * @param handler
 	 *            The handler which will parse the response.
-	 * 
+	 *
 	 * @throws java.io.IOException
 	 */
 	protected void executeRequest(HttpHost host, HttpGet get,
@@ -427,13 +428,13 @@ public class ServerInfo {
 	 * must invoke parse
 	 * {@link ResponseParser#parseResponse(org.xmlpull.v1.XmlPullParser)} if the
 	 * XML response is valid, or throw an exception if it is not.
-	 * 
+	 *
 	 * @param in
 	 *            The input stream containing the response sent by the web
 	 *            service.
 	 * @param responseParser
 	 *            The parser to use when the response is valid.
-	 * 
+	 *
 	 * @throws java.io.IOException
 	 */
 	public static void parseResponse(InputStream in,
@@ -519,10 +520,10 @@ public class ServerInfo {
 
 	/**
 	 * Finds the next item entry in the XML input stream.
-	 * 
+	 *
 	 * @param parser
 	 *            The XML parser to use to parse the item.
-	 * 
+	 *
 	 * @return True if an item was found, false otherwise.
 	 */
 	protected boolean findNextItem(XmlPullParser parser)
@@ -558,10 +559,10 @@ public class ServerInfo {
 		/**
 		 * Processes the responses sent by the HTTP server following a GET
 		 * request.
-		 * 
+		 *
 		 * @param in
 		 *            The stream containing the server's response.
-		 * 
+		 *
 		 * @throws java.io.IOException
 		 */
 		public void handleResponse(InputStream in) throws IOException;
@@ -575,10 +576,10 @@ public class ServerInfo {
 		/**
 		 * Processes the XML response sent by the web service after a successful
 		 * request.
-		 * 
+		 *
 		 * @param parser
 		 *            The parser containing the XML responses.
-		 * 
+		 *
 		 * @throws org.xmlpull.v1.XmlPullParserException
 		 * @throws java.io.IOException
 		 */

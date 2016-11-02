@@ -328,8 +328,9 @@
 	<string name="preferences_database_fr">Frankreich</string>
 	<string name="preferences_database_de">Deutschland</string>
 	<string name="preferences_database_jp">Japan</string>
-		<string name="preferences_database_it">Italien</string>
+	<string name="preferences_database_it">Italien</string>
 	<string name="preferences_database_cn">China</string>
+	<string name="preferences_database_es">Spanien</string>
 	<string name="preferences_database_us_value">USA</string>
 	<string name="preferences_database_ca_value">Kanada</string>
 	<string name="preferences_database_uk_value">Grossbritannien</string>
@@ -338,6 +339,7 @@
 	<string name="preferences_database_jp_value">Japan</string>
 	<string name="preferences_database_it_value">Italy</string>
 	<string name="preferences_database_cn_value">China</string>
+	<string name="preferences_database_es_value">Spanien</string>
 
 	<string name="preferences_sort_recently_added_desc_label">Vor kurzem hinzugefügt</string>
 	<string name="preferences_sort_author_asc_label">Nach Urheber, #-a-z</string>

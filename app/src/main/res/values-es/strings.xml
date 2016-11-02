@@ -273,7 +273,8 @@
     <string name="preferences_database_de">Alemania</string>
     <string name="preferences_database_jp">Japón</string>
     <string name="preferences_database_it">Italia</string>
-    <string name="preferences_database_cn">China </string>
+    <string name="preferences_database_cn">China</string>
+    <string name="preferences_database_es">España</string>
     <string name="preferences_database_us_value">Los Estados Unidos</string>
     <string name="preferences_database_ca_value">Canadá</string>
     <string name="preferences_database_uk_value">El Reino Unido</string>
@@ -282,6 +283,7 @@
     <string name="preferences_database_jp_value">Japón</string>
     <string name="preferences_database_it_value">Italia</string>
     <string name="preferences_database_cn_value">China</string>
+    <string name="preferences_database_es_value">España</string>
     <string name="preferences_sort_recently_added_desc_label">Añadidos recientemente</string>
     <string name="preferences_sort_author_asc_label">Por creador, #-a-z</string>
     <string name="preferences_sort_author_desc_label">Por creador, z-a-#</string>

@@ -357,6 +357,7 @@
 	<string name="preferences_database_jp">Japan</string>
 	<string name="preferences_database_it">Italy</string>
 	<string name="preferences_database_cn">China</string>
+	<string name="preferences_database_es">Spain</string>
 	<string name="preferences_database_us_value">the United States</string>
 	<string name="preferences_database_ca_value">Canada</string>
 	<string name="preferences_database_uk_value">the United Kingdom</string>
@@ -365,6 +366,7 @@
 	<string name="preferences_database_jp_value">Japan</string>
 	<string name="preferences_database_it_value">Italy</string>
 	<string name="preferences_database_cn_value">China</string>
+	<string name="preferences_database_es_value">Spain</string>
 
 	<string name="preferences_sort_recently_added_desc_label">Recently Added</string>
 	<string name="preferences_sort_author_asc_label">By Creator, #-a-z</string>

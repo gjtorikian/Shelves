@@ -561,7 +561,8 @@ public class MainGridActivity extends Activity {
 											ServerInfo.API_REST_HOST_DE,
 											ServerInfo.API_REST_HOST_JP,
 											ServerInfo.API_REST_HOST_IT,
-											ServerInfo.API_REST_HOST_CN };
+											ServerInfo.API_REST_HOST_CN,
+											ServerInfo.API_REST_HOST_ES };
 
 									SharedPreferences.Editor editor = pref
 											.edit();
