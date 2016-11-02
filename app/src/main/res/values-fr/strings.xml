@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- All good French text by Benoit Lathiere. Lousy text by Google Translate 
-	Licensed under the Apache License, Version 2.0 (the "License"); you may not 
-	use this file except in compliance with the License. You may obtain a copy 
-	of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required 
-	by applicable law or agreed to in writing, software distributed under the 
-	License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS 
-	OF ANY KIND, either express or implied. See the License for the specific 
+<!-- All good French text by Benoit Lathiere. Lousy text by Google Translate
+	Licensed under the Apache License, Version 2.0 (the "License"); you may not
+	use this file except in compliance with the License. You may obtain a copy
+	of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required
+	by applicable law or agreed to in writing, software distributed under the
+	License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS
+	OF ANY KIND, either express or implied. See the License for the specific
 	language governing permissions and limitations under the License. -->
 
 <resources>
@@ -122,9 +122,9 @@
 	<string name="success_item_deleted">%s supprimés</string>
 	<string name="success_refreshing_cover">Mise à jour de la couverture&#8230;</string>
 	<string name="success_item_found">Trouvé %1$d %2$s</string>
-	
+
 	<string name="take_new_photo">Capturer une nouvelle photo</string>
-	
+
 	<string name="menu_item_add_from_internet_label">Ajouter de la source en ligne</string>
 	<string name="menu_item_add_manually_label">Ajouter de nouveaux élément vide</string>
 	<string name="menu_item_scan_label">Scan</string>
@@ -153,7 +153,7 @@
 	<string name="context_menu_item_loan_return_label">Marquer comme retourné</string> <!-- GJT: Added this, for loaning -->
 	<string name="context_menu_item_loan_change_label">Change les infos de prêt</string> <!-- GJT: Added this, for loaning -->
 	<string name="context_menu_item_delete_label">Supprimer</string>
-	
+
 	<string name="adding_label">Ajout&#8230;</string>
 	<string name="import_label">Importation&#8230;</string>
 	<string name="export_label">Exportation&#8230;</string>
@@ -183,7 +183,7 @@
 	<string name="dialog_add_cancel">Ne pas ajouter</string>
 	<string name="context_menu_add_details">Voir les détails</string> <!-- GJT: Added this -->
 
-	<!-- GJT: Added this, for live folder. Can't change due to appearance in 
+	<!-- GJT: Added this, for live folder. Can't change due to appearance in
 		AndroidManifest -->
 	<string name="live_folder_apparel">Vêtements (Shelves)</string>
 	<string name="live_folder_boardgames">Jeux de société (Shelves)</string>
@@ -282,7 +282,7 @@
 
 	<string name="multiselect_type_title">Quel type de multi-sélection?
 	</string>
-	
+
 <string name="multiselect_verify">Voulez-vous ajouter ce objet à multi-sélection? Il
 		suffit de toucher le couvercle, au lieu de long en le pressant.
 	</string>
@@ -297,7 +297,7 @@
 	<string name="rate_set">Note fixés</string>
 
 	<string name="quantity_label">Quantité</string>
-	
+
 	<!-- GJT: Added these, for loaning -->
 	<string name="loan_item">Prêter un objet</string>
 	<string name="loan_item_to_button">Sélectionner un contact</string>
@@ -332,9 +332,9 @@
 	<string name="wishlist_status">WISHLIST</string>
 
 	<string name="preferences_category_items">Objets</string>
-	<!-- GJT: Deleted these, in favor of database selection <string name="preferences_bookstore">Book 
-		source</string> <string name="preferences_bookstore_summary">Your books will 
-		be imported from %s</string> <string name="preferences_bookstore_dialog_title">Choose 
+	<!-- GJT: Deleted these, in favor of database selection <string name="preferences_bookstore">Book
+		source</string> <string name="preferences_bookstore_summary">Your books will
+		be imported from %s</string> <string name="preferences_bookstore_dialog_title">Choose
 		a book source</string> -->
 
 	<!-- GJT: Added these, for database selection -->
@@ -408,8 +408,8 @@
 
 	<string name="preferences_number_of_sorts_title">Nombre de Trie</string>
 	<string name="sort_num_summary">Définissez le nombre de paramètres que vous voulez utiliser pour trier vos objets. En ce moment, ce n\'est %s.</string>
-	
-	
+
+
 	<string name="preferences_calendar">Calendrier</string>
 	<string name="preferences_calendar_summary">Le Calendrier Google qui gère les notifications de
 		prêts. En ce moment: %s</string>
@@ -417,12 +417,12 @@
 	<string name="preferences_calendar_default">default_calendar_id</string>
 	<string name="preferences_calendar_default_id">1</string>
 
-	<!-- GJT: Reorganized the below Data Categories for import, added export 
+	<!-- GJT: Reorganized the below Data Categories for import, added export
 		and Delete Everything capability -->
 	<string name="preferences_category_data">Gestion des données</string>
 
 	<string name="preferences_category_import_and_export">Importation et Export</string>
-	
+
 	<string name="preferences_import_override_title">Préférer l\'importation des données</string>
 	<string name="preferences_import_override_summary">Si activé, les informations sur les objets
 		(marqueurs, notes, etc.) sont copiées des données importées</string>
@@ -703,7 +703,7 @@
 	<string name="preference_bring_from_dropbox_summary">Imports your collection from its Google Drive
 		spreadsheet.
 	</string>
-	
+
 	<string name="preferences_delete">Suppression des objets&#8230;</string>
 	<string name="preferences_delete_summary">Choisissez les collections à supprimer depuis
 		Shelves</string>
@@ -746,10 +746,6 @@
 	<string name="help_back_button">Retour</string>
 	<string name="help_done_button">Ok</string>
 
-	<!-- GJT: Added these, for ACRA -->
-	<string name="crash_toast_text">Quelque chose ne va pas avec Shelves! Votre
-		bibliothèque est sauve. Un rapport sur ce problème a été envoyé au
-		développeur.\n\nRedémarrage de Shelves&#8230;</string>
 	<string name="buy_from_market">Acheter depuis Google Play\n(puis redémarrez
 		votre téléphone pour enlever les pubs)</string>
 	<string name="support_the_dev">Désolé! Cette fonction est uniquement disponible
@@ -846,4 +842,3 @@
 		pour cet article. Pour plus d\'informations, consultez l\'aide.
 	</string>
 </resources>
-        

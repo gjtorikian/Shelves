@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2008 Romain Guy Copyright (C) 2010 Garen J. Torikian Licensed 
-	under the Apache License, Version 2.0 (the "License"); you may not use this 
-	file except in compliance with the License. You may obtain a copy of the 
-	License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by 
-	applicable law or agreed to in writing, software distributed under the License 
-	is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY 
-	KIND, either express or implied. See the License for the specific language 
+<!-- Copyright (C) 2008 Romain Guy Copyright (C) 2010 Garen J. Torikian Licensed
+	under the Apache License, Version 2.0 (the "License"); you may not use this
+	file except in compliance with the License. You may obtain a copy of the
+	License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by
+	applicable law or agreed to in writing, software distributed under the License
+	is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+	KIND, either express or implied. See the License for the specific language
 	governing permissions and limitations under the License. -->
 
 <resources>
@@ -124,7 +124,7 @@
 	<string name="success_refreshing_cover">Refreshing cover&#8230;</string>
 	<string name="success_item_found">Found %1$d %2$s</string>
 	<string name="take_new_photo">Take New Photo</string>
-	
+
 	<string name="menu_item_add_from_internet_label">Add from online source</string>
 	<string name="menu_item_add_manually_label">Add new blank item</string>
 	<string name="menu_item_scan_label">Scan</string>
@@ -153,7 +153,7 @@
 	<string name="context_menu_item_loan_return_label">Mark as Returned</string> <!-- GJT: Added this, for loaning -->
 	<string name="context_menu_item_loan_change_label">Change Loan Information</string> <!-- GJT: Added this, for loaning -->
 	<string name="context_menu_item_delete_label">Delete</string>
-	
+
 	<string name="adding_label">Adding&#8230;</string>
 	<string name="import_label">Importing&#8230;</string>
 	<string name="export_label">Exporting&#8230;</string>
@@ -183,7 +183,7 @@
 	<string name="dialog_add_cancel">Don\'t add</string>
 	<string name="context_menu_add_details">View Details</string> <!-- GJT: Added this -->
 
-	<!-- GJT: Added this, for live folder. Can't change due to appearance in 
+	<!-- GJT: Added this, for live folder. Can't change due to appearance in
 		AndroidManifest -->
 	<string name="live_folder_apparel">Apparel (Shelves)</string>
 	<string name="live_folder_boardgames">Board Games (Shelves)</string>
@@ -298,7 +298,7 @@
 	<string name="rate_set">Rating set</string>
 
 	<string name="quantity_label">Quantity</string>
-	
+
 	<!-- GJT: Added these, for loaning -->
 	<string name="loan_item">Loan Item</string>
 	<string name="loan_item_to_button">Select Contact</string>
@@ -333,9 +333,9 @@
 	<string name="wishlist_status">WISHLIST</string>
 
 	<string name="preferences_category_items">Items</string>
-	<!-- GJT: Deleted these, in favor of database selection <string name="preferences_bookstore">Book 
-		source</string> <string name="preferences_bookstore_summary">Your books will 
-		be imported from %s</string> <string name="preferences_bookstore_dialog_title">Choose 
+	<!-- GJT: Deleted these, in favor of database selection <string name="preferences_bookstore">Book
+		source</string> <string name="preferences_bookstore_summary">Your books will
+		be imported from %s</string> <string name="preferences_bookstore_dialog_title">Choose
 		a book source</string> -->
 
 	<!-- GJT: Added these, for database selection -->
@@ -408,7 +408,7 @@
 
 	<string name="preferences_number_of_sorts_title">Number of Sorts</string>
 	<string name="sort_num_summary">Define how many parameters you want to use to sort your items. Currently, this is %s.</string>
-	
+
 	<string name="preferences_calendar">Calendar</string>
 	<string name="preferences_calendar_summary">The Google Calendar that manages loan
 		notifications. Currently: %s
@@ -418,8 +418,8 @@
 	<string name="preferences_calendar_default_id">1</string>
 
 	<string name="preferences_category_data">Data Management</string>
-	
-	<!-- GJT: Reorganized the below Data Categories for import, added export 
+
+	<!-- GJT: Reorganized the below Data Categories for import, added export
 		and Delete Everything capability -->
 	<string name="preferences_category_import_and_export">Import and Export</string>
 
@@ -755,8 +755,8 @@
 	<string name="preference_bring_from_dropbox_summary">Imports your collection from its Google Docs
 		spreadsheet.
 	</string> -->
-	
-	<!-- <string name="preferences_download_cover">Re-download Covers&#8230;</string> 
+
+	<!-- <string name="preferences_download_cover">Re-download Covers&#8230;</string>
 	<string name="preferences_download_cover_summary">Refresh all the covers in a Shelves collection.</string>
 
 	<string name="preferences_download_cover_apparel">Re-download Apparel Covers</string>
@@ -780,11 +780,11 @@
 	<string name="preferences_download_cover_toys">Re-download Toys Covers</string>
 	<string name="preferences_download_cover_toys_summary">Re-download all your Shelves toys covers</string>
 	<string name="preferences_download_cover_videogames">Re-download Video Games Covers</string>
-	<string name="preferences_download_cover_videogames_summary">Re-download all your Shelves video games covers</string> 
-	
+	<string name="preferences_download_cover_videogames_summary">Re-download all your Shelves video games covers</string>
+
 	<string name="preferences_download_cover_everything_progress_text">Downloading&#8230;</string>
 	<string name="preferences_download_cover_everything_success">Covers downloaded</string>-->
-	
+
 	<string name="preferences_delete">Delete Items&#8230;</string>
 	<string name="preferences_delete_summary">Choose collections to delete from Shelves</string>
 
@@ -825,12 +825,6 @@
 	<!-- GJT: Added these, for help navigation -->
 	<string name="help_back_button">Back</string>
 	<string name="help_done_button">Done</string>
-
-	<!-- GJT: Added these, for ACRA -->
-	<string name="crash_toast_text">Something\'s wrong with Shelves! Your library is
-		still safe. A report about this problem has been sent to the
-		developer.\n\nRestarting Shelves&#8230;
-	</string>
 
 	<string name="buy_from_market">Buy from Google Play\n(then, restart your phone
 		to remove ads)
@@ -942,4 +936,3 @@
 		has come to this.
 	</string>
 </resources>
-        

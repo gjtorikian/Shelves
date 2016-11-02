@@ -34,7 +34,6 @@ android {
 
 dependencies {
     compile 'com.google.firebase:firebase-ads:9.8.0'
-    compile files('libs/acra-4.2.3.jar')
     compile files('libs/dropbox-android-sdk-1.5.1.jar')
     compile files('libs/google-common.jar')
     compile files('libs/googleloginclient-helper.jar')

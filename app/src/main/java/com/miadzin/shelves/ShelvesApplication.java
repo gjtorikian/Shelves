@@ -20,7 +20,6 @@ package com.miadzin.shelves;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.acra.ACRA;
 import com.google.android.gms.ads.MobileAds;
 
 import android.app.Application;
@@ -45,8 +44,6 @@ import com.miadzin.shelves.util.auth.AccountChooser;
 import com.miadzin.shelves.util.auth.AuthManager;
 import com.miadzin.shelves.util.backup.BackupManagerWrapper;
 
-//@ReportsCrashes(formKey = "", mode = ReportingInteractionMode.TOAST, resToastText = R.string.crash_toast_text)
-// GJT: Replaced extends Application with ACRA
 public class ShelvesApplication extends Application {
 	private final String LOG_TAG = "ShelvesApplication";
 
@@ -70,8 +67,6 @@ public class ShelvesApplication extends Application {
 
 	@Override
 	public void onCreate() {
-		// The following line triggers the initialization of ACRA
-		ACRA.init(this);
 		super.onCreate();
 
 		CookieStore.initialize(this);
