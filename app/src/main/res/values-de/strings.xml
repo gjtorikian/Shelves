@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- All good German text by Walter Helbig, Michael Scholze, and Fabian Goiny. Lousy text 
-	by Google Translate Licensed under the Apache License, Version 2.0 (the "License"); 
-	you may not use this file except in compliance with the License. You may 
-	obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 
-	Unless required by applicable law or agreed to in writing, software distributed 
-	under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES 
-	OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
+<!-- All good German text by Walter Helbig, Michael Scholze, and Fabian Goiny. Lousy text
+	by Google Translate Licensed under the Apache License, Version 2.0 (the "License");
+	you may not use this file except in compliance with the License. You may
+	obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0
+	Unless required by applicable law or agreed to in writing, software distributed
+	under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
+	OR CONDITIONS OF ANY KIND, either express or implied. See the License for
 	the specific language governing permissions and limitations under the License. -->
 
 <resources>
@@ -22,7 +22,7 @@
 	<string name="main_grid_insult">Sie haben etwas Schlimmes getan. Wie soll Shelves
 		nun weiter laufen?</string>
 	<string name="main_grid_ok_button">Uhh&#8230;</string>
-	
+
 	<string name="apparel_label">Kleidung</string>
 	<string name="apparel_label_big">Kleidung</string>
 
@@ -30,7 +30,7 @@
 	<string name="boardgame_label_plural_small">Brettspiele</string>
 	<string name="boardgame_label_single_big">Brettspiel</string>
 	<string name="boardgame_label_plural_big">Brettspiele</string>
-	
+
 	<string name="book_label">Buch</string>
 	<string name="book_label_plural_small">Bücher</string>
 	<string name="book_label_single_big">Buch</string>
@@ -93,7 +93,7 @@
 		dass Ihr Internet funktioniert, oder versuchen Sie es später erneut.
 	</string>
 	<string name="error_no_barcode">Fehlender Barcode</string>
-	
+
 	<string name="import_results">Die Ergebnisse des Imports</string>
 	<string name="import_result_description">Einige Artikel wurden nicht hinzugefügt, da die
 		Barcode-Informationen nicht online verfügbar sind. Versuchen Sie, die Elemente manuell hinzufügen.\nDiese Ergebnisse werden in einer Datei namens %s. Sie sind in dem &#8222;shelves&#8221;)-Ordner der SD-Karte gespeichert.</string>
@@ -114,7 +114,7 @@
 	<string name="success_refreshing_cover">Erneuere Cover&#8230;</string>
 
 <string name="take_new_photo">Wählen Sie ein Foto</string>
-	
+
 	<string name="menu_item_add_from_internet_label">Von Onlinequelle hinzufügen</string>
 
 <string name="menu_item_add_manually_label">Füge neues leeres Element hinzu</string>
@@ -125,7 +125,7 @@
 	<string name="menu_item_check_online_label">Scannen für Online-Suche</string>
 	<string name="menu_item_search_label">Suche</string>
 	<string name="menu_item_sort_label">Sortieren</string>
-	<string name="menu_item_multiselect_label">Multi-Select</string> 
+	<string name="menu_item_multiselect_label">Multi-Select</string>
 	<string name="menu_item_filter_label">Filtern</string>
 	<string name="menu_item_settings_label">Einstellungen</string>
 	<string name="menu_item_help_label">Hilfe </string>
@@ -144,7 +144,7 @@
 	<string name="context_menu_item_loan_return_label">Als zurückgegeben markieren</string>
 	<string name="context_menu_item_loan_change_label">Verleihstatus ändern</string>
 	<string name="context_menu_item_delete_label">Löschen</string>
-	
+
 	<string name="adding_label">Hinzufügen&#8230;</string>
 	<string name="import_label">Importiere&#8230;</string>
 	<string name="export_label">Exportiere&#8230;</string>
@@ -213,7 +213,7 @@
 	<string name="item_details_max_players">Maximale Spieler</string>
 	<string name="item_details_age">Mindestalter</string>
 	<string name="item_details_playing_time">Spieldauer (in Minuten)</string>
-	
+
 	<string name="edit_title_label">Titel</string>
 	<string name="edit_cover_label">Cover</string>
 	<string name="edit_cover_remove_label">Cover entfernen?</string>
@@ -280,7 +280,7 @@
 	<string name="rate_set">Rating gesetzt</string>
 
 	<string name="quantity_label">Menge</string>
-	
+
 	<!-- GJT: Added these, for loaning -->
 	<string name="loan_item">Artikel verleihen</string>
 	<string name="loan_item_to_button">Kontakt auswählen</string>
@@ -338,7 +338,7 @@
 	<string name="preferences_database_jp_value">Japan</string>
 	<string name="preferences_database_it_value">Italy</string>
 	<string name="preferences_database_cn_value">China</string>
-	
+
 	<string name="preferences_sort_recently_added_desc_label">Vor kurzem hinzugefügt</string>
 	<string name="preferences_sort_author_asc_label">Nach Urheber, #-a-z</string>
 	<string name="preferences_sort_author_desc_label">Nach Urheber, z-a-#</string>
@@ -378,10 +378,10 @@
 	<string name="preferences_sort_playing_time_desc_label">Nach Spieldauer, absteigend</string>
 	<string name="preferences_sort_issue_asc_label">Nach Nummer, aufsteigend</string>
 	<string name="preferences_sort_issue_desc_label">Nach Nummer, absteigend</string>
-	
+
 	<string name="preferences_number_of_sorts_title">Anzahl der Sortierungen</string>
 	<string name="sort_num_summary">Definieren Sie, wie viele Parameter Sie verwenden, um Ihre Artikel sortieren möchten. Derzeit ist dies %s.</string>
-	
+
 	<string name="preferences_calendar">Kalender</string>
 	<string name="preferences_calendar_summary">Google Kalender der den Verleihstatus erfasst. Gegenwärtig: %s
 	</string>
@@ -392,7 +392,7 @@
 	<string name="preferences_category_data">Datenverwaltung</string>
 
 	<string name="preferences_category_import_and_export">Import und Export</string>
-	
+
 	<string name="preferences_import_override_title">Bevorzuge importierte Daten</string>
 	<string name="preferences_import_override_summary">Wenn aktiviert, werden Daten aus den importierten Daten übernommen.
 	</string>
@@ -431,7 +431,7 @@
 		BGG_Brettspielen.csv</string>
 <string name="preferences_import_shelves_boardgames_summary">Importiere Brettspiele aus Shelves_to_Shelves_Brettspielen.txt
 		Datei</string>
-		
+
 	<string name="preferences_import_bulk_book_summary">Bei einem vorherigen Import wurden Bücher gefunden,
 		jedoch nicht hinzugefügt.</string>
 	<string name="preferences_import_bulk_book">Bücher Multi-Scan</string>
@@ -455,7 +455,7 @@
 	</string>
 
 <string name="preferences_import_shelves_comics_summary">Importiere Comics aus Shelves_to_Shelves_Comics.txt</string>
-		
+
 	<string name="preferences_import_bulk_gadget_summary">Bei einem vorherigen Import wurden Gadgets
 		gefunden, jedoch nicht hinzugefügt.</string>
 	<string name="preferences_import_bulk_gadget">Gadgets Multi-Scan</string>
@@ -577,11 +577,11 @@
 	<string name="preferences_export_shelves_boardgames_summary">Exportiere Brettspiele als
 		Shelves_to_Shelves_Brettspielen.txt (TSV-Datei)
 	</string>
-	
+
 		<string name="preferences_export_shelves_comics_summary">Exportiere Comics als
 		Shelves_to_Shelves_Comics.txt (TSV-Datei)
 	</string>
-	
+
 	<string name="preferences_export_dl_books_summary">Exportiere Bücher als Shelves_to_DL_Bücher.txt
 	</string>
 	<string name="preferences_export_google_library_books">Google Bücher</string>
@@ -681,12 +681,12 @@
 	<string name="preference_send_to_dropbox">Sende an Dropbox</string>
 	<string name="preference_send_to_dropbox_summary">Sendet Ihre Sammlung zu Dropbox.
 	</string>
-	
+
 	<string name="preference_bring_from_dropbox">Restore from Dropbox</string>
 	<string name="preference_bring_from_dropbox_summary">Imports your collection from its Google Drive
 		spreadsheet.
 	</string>
-	
+
 	<string name="preferences_delete">Lösche Sammlungen&#8230;</string>
 	<string name="preferences_delete_summary">Bitte die zu löschenden Sammlungen auswählen.
 	</string>
@@ -726,10 +726,6 @@
 	<string name="help_back_button">Zurück</string>
 	<string name="help_done_button">Fertig</string>
 
-	<string name="crash_toast_text">Irgendetwas stimmt nicht mit Shelves! Ihre Daten
-		sind aber sicher. Ein Problembericht wurde an den Entwickler
-		geschickt.\n\nStarte Shelves neu&#8230;</string>
-
 	<string name="buy_from_market">Im Google Play kaufen\n(Handy neu starten um Werbung zu entfernen)</string>
 	<string name="support_the_dev">Pardon! Diese Funktion steht erst zur Verfügung, nachdem Sie den Shelves Unlocker aus dem Google Play gekauft haben.</string>
 
@@ -744,7 +740,7 @@
 
 	<string name="IMPORT_FILE_DL_BOOKS">Delicious_Library_Bücher.txt</string>
 	<string name="IMPORT_FILE_SHELFARI_BOOKS">My_Shelfari_Bücher.tsv</string>
-	
+
 	<string name="IMPORT_FILE_LIBRARY_THING_BOOKS">LibraryThing_Bücher.tsv</string>
 	<string name="IMPORT_FILE_MEDIAMAN_BOOKS">MediaMan_Bücher.csv</string>
 	<string name="IMPORT_FILE_SHELVES_BOOKS">Shelves_to_Shelves_Bücher.txt</string>
@@ -782,16 +778,16 @@
 	<string name="IMPORT_FILE_MEDIAMAN_VIDEOGAMES">MediaMan_Videospiele.csv</string>
 	<string name="IMPORT_FILE_SHELVES_VIDEOGAMES">Shelves_to_Shelves_Videospiele.txt</string>
 	<string name="IMPORT_FILE_LIST_OF_VIDEOGAMES">liste_der_videospiele.txt</string>
-	
+
 	<string name="EXPORT_FILE_DL_APPAREL">Shelves_to_DL_Bücher.txt</string>
 	<string name="EXPORT_FILE_SHELVES_APPAREL">Shelves_to_Shelves_Bücher.txt</string>
-	
+
 	<string name="EXPORT_FILE_SHELVES_BOARDGAMES">Shelves_to_Shelves_Brettspielen.txt</string>
-	
+
 	<string name="EXPORT_FILE_DL_BOOKS">Shelves_to_DL_Bücher.txt</string>
 	<string name="EXPORT_FILE_LIBRARY_THING_BOOKS">Shelves_to_LibraryThing_Bücher.csv</string>
 	<string name="EXPORT_FILE_MEDIAMAN_BOOKS">Shelves_to_MediaMan_Bücher.txt</string>
-	<string name="EXPORT_FILE_SHELFARI_BOOKS">Shelves_to_Shelfari_Bücher.txt</string>	
+	<string name="EXPORT_FILE_SHELFARI_BOOKS">Shelves_to_Shelfari_Bücher.txt</string>
 	<string name="EXPORT_FILE_SHELVES_BOOKS">Shelves_to_Shelves_Bücher.txt</string>
 
 	<string name="EXPORT_FILE_SHELVES_COMICS">Shelves_to_Shelves_Comics.txt</string>
@@ -819,6 +815,6 @@
 	<string name="EXPORT_FILE_DL_VIDEOGAMES">Shelves_to_DL_Videospiele.txt</string>
 	<string name="EXPORT_FILE_MEDIAMAN_VIDEOGAMES">Shelves_to_MediaMan_Videospiele.txt</string>
 	<string name="EXPORT_FILE_SHELVES_VIDEOGAMES">Shelves_to_Shelves_Videospiele.txt</string>
-	
+
 	<string name="not_supported_for_this_item">Pardon! Diese Funktion existiert nicht für diesen Artikel. Weitere Informationen finden Sie in der Hilfe.</string>
 </resources>
