@@ -70,8 +70,8 @@ import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
-import com.google.ads.AdRequest;
-import com.google.ads.AdView;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.miadzin.shelves.R;
 import com.miadzin.shelves.ShelvesApplication;
 import com.miadzin.shelves.activity.HelpActivity;
@@ -250,15 +250,16 @@ public abstract class BaseItemActivity extends Activity {
 		mMultiItemType = mMultiSelectId = "";
 		mMultiSelect = false;
 
-		AdView adView = (AdView) findViewById(R.id.adview);
+		AdView mAdView = (AdView) findViewById(R.id.adview);
 		if (!UIUtilities.isPaid(getContentResolver(), this)) {
-			adView.setVisibility(View.VISIBLE);
-			adView.loadAd(new AdRequest());
+			mAdView.setVisibility(View.VISIBLE);
+			AdRequest adRequest = new AdRequest.Builder().build();
+			mAdView.loadAd(adRequest);
 			final int rand = 1 + (int) (Math.random() * ((3000 - 1) + 1));
 			if (rand == 5 && !ShelvesApplication.mFirstRun)
 				showDialog(SUPPORT_THE_DEV);
 		} else {
-			adView.setVisibility(View.GONE);
+			mAdView.setVisibility(View.GONE);
 		}
 
 		Object savedState[] = (Object[]) getLastNonConfigurationInstance();

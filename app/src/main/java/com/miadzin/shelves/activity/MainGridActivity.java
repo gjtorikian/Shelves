@@ -48,8 +48,8 @@ import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.ads.AdRequest;
-import com.google.ads.AdView;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.miadzin.shelves.R;
 import com.miadzin.shelves.ShelvesApplication;
 import com.miadzin.shelves.activity.apparel.ApparelActivity;
@@ -410,11 +410,12 @@ public class MainGridActivity extends Activity {
 		mGridView.setAdapter(ia);
 		mGridView.setOnItemClickListener(new CollectionSelector());
 
-		AdView adView = (AdView) findViewById(R.id.adview);
+		AdView mAdView = (AdView) findViewById(R.id.adview);
 
 		if (!bought) {
-			adView.setVisibility(View.VISIBLE);
-			adView.loadAd(new AdRequest());
+			mAdView.setVisibility(View.VISIBLE);
+			AdRequest adRequest = new AdRequest.Builder().build();
+			mAdView.loadAd(adRequest);
 
 			Button buyFromMarket = (Button) findViewById(R.id.launch_market);
 
@@ -434,7 +435,7 @@ public class MainGridActivity extends Activity {
 				}
 			});
 		} else {
-			adView.setVisibility(View.GONE);
+			mAdView.setVisibility(View.GONE);
 		}
 
 		if (itemCounts.size() == 0) {

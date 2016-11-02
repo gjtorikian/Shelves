@@ -30,10 +30,10 @@
 		android:layout_marginLeft="12dip">
 		<TextView android:id="@+id/row_label"
 			android:layout_width="fill_parent"
-			android:layout_height="fill_parent"
+			android:layout_height="0dip" 
 			android:layout_gravity="center"
 			android:gravity="left|center_vertical"
 			android:textSize="14sp"
-			android:textStyle="bold" />
+			android:textStyle="bold"/>
 	</LinearLayout>
 </LinearLayout>
