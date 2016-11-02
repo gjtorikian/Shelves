@@ -7,8 +7,8 @@
 	OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
 	the specific language governing permissions and limitations under the License. -->
 
-<com.google.ads.AdView xmlns:android="http://schemas.android.com/apk/res/android"
-	xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+<com.google.android.gms.ads.AdView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:ads="http://schemas.android.com/apk/res-auto"
 	android:id="@+id/adview" android:layout_width="wrap_content"
-	android:layout_height="wrap_content" ads:adUnitId="@string/ad_id"
+	android:layout_height="wrap_content" ads:adUnitId="@string/banner_ad_unit_id"
 	ads:adSize="IAB_LEADERBOARD" android:visibility="gone" android:layout_gravity="center" />

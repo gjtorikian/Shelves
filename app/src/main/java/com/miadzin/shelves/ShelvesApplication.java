@@ -21,6 +21,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import org.acra.ACRA;
+import com.google.android.gms.ads.MobileAds;
 
 import android.app.Application;
 import android.content.Context;
@@ -74,6 +75,8 @@ public class ShelvesApplication extends Application {
 		super.onCreate();
 
 		CookieStore.initialize(this);
+
+		MobileAds.initialize(getApplicationContext(), "ca-app-pub-6838254586967039~4163145735");
 
 		TYPES_TO_URI.put(getContext().getString(R.string.apparel_label),
 				ApparelStore.Apparel.CONTENT_URI);

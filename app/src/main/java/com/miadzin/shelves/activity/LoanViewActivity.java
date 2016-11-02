@@ -28,8 +28,8 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.google.ads.AdRequest;
-import com.google.ads.AdView;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.miadzin.shelves.R;
 import com.miadzin.shelves.ShelvesApplication;
 import com.miadzin.shelves.activity.apparel.ApparelDetailsActivity;
@@ -113,12 +113,13 @@ public class LoanViewActivity extends ListActivity {
 	}
 
 	void setupViews() {
-		AdView adView = (AdView) findViewById(R.id.adview);
+		AdView mAdView = (AdView) findViewById(R.id.adview);
 		if (!UIUtilities.isPaid(getContentResolver(), this)) {
-			adView.setVisibility(View.VISIBLE);
-			adView.loadAd(new AdRequest());
+			mAdView.setVisibility(View.VISIBLE);
+			AdRequest adRequest = new AdRequest.Builder().build();
+			mAdView.loadAd(adRequest);
 		} else {
-			adView.setVisibility(View.GONE);
+			mAdView.setVisibility(View.GONE);
 		}
 		new retrieveLoansTask().execute();
 	}

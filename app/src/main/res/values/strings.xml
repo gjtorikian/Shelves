@@ -12,6 +12,7 @@
 	<string name="application_name">Shelves</string>
 	<string name="version">Version</string>
 	<string name="ad_id" translatable="false">a14d7974ddb4707</string>
+	<string name="banner_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/6300978111</string>
 
 	<string name="tab_item_selection">Collection</string>
 	<string name="tab_loaned_items">Loaned Items</string>

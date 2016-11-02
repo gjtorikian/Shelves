@@ -30,8 +30,8 @@ import android.view.animation.AnimationUtils;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
-import com.google.ads.AdRequest;
-import com.google.ads.AdView;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 import com.miadzin.shelves.R;
 import com.miadzin.shelves.util.ActivityHelper;
 import com.miadzin.shelves.util.AnalyticsUtils;
@@ -76,12 +76,13 @@ public abstract class AddBaseItemActivity extends Activity implements
 
 		setContentView(R.layout.screen_add_search);
 
-		AdView adView = (AdView) findViewById(R.id.adview);
+		AdView mAdView = (AdView) findViewById(R.id.adview);
 		if (!UIUtilities.isPaid(getContentResolver(), this)) {
-			adView.setVisibility(View.VISIBLE);
-			adView.loadAd(new AdRequest());
+			mAdView.setVisibility(View.VISIBLE);
+			AdRequest adRequest = new AdRequest.Builder().build();
+			mAdView.loadAd(adRequest);
 		} else {
-			adView.setVisibility(View.GONE);
+			mAdView.setVisibility(View.GONE);
 		}
 
 		final SharedPreferences pref = getBaseContext().getSharedPreferences(
