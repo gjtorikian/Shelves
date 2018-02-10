@@ -1,8 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 'Google Inc.:Google APIs:16'
-    buildToolsVersion '21.1.2'
+    compileSdkVersion 19
+    buildToolsVersion '26.0.2'
 
     defaultConfig {
         applicationId "com.miadzin.shelves"
@@ -41,4 +41,4 @@ dependencies {
     compile files('libs/libGoogleAnalytics.jar')
 }
 
-apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.google.gms.google-services'

@@ -62,7 +62,7 @@ public class ShelvesBackupAgent extends BackupAgentHelper {
 		// GJT: get backup agent helper for shared preferences and add it to the
 		// backup agent
 		SharedPreferencesBackupHelper preferencesBackupHelper = new SharedPreferencesBackupHelper(
-				this.getApplicationContext(), new String[] { Preferences.NAME });
+				this.getApplicationContext(), Preferences.NAME);
 		addHelper(PREFS_BACKUP_KEY, preferencesBackupHelper);
 
 		// GJT: get backup agent helper for all databases and add it to the

@@ -50,7 +50,7 @@ public class AccountChooser {
 		 * @param account
 		 *            The selected account or null if none could be found
 		 */
-		public void onAccountSelected(Account account);
+        void onAccountSelected(Account account);
 	}
 
 	/**

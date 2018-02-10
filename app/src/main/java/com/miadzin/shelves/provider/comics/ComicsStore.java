@@ -694,7 +694,7 @@ public class ComicsStore extends CVInfo {
 	 * Interface used to load images with an expiring date. The expiring date is
 	 * handled by the image cache to check for updated images from time to time.
 	 */
-	public static interface ImageLoader {
+	public interface ImageLoader {
 		/**
 		 * Load the specified as a Bitmap and associates an expiring date to it.
 		 * 
@@ -703,7 +703,7 @@ public class ComicsStore extends CVInfo {
 		 * 
 		 * @return The Bitmap decoded from the URL and an expiration date.
 		 */
-		public ImageUtilities.ExpiringBitmap load(String url);
+        ImageUtilities.ExpiringBitmap load(String url);
 	}
 
 	/**
@@ -711,7 +711,7 @@ public class ComicsStore extends CVInfo {
 	 * {@link com.miadzin.shelves.provider.comics.ComicsStore#searchComics(String, com.miadzin.shelves.provider.comics.ComicsStore.ComicSearchListener)}
 	 * .
 	 */
-	public static interface ComicSearchListener {
+	public interface ComicSearchListener {
 		/**
 		 * Invoked whenever a comic was found by the search operation.
 		 * 

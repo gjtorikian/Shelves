@@ -190,9 +190,8 @@ public class BGGInfo {
 
 		} catch (XmlPullParserException e) {
 			final IOException ioe = new IOException(
-					"Could not parse the response");
-			ioe.initCause(e);
-			throw ioe;
+					"Could not parse the response", e);
+            throw ioe;
 		}
 	}
 
@@ -235,7 +234,7 @@ public class BGGInfo {
 	 * . The handler is invoked when a response is sent by the server. The
 	 * response is made available as an input stream.
 	 */
-	public static interface ResponseHandler {
+	public interface ResponseHandler {
 		/**
 		 * Processes the responses sent by the HTTP server following a GET
 		 * request.
@@ -245,14 +244,14 @@ public class BGGInfo {
 		 * 
 		 * @throws java.io.IOException
 		 */
-		public void handleResponse(InputStream in) throws IOException;
+        void handleResponse(InputStream in) throws IOException;
 	}
 
 	/**
 	 * Response parser. When the request returns a valid response, this parser
 	 * is invoked to process the XML response.
 	 */
-	public static interface ResponseParser {
+	public interface ResponseParser {
 		/**
 		 * Processes the XML response sent by the web service after a successful
 		 * request.
@@ -263,7 +262,7 @@ public class BGGInfo {
 		 * @throws org.xmlpull.v1.XmlPullParserException
 		 * @throws java.io.IOException
 		 */
-		public void parseResponse(XmlPullParser parser)
+        void parseResponse(XmlPullParser parser)
 				throws XmlPullParserException, IOException;
 	}
 }

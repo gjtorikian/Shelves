@@ -144,10 +144,8 @@ public class ShelvesApplication extends Application {
 				getContext().getString(R.string.videogame_label_plural_big),
 				VideoGamesStore.VideoGame.CONTENT_URI);
 
-		mBackupManagerAvailable = Build.VERSION.SDK_INT >= Build.VERSION_CODES.FROYO ? true
-				: false;
-		mCalendarAPIAvailable = Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH ? true
-				: false;
+		mBackupManagerAvailable = Build.VERSION.SDK_INT >= Build.VERSION_CODES.FROYO;
+		mCalendarAPIAvailable = Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH;
 
 		if (mBackupManagerAvailable) {
 			mBackupManagerWrapper = new BackupManagerWrapper(this);// TODO:

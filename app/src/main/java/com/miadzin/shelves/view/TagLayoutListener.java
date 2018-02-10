@@ -33,5 +33,5 @@ public interface TagLayoutListener {
 	 * 
 	 * @param tag
 	 */
-	public void tagRemoved(String tag);
+    void tagRemoved(String tag);
 }

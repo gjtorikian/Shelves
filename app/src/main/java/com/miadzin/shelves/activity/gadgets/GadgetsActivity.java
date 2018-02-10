@@ -1086,9 +1086,8 @@ public class GadgetsActivity extends BaseItemActivity {
 				if (TextUtilities.isEmpty(title)) {
 					title = " ";
 				}
-				;
 
-				if (sortByTitle || sortByAuthor) {
+                if (sortByTitle || sortByAuthor) {
 					title = title.substring(0, Math.min(title.length(), 2));
 				}
 

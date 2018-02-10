@@ -27,7 +27,7 @@ public interface AuthManager {
 	/**
 	 * Callback for authentication token retrieval operations.
 	 */
-	public interface AuthCallback {
+    interface AuthCallback {
 		/**
 		 * Indicates that we're done fetching an auth token.
 		 * 

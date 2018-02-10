@@ -557,7 +557,7 @@ public class ApparelStore extends ServerInfo {
 	 * Interface used to load images with an expiring date. The expiring date is
 	 * handled by the image cache to check for updated images from time to time.
 	 */
-	static interface ImageLoader {
+    interface ImageLoader {
 		/**
 		 * Load the specified as a Bitmap and associates an expiring date to it.
 		 * 
@@ -566,7 +566,7 @@ public class ApparelStore extends ServerInfo {
 		 * 
 		 * @return The Bitmap decoded from the URL and an expiration date.
 		 */
-		public ImageUtilities.ExpiringBitmap load(String url);
+        ImageUtilities.ExpiringBitmap load(String url);
 	}
 
 	/**
@@ -574,7 +574,7 @@ public class ApparelStore extends ServerInfo {
 	 * {@link com.miadzin.shelves.provider.apparel.ApparelStore#searchApparel(String, com.miadzin.shelves.provider.apparel.ApparelStore.ApparelSearchListener)}
 	 * .
 	 */
-	public static interface ApparelSearchListener {
+	public interface ApparelSearchListener {
 		/**
 		 * Invoked whenever a apparel was found by the search operation.
 		 * 

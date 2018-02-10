@@ -543,7 +543,7 @@ public class GadgetsStore extends ServerInfo {
 	 * Interface used to load images with an expiring date. The expiring date is
 	 * handled by the image cache to check for updated images from time to time.
 	 */
-	static interface ImageLoader {
+    interface ImageLoader {
 		/**
 		 * Load the specified as a Bitmap and associates an expiring date to it.
 		 * 
@@ -552,7 +552,7 @@ public class GadgetsStore extends ServerInfo {
 		 * 
 		 * @return The Bitmap decoded from the URL and an expiration date.
 		 */
-		public ImageUtilities.ExpiringBitmap load(String url);
+        ImageUtilities.ExpiringBitmap load(String url);
 	}
 
 	/**
@@ -560,7 +560,7 @@ public class GadgetsStore extends ServerInfo {
 	 * {@link com.miadzin.shelves.provider.gadgets.GadgetsStore#searchGadgets(String, com.miadzin.shelves.provider.gadgets.GadgetsStore.GadgetSearchListener)}
 	 * .
 	 */
-	public static interface GadgetSearchListener {
+	public interface GadgetSearchListener {
 		/**
 		 * Invoked whenever a gadget was found by the search operation.
 		 * 

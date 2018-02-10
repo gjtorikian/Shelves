@@ -17,6 +17,31 @@
 
 package com.miadzin.shelves.provider.books;
 
+import android.content.ContentValues;
+import android.content.Context;
+import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.net.Uri;
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.provider.BaseColumns;
+import android.util.DisplayMetrics;
+import android.util.Log;
+
+import com.miadzin.shelves.base.BaseItem;
+import com.miadzin.shelves.base.BaseItem.ImageSize;
+import com.miadzin.shelves.server.ServerInfo;
+import com.miadzin.shelves.util.IOUtilities;
+import com.miadzin.shelves.util.IOUtilities.inputTypes;
+import com.miadzin.shelves.util.ImageUtilities;
+import com.miadzin.shelves.util.Preferences;
+import com.miadzin.shelves.util.TextUtilities;
+
+import org.apache.http.HttpHost;
+import org.apache.http.client.methods.HttpGet;
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.text.ParseException;
@@ -28,30 +53,6 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import org.apache.http.HttpHost;
-import org.apache.http.client.methods.HttpGet;
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
-
-import android.content.ContentValues;
-import android.content.Context;
-import android.database.Cursor;
-import android.graphics.Bitmap;
-import android.net.Uri;
-import android.os.Parcel;
-import android.os.Parcelable;
-import android.provider.BaseColumns;
-import android.util.Log;
-
-import com.miadzin.shelves.base.BaseItem;
-import com.miadzin.shelves.base.BaseItem.ImageSize;
-import com.miadzin.shelves.server.ServerInfo;
-import com.miadzin.shelves.util.IOUtilities;
-import com.miadzin.shelves.util.IOUtilities.inputTypes;
-import com.miadzin.shelves.util.ImageUtilities;
-import com.miadzin.shelves.util.Preferences;
-import com.miadzin.shelves.util.TextUtilities;
 
 /**
  * Utility class to load books from a books store.
@@ -181,7 +182,6 @@ public class BooksStore extends ServerInfo {
 			values.put(DETAILS_URL, TextUtilities.protectString(mDetailsUrl));
 
 			final int density = Preferences.getDPI();
-
 			switch (density) {
 			case 320:
 				values.put(TINY_URL, TextUtilities.protectString(mImages
@@ -607,7 +607,7 @@ public class BooksStore extends ServerInfo {
 	 * Interface used to load images with an expiring date. The expiring date is
 	 * handled by the image cache to check for updated images from time to time.
 	 */
-	public static interface ImageLoader {
+	public interface ImageLoader {
 		/**
 		 * Load the specified as a Bitmap and associates an expiring date to it.
 		 * 
@@ -616,7 +616,7 @@ public class BooksStore extends ServerInfo {
 		 * 
 		 * @return The Bitmap decoded from the URL and an expiration date.
 		 */
-		public ImageUtilities.ExpiringBitmap load(String url);
+		ImageUtilities.ExpiringBitmap load(String url);
 	}
 
 	/**
@@ -624,7 +624,7 @@ public class BooksStore extends ServerInfo {
 	 * {@link com.miadzin.shelves.provider.books.BooksStore#searchBooks(String, com.miadzin.shelves.provider.books.BooksStore.BookSearchListener)}
 	 * .
 	 */
-	public static interface BookSearchListener {
+	public interface BookSearchListener {
 		/**
 		 * Invoked whenever a book was found by the search operation.
 		 * 

@@ -29,11 +29,11 @@ import android.content.Context;
 import android.os.Environment;
 
 public class IOUtilities {
-	public static enum inputTypes {
+	public enum inputTypes {
 		bulkScanApparel, DLApparel, shelvesApparel, listOfApparel, bulkScanBoardGames, boardGameGeekBoardGames, shelvesBoardGames, listOfBoardGames, bulkScanBooks, DLBooks, googleLibraryBooks, libraryThingBooks, mediaManBooks, shelfariBooks, shelvesBooks, listOfBooks, bulkScanComics, shelvesComics, bulkScanGadgets, DLGadgets, shelvesGadgets, listOfGadgets, bulkScanMovies, DLMovies, mediaManMovies, shelvesMovies, listOfMovies, bulkScanMusic, DLMusic, mediaManMusic, shelvesMusic, listOfMusic, bulkScanSoftware, DLSoftware, shelvesSoftware, listOfSoftware, bulkScanTools, DLTools, shelvesTools, listOfTools, bulkScanToys, DLToys, shelvesToys, listOfToys, bulkScanVideoGames, DLVideoGames, mediaManVideoGames, shelvesVideoGames, listOfVideoGames
 	}
 
-	public static enum outputTypes {
+	public enum outputTypes {
 		DLApparel, shelvesApparel, shelvesBoardGames, DLBooks, googleLibraryBooks, libraryThingBooks, mediaManBooks, shelfariBooks, shelvesBooks, shelvesComics, DLGadgets, shelvesGadgets, DLMovies, mediaManMovies, shelvesMovies, DLMusic, mediaManMusic, shelvesMusic, DLSoftware, shelvesSoftware, DLTools, shelvesTools, DLToys, shelvesToys, DLVideoGames, mediaManVideoGames, shelvesVideoGames
 	}
 

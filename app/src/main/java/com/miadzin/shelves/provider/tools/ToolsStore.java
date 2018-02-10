@@ -543,7 +543,7 @@ public class ToolsStore extends ServerInfo {
 	 * Interface used to load images with an expiring date. The expiring date is
 	 * handled by the image cache to check for updated images from time to time.
 	 */
-	static interface ImageLoader {
+    interface ImageLoader {
 		/**
 		 * Load the specified as a Bitmap and associates an expiring date to it.
 		 * 
@@ -552,7 +552,7 @@ public class ToolsStore extends ServerInfo {
 		 * 
 		 * @return The Bitmap decoded from the URL and an expiration date.
 		 */
-		public ImageUtilities.ExpiringBitmap load(String url);
+        ImageUtilities.ExpiringBitmap load(String url);
 	}
 
 	/**
@@ -560,7 +560,7 @@ public class ToolsStore extends ServerInfo {
 	 * {@link com.miadzin.shelves.provider.tools.ToolsStore#searchTools(String, com.miadzin.shelves.provider.tools.ToolsStore.ToolSearchListener)}
 	 * .
 	 */
-	public static interface ToolSearchListener {
+	public interface ToolSearchListener {
 		/**
 		 * Invoked whenever a tool was found by the search operation.
 		 * 

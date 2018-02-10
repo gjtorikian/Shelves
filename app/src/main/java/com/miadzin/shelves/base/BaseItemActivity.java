@@ -206,11 +206,11 @@ public abstract class BaseItemActivity extends Activity {
 
 	protected ViewFlipper categoryViewFlipper;
 
-	protected static enum VIEW_TYPE {
+	protected enum VIEW_TYPE {
 		shelfView, listView, listView_nocover
-	};
+	}
 
-	protected String viewType;
+    protected String viewType;
 
 	List<String> mFilterTags;
 

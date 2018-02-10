@@ -576,7 +576,7 @@ public class VideoGamesStore extends ServerInfo {
 	 * Interface used to load images with an expiring date. The expiring date is
 	 * handled by the image cache to check for updated images from time to time.
 	 */
-	static interface ImageLoader {
+    interface ImageLoader {
 		/**
 		 * Load the specified as a Bitmap and associates an expiring date to it.
 		 * 
@@ -585,7 +585,7 @@ public class VideoGamesStore extends ServerInfo {
 		 * 
 		 * @return The Bitmap decoded from the URL and an expiration date.
 		 */
-		public ImageUtilities.ExpiringBitmap load(String url);
+        ImageUtilities.ExpiringBitmap load(String url);
 	}
 
 	/**
@@ -593,7 +593,7 @@ public class VideoGamesStore extends ServerInfo {
 	 * {@link VideoGamesStore#searchVideoGames(String, VideoGamesStore.VideoGameSearchListener)}
 	 * .
 	 */
-	public static interface VideoGameSearchListener {
+	public interface VideoGameSearchListener {
 		/**
 		 * Invoked whenever a videogame was found by the search operation.
 		 * 

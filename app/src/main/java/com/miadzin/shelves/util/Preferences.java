@@ -17,9 +17,6 @@
 
 package com.miadzin.shelves.util;
 
-import java.text.SimpleDateFormat;
-import java.util.Locale;
-
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -29,6 +26,9 @@ import android.util.DisplayMetrics;
 import com.miadzin.shelves.R;
 import com.miadzin.shelves.ShelvesApplication;
 import com.miadzin.shelves.base.BaseItem;
+
+import java.text.SimpleDateFormat;
+import java.util.Locale;
 
 public final class Preferences {
 	public static final String NAME = "Shelves";
@@ -181,10 +181,8 @@ public final class Preferences {
 			return 160;
 		case DisplayMetrics.DENSITY_HIGH:
 			return 240;
-		case DisplayMetrics.DENSITY_XHIGH:
+		default: // XHIGH, XXHIGH, XXXHIGH...
 			return 320;
-		default:
-			return 160;
 		}
 
 	}

@@ -66,7 +66,7 @@ public class Entities {
 		XML.addEntities(BASIC_ARRAY);
 	}
 
-	static interface EntityMap {
+	interface EntityMap {
 		void add(String name, int value);
 
 		String name(int value);

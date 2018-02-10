@@ -553,7 +553,7 @@ public class SoftwareStore extends ServerInfo {
 	 * Interface used to load images with an expiring date. The expiring date is
 	 * handled by the image cache to check for updated images from time to time.
 	 */
-	static interface ImageLoader {
+    interface ImageLoader {
 		/**
 		 * Load the specified as a Bitmap and associates an expiring date to it.
 		 * 
@@ -562,7 +562,7 @@ public class SoftwareStore extends ServerInfo {
 		 * 
 		 * @return The Bitmap decoded from the URL and an expiration date.
 		 */
-		public ImageUtilities.ExpiringBitmap load(String url);
+        ImageUtilities.ExpiringBitmap load(String url);
 	}
 
 	/**
@@ -570,7 +570,7 @@ public class SoftwareStore extends ServerInfo {
 	 * {@link com.miadzin.shelves.provider.software.SoftwareStore#searchSoftware(String, com.miadzin.shelves.provider.software.SoftwareStore.SoftwareSearchListener)}
 	 * .
 	 */
-	public static interface SoftwareSearchListener {
+	public interface SoftwareSearchListener {
 		/**
 		 * Invoked whenever a software was found by the search operation.
 		 * 

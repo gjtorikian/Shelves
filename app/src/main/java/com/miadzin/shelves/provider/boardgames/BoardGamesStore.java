@@ -602,7 +602,7 @@ public class BoardGamesStore extends BGGInfo {
 	 * Interface used to load images with an expiring date. The expiring date is
 	 * handled by the image cache to check for updated images from time to time.
 	 */
-	public static interface ImageLoader {
+	public interface ImageLoader {
 		/**
 		 * Load the specified as a Bitmap and associates an expiring date to it.
 		 * 
@@ -611,7 +611,7 @@ public class BoardGamesStore extends BGGInfo {
 		 * 
 		 * @return The Bitmap decoded from the URL and an expiration date.
 		 */
-		public ImageUtilities.ExpiringBitmap load(String url);
+        ImageUtilities.ExpiringBitmap load(String url);
 	}
 
 	/**
@@ -619,7 +619,7 @@ public class BoardGamesStore extends BGGInfo {
 	 * {@link com.miadzin.shelves.provider.boardgames.BoardGamesStore#searchBoardGames(String, com.miadzin.shelves.provider.boardgames.BoardGamesStore.BoardGameSearchListener)}
 	 * .
 	 */
-	public static interface BoardGameSearchListener {
+	public interface BoardGameSearchListener {
 		/**
 		 * Invoked whenever a boardgame was found by the search operation.
 		 * 

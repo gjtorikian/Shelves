@@ -52,7 +52,7 @@ public class GDataWrapper<C> {
 		public Exception getException() {
 			return exception;
 		}
-	};
+	}
 
 	public static class ParseException extends Exception {
 		private Exception exception;
@@ -65,7 +65,7 @@ public class GDataWrapper<C> {
 		public Exception getException() {
 			return exception;
 		}
-	};
+	}
 
 	public static class ConflictDetectedException extends Exception {
 		private Exception exception;
@@ -78,7 +78,7 @@ public class GDataWrapper<C> {
 		public Exception getException() {
 			return exception;
 		}
-	};
+	}
 
 	public static class HttpException extends Exception {
 		private static final long serialVersionUID = 1L;
@@ -98,7 +98,7 @@ public class GDataWrapper<C> {
 		public String getStatusMessage() {
 			return statusMessage;
 		}
-	};
+	}
 
 	/**
 	 * A QueryFunction is passed in when executing a query. The query function
@@ -107,7 +107,7 @@ public class GDataWrapper<C> {
 	 * concern for whether the client will throw an error.
 	 */
 	public interface QueryFunction<C> {
-		public abstract void query(C client) throws AuthenticationException,
+		void query(C client) throws AuthenticationException,
 				IOException, ParseException, ConflictDetectedException,
 				HttpException;
 	}
@@ -120,7 +120,7 @@ public class GDataWrapper<C> {
 	 * concern for whether the client will throw an error.
 	 */
 	public interface AuthenticatedFunction {
-		public abstract void run(String authenticationToken)
+		void run(String authenticationToken)
 				throws AuthenticationException, IOException;
 	}
 
